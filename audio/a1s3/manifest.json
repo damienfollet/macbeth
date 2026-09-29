@@ -1,391 +1,448 @@
 {
-  "scene": "a1s3",
+  "sceneId": "a1s3",
+  "label": "Acte I · Scène 3",
   "title": "Un endroit dans la forêt",
-  "lines": {
-    "a1s3_001": {
+  "count": 55,
+  "files": [
+    {
+      "n": 1,
+      "file": "a1s3_001.mp3",
       "speaker": "Némésis",
-      "voice": "Némésis",
+      "voiceCharacter": "Némésis",
       "pitch": -5,
-      "text": "La raclée qu’on leur a mis aux Norvégiens ! Hein, Mimésis ?",
-      "src": "audio/a1s3/a1s3_001.mp3"
+      "text": "La raclée qu’on leur a mis aux Norvégiens ! Hein, Mimésis ?"
     },
-    "a1s3_002": {
+    {
+      "n": 2,
+      "file": "a1s3_002.mp3",
       "speaker": "Mimésis",
-      "voice": "Mimésis",
+      "voiceCharacter": "Mimésis",
       "pitch": -5,
-      "text": "Je dirais même plus la raclée qu’on leur a mis Némésis !",
-      "src": "audio/a1s3/a1s3_002.mp3"
+      "text": "Je dirais même plus la raclée qu’on leur a mis Némésis !"
     },
-    "a1s3_003": {
+    {
+      "n": 3,
+      "file": "a1s3_003.mp3",
       "speaker": "Némésis",
-      "voice": "Némésis",
+      "voiceCharacter": "Némésis",
       "pitch": -5,
-      "text": "Il faut dire que mon cavalier, Macbeth, a été héroïque et très rusé !",
-      "src": "audio/a1s3/a1s3_003.mp3"
+      "text": "Il faut dire que mon cavalier, Macbeth, a été héroïque et très rusé !"
     },
-    "a1s3_004": {
+    {
+      "n": 4,
+      "file": "a1s3_004.mp3",
       "speaker": "Mimésis",
-      "voice": "Mimésis",
+      "voiceCharacter": "Mimésis",
       "pitch": -5,
-      "text": "Héroïque et très rusé, en effet ! Tout comme le mien, Banco !",
-      "src": "audio/a1s3/a1s3_004.mp3"
+      "text": "Héroïque et très rusé, en effet ! Tout comme le mien, Banco !"
     },
-    "a1s3_005": {
+    {
+      "n": 5,
+      "file": "a1s3_005.mp3",
       "speaker": "Némésis",
-      "voice": "Némésis",
+      "voiceCharacter": "Némésis",
       "pitch": -5,
-      "text": "Et nous ? Mimésis, on n‘a pas été mal non plus ?",
-      "src": "audio/a1s3/a1s3_005.mp3"
+      "text": "Et nous ? Mimésis, on n‘a pas été mal non plus ?"
     },
-    "a1s3_006": {
+    {
+      "n": 6,
+      "file": "a1s3_006.mp3",
       "speaker": "Mimésis",
-      "voice": "Mimésis",
+      "voiceCharacter": "Mimésis",
       "pitch": -5,
-      "text": "Pas mal non plus ! Némésis ! On n’a pas été mal du tout !",
-      "src": "audio/a1s3/a1s3_006.mp3"
+      "text": "Pas mal non plus ! Némésis ! On n’a pas été mal du tout !"
     },
-    "a1s3_007": {
+    {
+      "n": 7,
+      "file": "a1s3_007.mp3",
       "speaker": "Némésis",
-      "voice": "Némésis",
+      "voiceCharacter": "Némésis",
       "pitch": -5,
-      "text": "Non parce que si on n’avait pas rué ; jamais on n’aurait gagné !",
-      "src": "audio/a1s3/a1s3_007.mp3"
+      "text": "Non parce que si on n’avait pas rué ; jamais on n’aurait gagné !"
     },
-    "a1s3_008": {
+    {
+      "n": 8,
+      "file": "a1s3_008.mp3",
       "speaker": "Mimésis",
-      "voice": "Mimésis",
+      "voiceCharacter": "Mimésis",
       "pitch": -5,
-      "text": "Jamais, on n’aurait gagné ! Némésis !",
-      "src": "audio/a1s3/a1s3_008.mp3"
+      "text": "Jamais, on n’aurait gagné ! Némésis !"
     },
-    "a1s3_009": {
+    {
+      "n": 9,
+      "file": "a1s3_009.mp3",
       "speaker": "Némésis",
-      "voice": "Némésis",
+      "voiceCharacter": "Némésis",
       "pitch": -5,
-      "text": "On les a bien chamboulés, les montures norvégiennes, quand on s’est présenté avec notre attelage, tu te souviens, Mimésis ?",
-      "src": "audio/a1s3/a1s3_009.mp3"
+      "text": "On les a bien chamboulés, les montures norvégiennes, quand on s’est présenté avec notre attelage, tu te souviens, Mimésis ?"
     },
-    "a1s3_010": {
+    {
+      "n": 10,
+      "file": "a1s3_010.mp3",
       "speaker": "Mimésis",
-      "voice": "Mimésis",
+      "voiceCharacter": "Mimésis",
       "pitch": -5,
-      "text": "Oh, oui, je me souviens, Némésis !",
-      "src": "audio/a1s3/a1s3_010.mp3"
+      "text": "Oh, oui, je me souviens, Némésis !"
     },
-    "a1s3_011": {
+    {
+      "n": 11,
+      "file": "a1s3_011.mp3",
       "speaker": "Némésis",
-      "voice": "Némésis",
+      "voiceCharacter": "Némésis",
       "pitch": -5,
-      "text": "On était dans la forêt, bordée par des troènes.",
-      "src": "audio/a1s3/a1s3_011.mp3"
+      "text": "On était dans la forêt, bordée par des troènes."
     },
-    "a1s3_012": {
+    {
+      "n": 12,
+      "file": "a1s3_012.mp3",
       "speaker": "Mimésis",
-      "voice": "Mimésis",
+      "voiceCharacter": "Mimésis",
       "pitch": -5,
-      "text": "Limité par des troènes, Némésis !",
-      "src": "audio/a1s3/a1s3_012.mp3"
+      "text": "Limité par des troènes, Némésis !"
     },
-    "a1s3_013": {
+    {
+      "n": 13,
+      "file": "a1s3_013.mp3",
       "speaker": "Némésis",
-      "voice": "Némésis",
+      "voiceCharacter": "Némésis",
       "pitch": -5,
-      "text": "Une monture de 2 chevaux dans une forêt bordée de six troènes !",
-      "src": "audio/a1s3/a1s3_013.mp3"
+      "text": "Une monture de 2 chevaux dans une forêt bordée de six troènes !"
     },
-    "a1s3_014": {
+    {
+      "n": 14,
+      "file": "a1s3_014.mp3",
       "speaker": "Mimésis",
-      "voice": "Mimésis",
+      "voiceCharacter": "Mimésis",
       "pitch": -5,
-      "text": "2 chevaux dans une forêt bordée de six troènes !",
-      "src": "audio/a1s3/a1s3_014.mp3"
+      "text": "2 chevaux dans une forêt bordée de six troènes !"
     },
-    "a1s3_015": {
+    {
+      "n": 15,
+      "file": "a1s3_015.mp3",
       "speaker": "Némésis",
-      "voice": "Némésis",
+      "voiceCharacter": "Némésis",
       "pitch": -5,
-      "text": "Et pourtant nos cavaliers hésitaient, ils étaient peu chauds !",
-      "src": "audio/a1s3/a1s3_015.mp3"
+      "text": "Et pourtant nos cavaliers hésitaient, ils étaient peu chauds !"
     },
-    "a1s3_016": {
+    {
+      "n": 16,
+      "file": "a1s3_016.mp3",
       "speaker": "Mimésis",
-      "voice": "Mimésis",
+      "voiceCharacter": "Mimésis",
       "pitch": -5,
-      "text": "Ah, ça oui, ils étaient peu chauds !",
-      "src": "audio/a1s3/a1s3_016.mp3"
+      "text": "Ah, ça oui, ils étaient peu chauds !"
     },
-    "a1s3_017": {
+    {
+      "n": 17,
+      "file": "a1s3_017.mp3",
       "speaker": "Némésis et Mimésis",
-      "voice": "Némésis",
+      "voiceCharacter": "Némésis",
       "pitch": -5,
-      "text": "Aïe ! Aïe !",
-      "src": "audio/a1s3/a1s3_017.mp3"
+      "text": "Aïe ! Aïe !"
     },
-    "a1s3_018": {
+    {
+      "n": 18,
+      "file": "a1s3_018.mp3",
       "speaker": "Banco",
-      "voice": "Banco",
+      "voiceCharacter": "Banco",
       "pitch": 0,
-      "text": "Dîtes-donc, montures de nous deux ! On était quand même là pour vous guider !",
-      "src": "audio/a1s3/a1s3_018.mp3"
+      "text": "Dîtes-donc, montures de nous deux ! On était quand même là pour vous guider !"
     },
-    "a1s3_019": {
+    {
+      "n": 19,
+      "file": "a1s3_019.mp3",
       "speaker": "Némésis",
-      "voice": "Némésis",
+      "voiceCharacter": "Némésis",
       "pitch": -5,
-      "text": "Oui, peut-être, mais qu’est-ce qu’on a pris ! Qu’est-ce qu’on a pu s’faire fouetter !",
-      "src": "audio/a1s3/a1s3_019.mp3"
+      "text": "Oui, peut-être, mais qu’est-ce qu’on a pris ! Qu’est-ce qu’on a pu s’faire fouetter !"
     },
-    "a1s3_020": {
+    {
+      "n": 20,
+      "file": "a1s3_020.mp3",
       "speaker": "Mimésis",
-      "voice": "Mimésis",
+      "voiceCharacter": "Mimésis",
       "pitch": -5,
-      "text": "Ah, oui, on a pris ces coups, plusieurs « fouets » !",
-      "src": "audio/a1s3/a1s3_020.mp3"
+      "text": "Ah, oui, on a pris ces coups, plusieurs « fouets » !"
     },
-    "a1s3_021": {
+    {
+      "n": 21,
+      "file": "a1s3_021.mp3",
       "speaker": "Macbeth",
-      "voice": "Macbeth",
+      "voiceCharacter": "Macbeth",
       "pitch": 0,
-      "text": "Suffit ! Némésis et Mimésis ! Nous voici de retour dans notre belle Ecosse, vous allez pouvoir profiter d’une belle ration d’avoine et d’eau.",
-      "src": "audio/a1s3/a1s3_021.mp3"
+      "text": "Suffit ! Némésis et Mimésis ! Nous voici de retour dans notre belle Ecosse, vous allez pouvoir profiter d’une belle ration d’avoine et d’eau."
     },
-    "a1s3_022": {
+    {
+      "n": 22,
+      "file": "a1s3_022.mp3",
       "speaker": "Némésis",
-      "voice": "Némésis",
+      "voiceCharacter": "Némésis",
       "pitch": -5,
-      "text": "C’est pas trop tôt !",
-      "src": "audio/a1s3/a1s3_022.mp3"
+      "text": "C’est pas trop tôt !"
     },
-    "a1s3_023": {
+    {
+      "n": 23,
+      "file": "a1s3_023.mp3",
       "speaker": "Mimésis",
-      "voice": "Mimésis",
+      "voiceCharacter": "Mimésis",
       "pitch": -5,
-      "text": "Je dirais même plus, c’est pas trop tôt !",
-      "src": "audio/a1s3/a1s3_023.mp3"
+      "text": "Je dirais même plus, c’est pas trop tôt !"
     },
-    "a1s3_024": {
+    {
+      "n": 24,
+      "file": "a1s3_024.mp3",
       "speaker": "Macbeth",
-      "voice": "Macbeth",
+      "voiceCharacter": "Macbeth",
       "pitch": 0,
-      "text": "Et on arrête de se plaindre, sinon….",
-      "src": "audio/a1s3/a1s3_024.mp3"
+      "text": "Et on arrête de se plaindre, sinon…."
     },
-    "a1s3_025": {
+    {
+      "n": 25,
+      "file": "a1s3_025.mp3",
       "speaker": "Némésis et Mimésis",
-      "voice": "Némésis",
+      "voiceCharacter": "Némésis",
       "pitch": -5,
-      "text": "Sinon ?",
-      "src": "audio/a1s3/a1s3_025.mp3"
+      "text": "Sinon ?"
     },
-    "a1s3_026": {
+    {
+      "n": 26,
+      "file": "a1s3_026.mp3",
       "speaker": "Macbeth et Banco",
-      "voice": "Banco",
+      "voiceCharacter": "Macbeth",
       "pitch": 0,
-      "text": "Vous aurez de l’avoine…",
-      "src": "audio/a1s3/a1s3_026.mp3"
+      "text": "Vous aurez de l’avoine…"
     },
-    "a1s3_027": {
+    {
+      "n": 27,
+      "file": "a1s3_027.mp3",
       "speaker": "Némésis et Mimésis",
-      "voice": "Némésis",
+      "voiceCharacter": "Némésis",
       "pitch": -5,
-      "text": "Ah !",
-      "src": "audio/a1s3/a1s3_027.mp3"
+      "text": "Ah !"
     },
-    "a1s3_028": {
+    {
+      "n": 28,
+      "file": "a1s3_028.mp3",
       "speaker": "Macbeth et Banco",
-      "voice": "Banco",
+      "voiceCharacter": "Macbeth",
       "pitch": 0,
-      "text": "mais on vous coupe le son !",
-      "src": "audio/a1s3/a1s3_028.mp3"
+      "text": "mais on vous coupe le son !"
     },
-    "a1s3_029": {
+    {
+      "n": 29,
+      "file": "a1s3_029.mp3",
       "speaker": "Macbeth et Banco",
-      "voice": "Banco",
+      "voiceCharacter": "Macbeth",
       "pitch": 0,
-      "text": "Comme ça on vous entendra plus !",
-      "src": "audio/a1s3/a1s3_029.mp3"
+      "text": "Comme ça on vous entendra plus !"
     },
-    "a1s3_030": {
+    {
+      "n": 30,
+      "file": "a1s3_030.mp3",
       "speaker": "Banco",
-      "voice": "Banco",
+      "voiceCharacter": "Banco",
       "pitch": 0,
-      "text": "Quelles sont drôles de créatures ? Est-ce un accueil à notre retour de guerre ?",
-      "src": "audio/a1s3/a1s3_030.mp3"
+      "text": "Quelles sont drôles de créatures ? Est-ce un accueil à notre retour de guerre ?"
     },
-    "a1s3_031": {
+    {
+      "n": 31,
+      "file": "a1s3_031.mp3",
       "speaker": "Macbeth",
-      "voice": "Macbeth",
+      "voiceCharacter": "Macbeth",
       "pitch": 0,
-      "text": "Nous feraient-elles une haie d’honneur pour notre victoire ?",
-      "src": "audio/a1s3/a1s3_031.mp3"
+      "text": "Nous feraient-elles une haie d’honneur pour notre victoire ?"
     },
-    "a1s3_032": {
+    {
+      "n": 32,
+      "file": "a1s3_032.mp3",
       "speaker": "Banco",
-      "voice": "Banco",
+      "voiceCharacter": "Banco",
       "pitch": 0,
-      "text": "Et si on les chatouillait ?",
-      "src": "audio/a1s3/a1s3_032.mp3"
+      "text": "Et si on les chatouillait ?"
     },
-    "a1s3_033": {
+    {
+      "n": 33,
+      "file": "a1s3_033.mp3",
       "speaker": "Macbeth",
-      "voice": "Macbeth",
+      "voiceCharacter": "Macbeth",
       "pitch": 0,
-      "text": "Banco !",
-      "src": "audio/a1s3/a1s3_033.mp3"
+      "text": "Banco !"
     },
-    "a1s3_034": {
+    {
+      "n": 34,
+      "file": "a1s3_034.mp3",
       "speaker": "Banco",
-      "voice": "Banco",
+      "voiceCharacter": "Banco",
       "pitch": 0,
-      "text": "Oui, c’est moi !",
-      "src": "audio/a1s3/a1s3_034.mp3"
+      "text": "Oui, c’est moi !"
     },
-    "a1s3_035": {
+    {
+      "n": 35,
+      "file": "a1s3_035.mp3",
       "speaker": "Macbeth",
-      "voice": "Macbeth",
+      "voiceCharacter": "Macbeth",
       "pitch": 0,
-      "text": "Non, mais j’ai dit banco, pour dire on parie ! T’es un mec bête ?",
-      "src": "audio/a1s3/a1s3_035.mp3"
+      "text": "Non, mais j’ai dit banco, pour dire on parie ! T’es un mec bête ?"
     },
-    "a1s3_036": {
+    {
+      "n": 36,
+      "file": "a1s3_036.mp3",
       "speaker": "Banco",
-      "voice": "Banco",
+      "voiceCharacter": "Banco",
       "pitch": 0,
-      "text": "Ben, non c’est toi Macbeth !",
-      "src": "audio/a1s3/a1s3_036.mp3"
+      "text": "Ben, non c’est toi Macbeth !"
     },
-    "a1s3_037": {
+    {
+      "n": 37,
+      "file": "a1s3_037.mp3",
       "speaker": "Macbeth",
-      "voice": "Macbeth",
+      "voiceCharacter": "Macbeth",
       "pitch": 0,
-      "text": "Oui on a compris, je suis Macbeth et toi t’es Banco, point final !",
-      "src": "audio/a1s3/a1s3_037.mp3"
+      "text": "Oui on a compris, je suis Macbeth et toi t’es Banco, point final !"
     },
-    "a1s3_038": {
+    {
+      "n": 38,
+      "file": "a1s3_038.mp3",
       "speaker": "Ririte",
-      "voice": "Ririte",
+      "voiceCharacter": "Ririte",
       "pitch": 2,
-      "text": "Salut à toi, Macbeth ! Comte de Glamis, mais ça c’était jadis.",
-      "src": "audio/a1s3/a1s3_038.mp3"
+      "text": "Salut à toi, Macbeth ! Comte de Glamis, mais ça c’était jadis."
     },
-    "a1s3_039": {
+    {
+      "n": 39,
+      "file": "a1s3_039.mp3",
       "speaker": "Fifite",
-      "voice": "Fifite",
+      "voiceCharacter": "Fifite",
       "pitch": 2,
-      "text": "Salut à toi Macbeth ! Comte de Cador, titre qui bientôt sera ton sort !",
-      "src": "audio/a1s3/a1s3_039.mp3"
+      "text": "Salut à toi Macbeth ! Comte de Cador, titre qui bientôt sera ton sort !"
     },
-    "a1s3_040": {
+    {
+      "n": 40,
+      "file": "a1s3_040.mp3",
       "speaker": "Liloute",
-      "voice": "Liloute",
+      "voiceCharacter": "Liloute",
       "pitch": -2,
-      "text": "Salut à toi Macbeth ! Salut à toi qui un jour sera roi !",
-      "src": "audio/a1s3/a1s3_040.mp3"
+      "text": "Salut à toi Macbeth ! Salut à toi qui un jour sera roi !"
     },
-    "a1s3_041": {
+    {
+      "n": 41,
+      "file": "a1s3_041.mp3",
       "speaker": "Banco",
-      "voice": "Banco",
+      "voiceCharacter": "Banco",
       "pitch": 0,
-      "text": "Créatures, je ne vous appellerai pas vieille branche car vous ne m’avez même pas salué.",
-      "src": "audio/a1s3/a1s3_041.mp3"
+      "text": "Créatures, je ne vous appellerai pas vieille branche car vous ne m’avez même pas salué."
     },
-    "a1s3_042": {
+    {
+      "n": 42,
+      "file": "a1s3_042.mp3",
       "speaker": "Ririte, Fifite et Liloute",
-      "voice": "Ririte",
+      "voiceCharacter": "Ririte",
       "pitch": 2,
-      "text": "Salut, Salut à toi, Banco !",
-      "src": "audio/a1s3/a1s3_042.mp3"
+      "text": "Salut, Salut à toi, Banco !"
     },
-    "a1s3_043": {
+    {
+      "n": 43,
+      "file": "a1s3_043.mp3",
       "speaker": "Ririte",
-      "voice": "Ririte",
+      "voiceCharacter": "Ririte",
       "pitch": 2,
-      "text": "T’inquiète car tu seras moindre que Macbeth mais plus grand.",
-      "src": "audio/a1s3/a1s3_043.mp3"
+      "text": "T’inquiète car tu seras moindre que Macbeth mais plus grand."
     },
-    "a1s3_044": {
+    {
+      "n": 44,
+      "file": "a1s3_044.mp3",
       "speaker": "Liloute",
-      "voice": "Liloute",
+      "voiceCharacter": "Liloute",
       "pitch": -2,
-      "text": "Tu seras moins heureux et cependant beaucoup plus heureux.",
-      "src": "audio/a1s3/a1s3_044.mp3"
+      "text": "Tu seras moins heureux et cependant beaucoup plus heureux."
     },
-    "a1s3_045": {
+    {
+      "n": 45,
+      "file": "a1s3_045.mp3",
       "speaker": "Fifite",
-      "voice": "Fifite",
+      "voiceCharacter": "Fifite",
       "pitch": 2,
-      "text": "Et tu engendreras des rois, mais tu ne le seras pas !",
-      "src": "audio/a1s3/a1s3_045.mp3"
+      "text": "Et tu engendreras des rois, mais tu ne le seras pas !"
     },
-    "a1s3_046": {
+    {
+      "n": 46,
+      "file": "a1s3_046.mp3",
       "speaker": "Ririte, Fifite et Liloute",
-      "voice": "Ririte",
+      "voiceCharacter": "Ririte",
       "pitch": 2,
-      "text": "Salut Banco, Salut Macbeth !",
-      "src": "audio/a1s3/a1s3_046.mp3"
+      "text": "Salut Banco, Salut Macbeth !"
     },
-    "a1s3_047": {
+    {
+      "n": 47,
+      "file": "a1s3_047.mp3",
       "speaker": "Banco",
-      "voice": "Banco",
+      "voiceCharacter": "Banco",
       "pitch": 0,
-      "text": "Paroles en l’air ou vérité ?",
-      "src": "audio/a1s3/a1s3_047.mp3"
+      "text": "Paroles en l’air ou vérité ?"
     },
-    "a1s3_048": {
+    {
+      "n": 48,
+      "file": "a1s3_048.mp3",
       "speaker": "Macbeth",
-      "voice": "Macbeth",
+      "voiceCharacter": "Macbeth",
       "pitch": 0,
-      "text": "Prophéties dites par des arbres mais pas gravées dans le marbre !",
-      "src": "audio/a1s3/a1s3_048.mp3"
+      "text": "Prophéties dites par des arbres mais pas gravées dans le marbre !"
     },
-    "a1s3_049": {
+    {
+      "n": 49,
+      "file": "a1s3_049.mp3",
       "speaker": "Banco",
-      "voice": "Banco",
+      "voiceCharacter": "Banco",
       "pitch": 0,
-      "text": "Tu seras roi …",
-      "src": "audio/a1s3/a1s3_049.mp3"
+      "text": "Tu seras roi …"
     },
-    "a1s3_050": {
+    {
+      "n": 50,
+      "file": "a1s3_050.mp3",
       "speaker": "Macbeth",
-      "voice": "Macbeth",
+      "voiceCharacter": "Macbeth",
       "pitch": 0,
-      "text": "Tes enfants seront rois…",
-      "src": "audio/a1s3/a1s3_050.mp3"
+      "text": "Tes enfants seront rois…"
     },
-    "a1s3_051": {
+    {
+      "n": 51,
+      "file": "a1s3_051.mp3",
       "speaker": "Banco",
-      "voice": "Banco",
+      "voiceCharacter": "Banco",
       "pitch": 0,
-      "text": "Tu vas être Comte de Cador ! Comte de Cador, le plus haut rang de notre chevalerie !",
-      "src": "audio/a1s3/a1s3_051.mp3"
+      "text": "Tu vas être Comte de Cador ! Comte de Cador, le plus haut rang de notre chevalerie !"
     },
-    "a1s3_052": {
+    {
+      "n": 52,
+      "file": "a1s3_052.mp3",
       "speaker": "Macbeth",
-      "voice": "Macbeth",
+      "voiceCharacter": "Macbeth",
       "pitch": 0,
-      "text": "Putain ! J’y crois pas! Comment ce fait-ce d’ailleurs ? Ce comte de Cador, il vit encore ? Comte de Cador ; c’est une mise en bouche mais alors roi c’est carrément le palais qui s’ouvre. Sont-ce des vérités qu’on nous fait avaler qui nous font fantasmer ?",
-      "src": "audio/a1s3/a1s3_052.mp3"
+      "text": "Putain ! J’y crois pas! Comment ce fait-ce d’ailleurs ? Ce comte de Cador, il vit encore ? Comte de Cador ; c’est une mise en bouche mais alors roi c’est carrément le palais qui s’ouvre. Sont-ce des vérités qu’on nous fait avaler qui nous font fantasmer ?"
     },
-    "a1s3_053": {
+    {
+      "n": 53,
+      "file": "a1s3_053.mp3",
       "speaker": "Banco",
-      "voice": "Banco",
+      "voiceCharacter": "Banco",
       "pitch": 0,
-      "text": "Merde, mais qu’est-ce que c’est qu’ce binz ? Il rafle tout le Père Macbeth ; … en attendant si ces femmes disent vrai, je pourrai aller à la cour et m’offrir un jeu de palais chez mon jeune fils à l’avenir.",
-      "src": "audio/a1s3/a1s3_053.mp3"
+      "text": "Merde, mais qu’est-ce que c’est qu’ce binz ? Il rafle tout le Père Macbeth ; … en attendant si ces femmes disent vrai, je pourrai aller à la cour et m’offrir un jeu de palais chez mon jeune fils à l’avenir."
     },
-    "a1s3_054": {
+    {
+      "n": 54,
+      "file": "a1s3_054.mp3",
       "speaker": "Banco",
-      "voice": "Banco",
+      "voiceCharacter": "Banco",
       "pitch": 0,
-      "text": "Après vous… compte de Cador",
-      "src": "audio/a1s3/a1s3_054.mp3"
+      "text": "Après vous… compte de Cador"
     },
-    "a1s3_055": {
+    {
+      "n": 55,
+      "file": "a1s3_055.mp3",
       "speaker": "Macbeth",
-      "voice": "Macbeth",
+      "voiceCharacter": "Macbeth",
       "pitch": 0,
-      "text": "Après toi… géniteur de rois ….",
-      "src": "audio/a1s3/a1s3_055.mp3"
+      "text": "Après toi… géniteur de rois …."
     }
-  }
+  ]
 }
