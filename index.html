@@ -42,10 +42,22 @@ button,select{appearance:none;border:1px solid #ffffff22;background:#27242a;colo
 .v2-progress:hover .v2-progress-thumb { transform:translateX(-50%) scale(1.2); }
 .v2-tick { position:absolute; top:10px; width:1px; height:9px; background:#9ca3af; opacity:.55; }
 .v2-progress-labels { display:flex; justify-content:space-between; font-size:11px; color:#6b7280; margin-top:-2px; }
+#voiceSettings.v2-highlight { animation:v2flash 1.05s ease; }
 @keyframes v2flash { 0%,100%{box-shadow:none} 35%{box-shadow:0 0 0 4px rgba(37,99,235,.20)} }
 @media (prefers-reduced-motion: reduce) {
   #currentCard,#prevCard,#nextCard,.v2-progress-fill,.v2-progress-thumb,.top-action { transition:none !important; }
-  }
+  #voiceSettings.v2-highlight { animation:none; }
+}
+
+
+/* V2.0.4 — état actif du bouton Voix */
+#voiceBtn.voice-selected,
+button.voice-selected {
+  background: #dbeafe !important;
+  color: #1d4ed8 !important;
+  border-color: #93c5fd !important;
+  box-shadow: inset 0 0 0 1px rgba(37,99,235,.28) !important;
+}
 
 
 /* V2.0.4 */
@@ -53,7 +65,7 @@ button,select{appearance:none;border:1px solid #ffffff22;background:#27242a;colo
 .topControl:hover{transform:translateY(-1px)}
 .topControl .tooltip{position:absolute;z-index:10000;top:calc(100% + 8px);left:50%;transform:translate(-50%,-3px);opacity:0;visibility:hidden;pointer-events:none;white-space:nowrap;background:#08080a;color:#fff;border:1px solid #ffffff24;border-radius:8px;padding:7px 9px;font:600 12px system-ui;box-shadow:0 8px 24px #0009;transition:opacity .15s,transform .15s,visibility .15s}
 .topControl:hover .tooltip{opacity:1;visibility:visible;transform:translate(-50%,0)}
-.topControl.controlActive,#settingsBtn.controlActive{background:#dbeafe!important;color:#1d4ed8!important;border-color:#93c5fd!important;box-shadow:inset 0 0 0 1px #2563eb44}
+.topControl.controlActive{background:#dbeafe!important;color:#1d4ed8!important;border-color:#93c5fd!important;box-shadow:inset 0 0 0 1px #2563eb44}
 .v2-progress-wrap{margin-top:13px;padding:2px 3px 0}
 .v2-progress{height:31px;position:relative;cursor:pointer;overflow:visible}
 .v2-progress-track{position:absolute;left:0;right:0;top:13px;height:5px;border-radius:99px;background:#ffffff18;overflow:hidden}
@@ -132,7 +144,6 @@ button,select{appearance:none;border:1px solid #ffffff22;background:#27242a;colo
  header .toolbar .volumeText{font-size:12px}
  header .toolbar #volumeSlider{min-width:24px;width:100%}
  header .toolbar #volumeValue{font-size:12px;white-space:nowrap}
- #settingsBtn{grid-column:1/-1;width:100%;justify-content:center}
  .mobileNavBar{display:flex;position:relative;z-index:4;align-items:center;gap:12px;padding:9px 14px;background:#19161a;border-bottom:1px solid #ffffff22}
  #mobileNavBtn{flex:0 0 auto;display:flex;align-items:center;gap:12px;padding:11px 13px;font:700 13px system-ui;background:#2b272d;border:1px solid #ffffff33;border-radius:11px;color:#fff}
  #mobileNavBtn[aria-expanded="true"]{background:#e7b85c;color:#20170d}
@@ -185,7 +196,7 @@ button,select{appearance:none;border:1px solid #ffffff22;background:#27242a;colo
  header h1{font-size:clamp(13px,3.65vw,17px)!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important;line-height:1.2!important;margin:0!important}
  header h1 span,header .tag{display:none!important}
  header .toolbar{margin:0!important;display:flex!important;align-items:center!important;gap:4px!important;flex:0 0 auto!important}
- header .toolbar .volumeControl,header #settingsBtn{display:none!important}
+ header .toolbar .volumeControl{display:none!important}
  header .toolbar .topControl{height:37px!important;min-height:37px!important;padding:5px 7px!important;font-size:11px!important;white-space:nowrap!important;border-radius:9px!important}
  .mobileNavBar{display:block!important;position:fixed!important;top:7px!important;left:8px!important;width:38px!important;height:38px!important;padding:0!important;margin:0!important;border:0!important;background:transparent!important;z-index:60!important}
  #mobileNavBtn{display:flex!important;align-items:center!important;justify-content:center!important;width:38px!important;height:38px!important;min-height:0!important;padding:0!important;border-radius:9px!important;font-size:0!important;gap:0!important;background:#29262d!important}
@@ -240,7 +251,8 @@ button,select{appearance:none;border:1px solid #ffffff22;background:#27242a;colo
  .sidebar[data-mobile-tab='roles'] .roleBox{display:block!important;visibility:visible!important}
  .sidebar[data-mobile-tab='roles'] .rolePicker{display:block!important}
  .sidebar[data-mobile-tab='roles'] .roleMenu{max-height:calc(100dvh - 210px)!important;overflow-y:auto!important}
- }
+ .sidebar[data-mobile-tab='voices'] .settingsPanel{display:block!important}
+}
 </style>
 </head>
 <body>
@@ -395,9 +407,6 @@ const mine=e=>e.c&&learningRoles.some(role=>roleInSpeaker(role,e.c));
 
 const $=id=>document.getElementById(id), card=$('card'), line=$('line'), speaker=$('speaker'), dir=$('direction'), status=$('status'), cue=$('cue');
 let stageTimer=null, speechStartTimer=null;
-let chars=[]; function updateChars(){const speakers=scenes.flatMap(s=>s.lines).filter(e=>e.c).map(e=>e.c);chars=Object.keys(aliases).filter(c=>speakers.some(sp=>roleInSpeaker(c,sp))&&!learningRoles.some(r=>r===c)).sort((a,b)=>a.localeCompare(b,'fr',{sensitivity:'base'}));}
-let voiceMap=JSON.parse(localStorage.getItem('macbethVoices')||'{}');
-let voiceParams=JSON.parse(localStorage.getItem('macbethVoiceParams')||'{}');
 let muted=localStorage.getItem('macbethMuted')==='1';
 let masterVolume=1;
 const speedSteps=[1,1.3,1.5]; let globalSpeed=+localStorage.getItem('macbethGlobalSpeed')||1;if(!speedSteps.includes(globalSpeed))globalSpeed=1;
@@ -408,10 +417,7 @@ function updateTopControls(){
  mb.classList.toggle('controlActive',muted);
  sb.classList.toggle('controlActive',globalSpeed!==1);
 }
-function paramsFor(c){const p=voiceParams[c]||{};return {rate:Number.isFinite(+p.rate)?+p.rate:1,pitch:Number.isFinite(+p.pitch)?+p.pitch:1}}
-function saveVoiceParams(){localStorage.setItem('macbethVoiceParams',JSON.stringify(voiceParams))}
 function voices(){return speechSynthesis.getVoices().filter(v=>v.lang.toLowerCase().startsWith('fr'))}
-function baseChar(c){if(!c)return '';let best='',bestPos=Infinity;for(const [canon,names] of Object.entries(aliases)){for(const n of names){const pos=c.toLocaleLowerCase('fr').indexOf(n.toLocaleLowerCase('fr'));if(pos>=0&&pos<bestPos){best=canon;bestPos=pos}}}return best||c.split(/\s*\+\s*|\s+et\s+|,|\//i)[0].trim()}
 function clearAutoTimers(){if(stageTimer){clearTimeout(stageTimer);stageTimer=null}if(speechStartTimer){clearTimeout(speechStartTimer);speechStartTimer=null}}
 
 // Audio pré-généré pour l’ensemble de la pièce.
@@ -439,7 +445,7 @@ function speakText(c,x,onend){
  speakSystemVoice(c,x,onend);
 }
 function speakSystemVoice(c,x,onend){
- let u=new SpeechSynthesisUtterance(x),vs=voices(),bc=baseChar(c),chosen=vs.find(v=>v.name===voiceMap[bc]);u.volume=masterVolume;if(!chosen&&vs.length)chosen=vs[Math.abs(chars.indexOf(bc))%vs.length];if(chosen)u.voice=chosen;u.lang='fr-FR';const p=paramsFor(bc);u.rate=Math.max(.5,Math.min(4,p.rate*globalSpeed));u.pitch=Math.max(.5,Math.min(2,p.pitch));u.onend=()=>{speaking=false;if(!paused)onend&&onend()};u.onerror=()=>{speaking=false};speaking=true;speechSynthesis.speak(u)
+ let u=new SpeechSynthesisUtterance(x),vs=voices();u.volume=masterVolume;if(vs.length)u.voice=vs[0];u.lang='fr-FR';u.rate=Math.max(.5,Math.min(4,globalSpeed));u.pitch=1;u.onend=()=>{speaking=false;if(!paused)onend&&onend()};u.onerror=()=>{speaking=false};speaking=true;speechSynthesis.speak(u)
 }
 function contextHTML(e,label){
  if(!e)return '<div class="ctxLabel">'+label+'</div>';
@@ -554,7 +560,7 @@ function setupUI(){
  function updateRoleLabel(){$('rolePickerLabel').textContent=learningRoles.length===0?'Sélectionner le(s) personnage(s) joué(s)':(learningRoles.length<=2?learningRoles.join(' + '):learningRoles.length+' rôles sélectionnés')}
  menu.innerHTML=roles.map(r=>`<label class="roleChoice"><input type="checkbox" value="${r}" ${learningRoles.includes(r)?'checked':''}><span>${r}</span></label>`).join('');
  pickerBtn.onclick=()=>picker.classList.toggle('open');
- menu.querySelectorAll('input').forEach(cb=>cb.onchange=()=>{picker.classList.remove('open');let chosen=[...menu.querySelectorAll('input:checked')].map(x=>x.value);learningRoles=chosen;localStorage.setItem('macbethRoles',JSON.stringify(learningRoles));updateRoleLabel();started=false;paused=false;i=0;updateChars();renderVoices();render()});
+ menu.querySelectorAll('input').forEach(cb=>cb.onchange=()=>{picker.classList.remove('open');let chosen=[...menu.querySelectorAll('input:checked')].map(x=>x.value);learningRoles=chosen;localStorage.setItem('macbethRoles',JSON.stringify(learningRoles));updateRoleLabel();started=false;paused=false;i=0;render()});
  updateRoleLabel();
  const nav=$('sceneNav');
  const prologue=scenes.find(s=>s.id==='prologue');
@@ -588,7 +594,7 @@ function setupUI(){
    };
  }
 
- updateChars();renderVoices();updateTopControls();
+ updateTopControls();
 }
 document.addEventListener('keydown',e=>{if(['SELECT','INPUT'].includes(e.target.tagName))return;if(e.code==='Space'){e.preventDefault();$('mainBtn').click()}else if(e.key==='ArrowLeft')$('prevBtn').click();else if(e.key==='ArrowRight')$('nextBtn').click();else if(e.key.toLowerCase()==='r')$('replayBtn').click()});setupUI();render();
 
