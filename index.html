@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Macbeth, mec bête ? — Répétition V3.0.6</title>
+<title>Macbeth, mec bête ? — Répétition V3.0.7</title>
 <style>
 :root{--bg:#100f12;--panel:#1a181d;--ink:#f5f0e8;--muted:#aaa2a8;--gold:#e7b85c;--red:#9d302f;--green:#274b3d}
 *{box-sizing:border-box} body{margin:0;background:radial-gradient(circle at 50% -20%,#34292b 0,#100f12 42%);color:var(--ink);font-family:Georgia,'Times New Roman',serif;min-height:100vh}
@@ -206,11 +206,11 @@ button.voice-selected {
 }
 
 
-/* V3.0.6 — interface Voix retirée */
+/* V3.0.7 — interface Voix retirée */
 #settingsBtn,#settingsPanel,.mobileVoiceArea,[data-mobile-tab="voices"]{display:none!important}
 
 
-/* V3.0.6 : aucun réglage de voix visible */
+/* V3.0.7 : aucun réglage de voix visible */
 #settingsBtn,#settingsPanel,.mobileVoiceArea,[data-mobile-tab="voices"]{display:none!important}
 </style><style>
 /* V2.2.1 : prompteur mobile, CSS indépendant du mode Mac */
@@ -283,7 +283,7 @@ button.voice-selected {
 </style>
 
 <style>
-/* V3.0.6 définitif : Mac + mobile */
+/* V3.0.7 définitif : Mac + mobile */
 .contextLine{min-height:118px!important;max-height:190px!important;padding:12px 14px!important}
 .contextStack{gap:7px!important}
 .ctxItem{padding:5px 0!important}
@@ -303,7 +303,7 @@ button.voice-selected {
 </style>
 </head>
 <body>
-<header><div><h1>Macbeth, mec bête ? <span style="opacity:.55">— Répétition</span></h1><div class="tag">V3.0.6</div></div><div class="toolbar">
+<header><div><h1>Macbeth, mec bête ? <span style="opacity:.55">— Répétition</span></h1><div class="tag">V3.0.7</div></div><div class="toolbar">
 <button id="muteBtn" class="topControl"><span class="controlLabel">🔊 Son</span><span class="tooltip">Activer/désactiver la lecture vocale</span></button>
 <div class="volumeControl"><span class="volumeTooltip">Volume de lecture</span>
   <span class="volumeText">Vol.</span>
@@ -476,54 +476,51 @@ function clearAutoTimers(){if(stageTimer){clearTimeout(stageTimer);stageTimer=nu
 
 // Audio pré-généré pour l’ensemble de la pièce.
 // Les MP3 sont chargés automatiquement depuis audio/<scene>/<scene>_XXX.mp3.
-let recordedAudio=null;
-let playbackToken=0;
+// Un seul lecteur MP3 pendant toute la répétition (iOS/WebKit).
+const recordedAudio=new Audio();
+recordedAudio.preload='auto';
+let playbackToken=0, recordedActive=false;
 function recordedSrcFor(c,x){
  if(!currentScene||!L[i]||L[i].t==='stage'||L[i].c!==c||L[i].x!==x)return null;
  let spoken=0;for(let n=0;n<=i;n++)if(L[n]&&L[n].c)spoken++;
  return `audio/${currentScene}/${currentScene}_${String(spoken).padStart(3,'0')}.mp3`;
 }
 function stopRecordedAudio(){
- if(recordedAudio){const a=recordedAudio;recordedAudio=null;a.onended=null;a.onerror=null;a.oncanplay=null;try{a.pause();a.removeAttribute('src');a.load()}catch(e){}}
+ recordedActive=false;recordedAudio.onended=null;recordedAudio.onerror=null;
+ try{recordedAudio.pause()}catch(e){}
 }
 function stopPlayback(){playbackToken++;clearAutoTimers();stopRecordedAudio();speechSynthesis.cancel();speaking=false}
 function speakText(c,x,onend){
- // Chaque lecture a son identifiant : un ancien échec ne peut pas lancer une autre voix.
  const token=++playbackToken;
  speechSynthesis.cancel();stopRecordedAudio();
  const scene=currentScene,index=i,recordedSrc=recordedSrcFor(c,x);
  const valid=()=>token===playbackToken&&scene===currentScene&&index===i&&!paused;
  if(!recordedSrc){if(valid())speakSystemVoice(c,x,onend);return}
- let attempt=0;
+ let attempt=0, settled=false;
+ const a=recordedAudio;
+ function fail(reason){
+  if(settled||!valid()||!recordedActive)return;
+  if(attempt<3){
+   console.warn('Nouvelle tentative MP3',attempt,recordedSrc,reason);
+   speechStartTimer=setTimeout(()=>{speechStartTimer=null;if(valid())start()},350*attempt);
+  }else{
+   settled=true;recordedActive=false;
+   console.warn('MP3 indisponible :',recordedSrc,reason);
+   if(valid()){speaking=false;speakSystemVoice(c,x,onend)}
+  }
+ }
  function start(){
-  if(!valid())return;
-  attempt++;
-  const a=new Audio();recordedAudio=a;
-  a.preload='auto';a.volume=masterVolume;a.playbackRate=globalSpeed;
+  if(!valid()||settled)return;
+  attempt++;recordedActive=true;
+  a.onended=()=>{if(!valid()||settled||!recordedActive)return;settled=true;recordedActive=false;speaking=false;onend&&onend()};
+  a.onerror=()=>fail('chargement');
+  a.volume=masterVolume;a.playbackRate=globalSpeed;
   try{a.preservesPitch=true;a.webkitPreservesPitch=true}catch(e){}
-  let settled=false;
-  const failed=(reason)=>{
-   if(settled||!valid()||recordedAudio!==a)return;
-   settled=true;a.onended=null;a.onerror=null;
-   try{a.pause()}catch(e){}
-   recordedAudio=null;
-   if(attempt<3){
-    console.warn('Nouvelle tentative MP3',attempt,recordedSrc,reason);
-    speechStartTimer=setTimeout(()=>{speechStartTimer=null;if(valid())start()},350*attempt);
-   }else{
-    console.warn('MP3 indisponible après 3 tentatives :',recordedSrc,reason);
-    if(valid()){speaking=false;speakSystemVoice(c,x,onend)}
-   }
-  };
-  a.onended=()=>{
-   if(settled||!valid()||recordedAudio!==a)return;
-   settled=true;recordedAudio=null;speaking=false;onend&&onend();
-  };
-  a.onerror=()=>failed('erreur de chargement');
-  a.src=recordedSrc;
+  if(a.getAttribute('src')!==recordedSrc){a.src=recordedSrc;a.load()}
+  else if(attempt>1){a.load()}
   speaking=true;
-  try{const promise=a.play();if(promise&&promise.catch)promise.catch(err=>failed(err?.name||String(err)))}
-  catch(err){failed(err?.name||String(err))}
+  try{const promise=a.play();if(promise&&promise.catch)promise.catch(err=>fail(err?.name||String(err)))}
+  catch(err){fail(err?.name||String(err))}
  }
  start();
 }
@@ -551,22 +548,22 @@ function scheduleCurrent(){
  const e=L[i],isMine=mine(e);
  if(isMine){$('mainBtn').textContent='J’ai fini → Continuer';return}
  if(e.t==='stage'){
-   $('mainBtn').textContent='⏸ Pause'; status.textContent+=status.textContent.includes('Didascalie')?'':' · Didascalie';
+  $('mainBtn').textContent='⏸ Pause';status.textContent+=status.textContent.includes('Didascalie')?'':' · Didascalie';
+  const words=(e.x||'').trim().split(/\s+/).filter(Boolean).length;
+  const delay=Math.max(1600,Math.min(4000,900+words*85));
+  stageTimer=setTimeout(()=>{stageTimer=null;if(!paused)advance(true)},delay);
+ }else{
+  $('mainBtn').textContent='⏸ Pause';
+  if(muted){
    const words=(e.x||'').trim().split(/\s+/).filter(Boolean).length;
-   const delay=Math.max(1600,Math.min(4000,900+words*85));
-   stageTimer=setTimeout(()=>{stageTimer=null;if(!paused)advance(true)},delay);
- } else {
-   $('mainBtn').textContent='⏸ Pause';
-   if(muted){
-     const words=(e.x||'').trim().split(/\s+/).filter(Boolean).length;
-     const delay=Math.max(900,Math.min(8000,(700+words*250)/globalSpeed));
-     speechStartTimer=setTimeout(()=>{speechStartTimer=null;if(!paused)advance(true)},delay);
-   }else{
-     if(mobileSceneTap){speakText(e.c,e.x,()=>advance(true))}else{speechStartTimer=setTimeout(()=>{speechStartTimer=null;if(!paused)speakText(e.c,e.x,()=>advance(true))},180);}
-   }
+   const delay=Math.max(900,Math.min(8000,(700+words*250)/globalSpeed));
+   speechStartTimer=setTimeout(()=>{speechStartTimer=null;if(!paused)advance(true)},delay);
+  }else{
+   // Pas de temporisation avant le play() : réutilisation du lecteur iOS.
+   speakText(e.c,e.x,()=>advance(true));
+  }
  }
 }
-
 function textWeight(e){return Math.max(1,(e?.x||'').length)}
 function ratioForIndex(idx){
  const weights=L.map(textWeight),total=weights.reduce((a,b)=>a+b,0);
@@ -610,14 +607,14 @@ function render(){
 function pausePlayback(){
  if(paused||!started||mine(L[i]))return;
  paused=true; clearAutoTimers();
- if(speaking){if(recordedAudio)recordedAudio.pause();else if(!speechStartTimer)speechSynthesis.pause()}
+ if(speaking){if(recordedActive)recordedAudio.pause();else if(!speechStartTimer)speechSynthesis.pause()}
  $('mainBtn').textContent='▶ Reprendre'; status.textContent=status.textContent.replace(' · En pause','')+' · En pause';
 }
 function resumePlayback(){
  if(!paused)return;
  paused=false;
- if(speechStartTimer&&speaking&&!recordedAudio){clearAutoTimers();speaking=false}
- if(speaking && recordedAudio){recordedAudio.playbackRate=globalSpeed;recordedAudio.play();$('mainBtn').textContent='⏸ Pause';status.textContent=status.textContent.replace(' · En pause','');}
+ if(speechStartTimer&&speaking&&!recordedActive){clearAutoTimers();speaking=false}
+ if(speaking && recordedActive){recordedAudio.playbackRate=globalSpeed;recordedAudio.play().catch(err=>console.warn("Reprise audio iOS :",err));$('mainBtn').textContent='⏸ Pause';status.textContent=status.textContent.replace(' · En pause','');}
  else if(speaking && speechSynthesis.paused){speechSynthesis.resume();$('mainBtn').textContent='⏸ Pause';status.textContent=status.textContent.replace(' · En pause','');}
  else {speaking=false;status.textContent=status.textContent.replace(' · En pause','');scheduleCurrent()}
 }
@@ -713,7 +710,7 @@ document.addEventListener('keydown',e=>{if(['SELECT','INPUT'].includes(e.target.
 </script>
 
 <script>
-/* V3.0.6 : menu mobile — Personnages + Actes & scènes uniquement. */
+/* V3.0.7 : menu mobile — Personnages + Actes & scènes uniquement. */
 (function(){
  const mobile=()=>window.matchMedia('(max-width:850px)').matches;
  const panel=document.getElementById('mobileNavPanel');
