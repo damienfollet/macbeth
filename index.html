@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Macbeth, mec bête ? — Répétition V2.1.0</title>
+<title>Macbeth, mec bête ? — Répétition V2.1.1</title>
 <style>
 :root{--bg:#100f12;--panel:#1a181d;--ink:#f5f0e8;--muted:#aaa2a8;--gold:#e7b85c;--red:#9d302f;--green:#274b3d}
 *{box-sizing:border-box} body{margin:0;background:radial-gradient(circle at 50% -20%,#34292b 0,#100f12 42%);color:var(--ink);font-family:Georgia,'Times New Roman',serif;min-height:100vh}
@@ -121,7 +121,16 @@ button.voice-selected {
 }
 @media (max-width:850px){.sceneNavWrap{position:relative}.navScrollbar{display:none}}
 
-/* V2.1.0 — smartphone, sans modification de l'interface Mac */
+/* V2.1.1 — smartphone, choix du rôle avant les scènes */
+@media(max-width:850px){
+ body>.roleBox{margin:0!important;}
+ .mobileNavBar{order:0;}
+ .roleBox{padding:13px 16px 10px!important;margin:0!important;background:#19161a;border-bottom:0;}
+ .roleBox>label{font-size:13px!important;}
+ .rolePicker>button{min-height:46px!important;}
+ .mobileNavBar{padding-top:7px!important;}
+}
+/* V2.1.1 — smartphone, sans modification de l'interface Mac */
 .mobileNavBar{display:none}
 @media (max-width:850px){
  html{scroll-padding-top:10px}
@@ -179,7 +188,7 @@ button.voice-selected {
 @media (max-width:390px){header .toolbar{grid-template-columns:auto minmax(0,1fr) auto;gap:5px}header .toolbar .topControl{padding:8px}header .toolbar .volumeControl{padding:6px}header .toolbar #volumeValue{font-size:11px}.line{font-size:24px!important}}
 </style></head>
 <body>
-<header><div><h1>Macbeth, mec bête ? <span style="opacity:.55">— Répétition</span></h1><div class="tag">V2.1.0 · navigation texte + voix</div></div><div class="toolbar">
+<header><div><h1>Macbeth, mec bête ? <span style="opacity:.55">— Répétition</span></h1><div class="tag">V2.1.1 · navigation texte + voix</div></div><div class="toolbar">
 <button id="muteBtn" class="topControl"><span class="controlLabel">🔊 Son</span><span class="tooltip">Activer/désactiver la lecture vocale</span></button>
 <div class="volumeControl"><span class="volumeTooltip">Volume de lecture</span>
   <span class="volumeText">Vol.</span>
@@ -368,6 +377,7 @@ function renderContext(){
  next.className='contextLine'+(!ne?' empty':'')+(ne&&mine(ne)?' mineContext':'')+(ne&&ne.t==='stage'?' stageContext':'');
  prev.innerHTML=contextHTML(pe,'Réplique précédente'); next.innerHTML=contextHTML(ne,'Réplique suivante');
 }
+let mobileSceneTap=false;
 function scheduleCurrent(){
  if(!started||paused)return;
  const e=L[i],isMine=mine(e);
@@ -384,7 +394,7 @@ function scheduleCurrent(){
      const delay=Math.max(900,Math.min(8000,(700+words*250)/globalSpeed));
      speechStartTimer=setTimeout(()=>{speechStartTimer=null;if(!paused)advance(true)},delay);
    }else{
-     speechStartTimer=setTimeout(()=>{speechStartTimer=null;if(!paused)speakText(e.c,e.x,()=>advance(true))},180);
+     if(mobileSceneTap){speakText(e.c,e.x,()=>advance(true))}else{speechStartTimer=setTimeout(()=>{speechStartTimer=null;if(!paused)speakText(e.c,e.x,()=>advance(true))},180);}
    }
  }
 }
@@ -489,7 +499,7 @@ function setupUI(){
  const currentAct=(()=>{const m=currentScene.match(/^a(\d+)/);return m?Number(m[1]):0})();
  nav.innerHTML=`<button data-id="prologue" class="prologueNav ${currentScene==='prologue'?'active':''}">Prologue<small style="display:block;opacity:.65;font-weight:500;margin-top:2px">${prologue?.title||''}</small></button>`+Object.keys(groups).map(a=>`<div class="actGroup ${Number(a)===currentAct?'open':''}" data-act="${a}"><button type="button" class="actToggle"><span>Acte ${a}</span><span class="chev">›</span></button><div class="actScenes">${groups[a].map(s=>`<button data-id="${s.id}" class="${s.id===currentScene?'active':''}">${s.label.replace(/^Acte\s*[^·—-]+[·—-]\s*/i,'')}<small style="display:block;opacity:.65;font-weight:500;margin-top:2px">${s.title}</small></button>`).join('')}</div></div>`).join('');
  nav.querySelectorAll('.actToggle').forEach(b=>b.onclick=()=>b.closest('.actGroup').classList.toggle('open'));
- nav.querySelectorAll('button[data-id]').forEach(b=>b.onclick=()=>{stopPlayback();currentScene=b.dataset.id;localStorage.setItem('macbethScene',currentScene);L=scenes.find(s=>s.id===currentScene).lines;i=0;started=true;paused=false;setActiveSceneButton();const m=currentScene.match(/^a(\d+)/);if(m){const g=nav.querySelector(`.actGroup[data-act="${m[1]}"]`);if(g)g.classList.add('open')}render()});
+ nav.querySelectorAll('button[data-id]').forEach(b=>b.onclick=()=>{stopPlayback();currentScene=b.dataset.id;localStorage.setItem('macbethScene',currentScene);L=scenes.find(s=>s.id===currentScene).lines;i=0;started=true;paused=false;setActiveSceneButton();const m=currentScene.match(/^a(\d+)/);if(m){const g=nav.querySelector(`.actGroup[data-act="${m[1]}"]`);if(g)g.classList.add('open')}mobileSceneTap=window.matchMedia('(max-width:850px)').matches;render();mobileSceneTap=false; if(window.matchMedia('(max-width:850px)').matches && L[i]?.t==='stage' && !muted){try{const u=new SpeechSynthesisUtterance(' ');u.lang='fr-FR';u.volume=0;speechSynthesis.speak(u)}catch(e){}}});
  
  const pbar=$('v2Progress'),seek=$('seekSlider');
  if(pbar&&seek){
@@ -545,11 +555,16 @@ document.addEventListener('keydown',e=>{if(['SELECT','INPUT'].includes(e.target.
 </script>
 
 <script>
-/* Menu mobile autonome : aucun changement à la navigation Mac */
+/* Menu mobile autonome + sélection des rôles avant les scènes */
 (function(){
  const btn=document.getElementById('mobileNavBtn');
  const panel=document.getElementById('mobileNavPanel');
  const label=document.getElementById('mobileSceneLabel');
+ const roleBox=panel?.querySelector('.roleBox');
+ const mobileBar=document.querySelector('.mobileNavBar');
+ const navTitle=panel?.querySelector('.navTitle');
+ function positionRolePicker(){if(!roleBox||!mobileBar||!navTitle)return;if(window.matchMedia('(max-width:850px)').matches){mobileBar.parentNode.insertBefore(roleBox,mobileBar)}else{panel.insertBefore(roleBox,navTitle)}}
+ positionRolePicker();
  if(!btn||!panel)return;
  const isMobile=()=>window.matchMedia('(max-width:850px)').matches;
  function toggle(open){panel.classList.toggle('mobileOpen',open);btn.setAttribute('aria-expanded',String(open));}
@@ -562,7 +577,7 @@ document.addEventListener('keydown',e=>{if(['SELECT','INPUT'].includes(e.target.
      document.getElementById('card')?.scrollIntoView({behavior:'smooth',block:'start'});
    }
  });
- window.addEventListener('resize',()=>{if(!isMobile())toggle(false)});
+ window.addEventListener('resize',()=>{positionRolePicker();if(!isMobile())toggle(false)});
 })();
 </script>
 </body></html>
