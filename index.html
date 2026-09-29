@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Macbeth, mec bête ? — Répétition V3.0.4</title>
+<title>Macbeth, mec bête ? — Répétition V3.0.5</title>
 <style>
 :root{--bg:#100f12;--panel:#1a181d;--ink:#f5f0e8;--muted:#aaa2a8;--gold:#e7b85c;--red:#9d302f;--green:#274b3d}
 *{box-sizing:border-box} body{margin:0;background:radial-gradient(circle at 50% -20%,#34292b 0,#100f12 42%);color:var(--ink);font-family:Georgia,'Times New Roman',serif;min-height:100vh}
@@ -206,11 +206,11 @@ button.voice-selected {
 }
 
 
-/* V3.0.4 — interface Voix retirée */
+/* V3.0.5 — interface Voix retirée */
 #settingsBtn,#settingsPanel,.mobileVoiceArea,[data-mobile-tab="voices"]{display:none!important}
 
 
-/* V3.0.4 : aucun réglage de voix visible */
+/* V3.0.5 : aucun réglage de voix visible */
 #settingsBtn,#settingsPanel,.mobileVoiceArea,[data-mobile-tab="voices"]{display:none!important}
 </style><style>
 /* V2.2.1 : prompteur mobile, CSS indépendant du mode Mac */
@@ -283,7 +283,7 @@ button.voice-selected {
 </style>
 
 <style>
-/* V3.0.4 définitif : Mac + mobile */
+/* V3.0.5 définitif : Mac + mobile */
 .contextLine{min-height:118px!important;max-height:190px!important;padding:12px 14px!important}
 .contextStack{gap:7px!important}
 .ctxItem{padding:5px 0!important}
@@ -303,7 +303,7 @@ button.voice-selected {
 </style>
 </head>
 <body>
-<header><div><h1>Macbeth, mec bête ? <span style="opacity:.55">— Répétition</span></h1><div class="tag">V3.0.4 · contexte 2+2</div></div><div class="toolbar">
+<header><div><h1>Macbeth, mec bête ? <span style="opacity:.55">— Répétition</span></h1><div class="tag">V3.0.5</div></div><div class="toolbar">
 <button id="muteBtn" class="topControl"><span class="controlLabel">🔊 Son</span><span class="tooltip">Activer/désactiver la lecture vocale</span></button>
 <div class="volumeControl"><span class="volumeTooltip">Volume de lecture</span>
   <span class="volumeText">Vol.</span>
@@ -683,7 +683,7 @@ document.addEventListener('keydown',e=>{if(['SELECT','INPUT'].includes(e.target.
 </script>
 
 <script>
-/* V3.0.4 : menu mobile — Personnages + Actes & scènes uniquement. */
+/* V3.0.5 : menu mobile — Personnages + Actes & scènes uniquement. */
 (function(){
  const mobile=()=>window.matchMedia('(max-width:850px)').matches;
  const panel=document.getElementById('mobileNavPanel');
