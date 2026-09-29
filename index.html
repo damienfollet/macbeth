@@ -257,7 +257,7 @@ button.voice-selected {
 </style>
 </head>
 <body>
-<header><div><h1>Macbeth, mec bête ? <span style="opacity:.55">— Répétition</span></h1><div class="tag">V2.2.2 · prompteur mobile</div></div><div class="toolbar">
+<header><div><h1>Macbeth, mec bête ? <span style="opacity:.55">— Répétition</span></h1><div class="tag">V2.3.0 · prompteur mobile</div></div><div class="toolbar">
 <button id="muteBtn" class="topControl"><span class="controlLabel">🔊 Son</span><span class="tooltip">Activer/désactiver la lecture vocale</span></button>
 <div class="volumeControl"><span class="volumeTooltip">Volume de lecture</span>
   <span class="volumeText">Vol.</span>
@@ -433,8 +433,34 @@ function renderVoices(){const vs=voices(),box=$('voices');box.innerHTML='';chars
 speechSynthesis.onvoiceschanged=renderVoices;
 function baseChar(c){if(!c)return '';let best='',bestPos=Infinity;for(const [canon,names] of Object.entries(aliases)){for(const n of names){const pos=c.toLocaleLowerCase('fr').indexOf(n.toLocaleLowerCase('fr'));if(pos>=0&&pos<bestPos){best=canon;bestPos=pos}}}return best||c.split(/\s*\+\s*|\s+et\s+|,|\//i)[0].trim()}
 function clearAutoTimers(){if(stageTimer){clearTimeout(stageTimer);stageTimer=null}if(speechStartTimer){clearTimeout(speechStartTimer);speechStartTimer=null}}
-function stopPlayback(){clearAutoTimers();speechSynthesis.cancel();speaking=false}
-function speakText(c,x,onend){speechSynthesis.cancel();let u=new SpeechSynthesisUtterance(x),vs=voices(),bc=baseChar(c),chosen=vs.find(v=>v.name===voiceMap[bc]); u.volume=masterVolume;if(!chosen&&vs.length)chosen=vs[Math.abs(chars.indexOf(bc))%vs.length];if(chosen)u.voice=chosen;u.lang='fr-FR';const p=paramsFor(bc);u.volume=masterVolume;u.rate=Math.max(.5,Math.min(4,p.rate*globalSpeed));u.pitch=Math.max(.5,Math.min(2,p.pitch));u.onend=()=>{speaking=false;if(!paused)onend&&onend()};u.onerror=()=>{speaking=false};speaking=true;speechSynthesis.speak(u)}
+
+// V2.3.0 — pilote audio pré-généré pour Acte I · Scène 3.
+// Les 55 MP3 doivent être placés dans audio/a1s3/ à côté de index.html.
+let recordedAudio=null;
+function recordedSrcFor(c,x){
+ if(currentScene!=='a1s3'||!L[i]||L[i].t==='stage'||L[i].c!==c||L[i].x!==x)return null;
+ let spoken=0;for(let n=0;n<=i;n++)if(L[n]&&L[n].c)spoken++;
+ return `audio/a1s3/a1s3_${String(spoken).padStart(3,'0')}.mp3`;
+}
+function stopRecordedAudio(){
+ if(recordedAudio){recordedAudio.onended=null;recordedAudio.onerror=null;try{recordedAudio.pause()}catch(e){};recordedAudio=null}
+}
+function stopPlayback(){clearAutoTimers();stopRecordedAudio();speechSynthesis.cancel();speaking=false}
+function speakText(c,x,onend){
+ speechSynthesis.cancel();stopRecordedAudio();
+ const recordedSrc=recordedSrcFor(c,x);
+ if(recordedSrc){
+   const a=new Audio(recordedSrc);recordedAudio=a;a.volume=masterVolume;a.playbackRate=globalSpeed;
+   try{a.preservesPitch=true;a.webkitPreservesPitch=true}catch(e){}
+   a.onended=()=>{if(recordedAudio===a)recordedAudio=null;speaking=false;if(!paused)onend&&onend()};
+   a.onerror=()=>{if(recordedAudio===a)recordedAudio=null;speaking=false;console.warn('Audio pré-généré indisponible, repli sur la voix système :',recordedSrc);speakSystemVoice(c,x,onend)};
+   speaking=true;const playPromise=a.play();if(playPromise&&playPromise.catch)playPromise.catch(()=>{a.onerror&&a.onerror()});return;
+ }
+ speakSystemVoice(c,x,onend);
+}
+function speakSystemVoice(c,x,onend){
+ let u=new SpeechSynthesisUtterance(x),vs=voices(),bc=baseChar(c),chosen=vs.find(v=>v.name===voiceMap[bc]);u.volume=masterVolume;if(!chosen&&vs.length)chosen=vs[Math.abs(chars.indexOf(bc))%vs.length];if(chosen)u.voice=chosen;u.lang='fr-FR';const p=paramsFor(bc);u.rate=Math.max(.5,Math.min(4,p.rate*globalSpeed));u.pitch=Math.max(.5,Math.min(2,p.pitch));u.onend=()=>{speaking=false;if(!paused)onend&&onend()};u.onerror=()=>{speaking=false};speaking=true;speechSynthesis.speak(u)
+}
 function contextHTML(e,label){
  if(!e)return '<div class="ctxLabel">'+label+'</div>';
  const isStage=e.t==='stage'; const who=isStage?'DIDASCALIE':e.c;
@@ -511,13 +537,14 @@ function render(){
 function pausePlayback(){
  if(paused||!started||mine(L[i]))return;
  paused=true; clearAutoTimers();
- if(speaking){speechSynthesis.pause()}
+ if(speaking){if(recordedAudio)recordedAudio.pause();else speechSynthesis.pause()}
  $('mainBtn').textContent='▶ Reprendre'; status.textContent=status.textContent.replace(' · En pause','')+' · En pause';
 }
 function resumePlayback(){
  if(!paused)return;
  paused=false;
- if(speaking && speechSynthesis.paused){speechSynthesis.resume();$('mainBtn').textContent='⏸ Pause';status.textContent=status.textContent.replace(' · En pause','');}
+ if(speaking && recordedAudio){recordedAudio.playbackRate=globalSpeed;recordedAudio.play();$('mainBtn').textContent='⏸ Pause';status.textContent=status.textContent.replace(' · En pause','');}
+ else if(speaking && speechSynthesis.paused){speechSynthesis.resume();$('mainBtn').textContent='⏸ Pause';status.textContent=status.textContent.replace(' · En pause','');}
  else {status.textContent=status.textContent.replace(' · En pause','');scheduleCurrent()}
 }
 function setActiveSceneButton(){document.querySelectorAll('#sceneNav button').forEach(b=>b.classList.toggle('active',b.dataset.id===currentScene));}
