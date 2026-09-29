@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Macbeth, mec bête ? — Répétition V3.0.3</title>
+<title>Macbeth, mec bête ? — Répétition V3.0.4</title>
 <style>
 :root{--bg:#100f12;--panel:#1a181d;--ink:#f5f0e8;--muted:#aaa2a8;--gold:#e7b85c;--red:#9d302f;--green:#274b3d}
 *{box-sizing:border-box} body{margin:0;background:radial-gradient(circle at 50% -20%,#34292b 0,#100f12 42%);color:var(--ink);font-family:Georgia,'Times New Roman',serif;min-height:100vh}
@@ -206,9 +206,12 @@ button.voice-selected {
 }
 
 
-/* V3.0.3 — interface Voix retirée */
+/* V3.0.4 — interface Voix retirée */
 #settingsBtn,#settingsPanel,.mobileVoiceArea,[data-mobile-tab="voices"]{display:none!important}
 
+
+/* V3.0.4 : aucun réglage de voix visible */
+#settingsBtn,#settingsPanel,.mobileVoiceArea,[data-mobile-tab="voices"]{display:none!important}
 </style><style>
 /* V2.2.1 : prompteur mobile, CSS indépendant du mode Mac */
 .mobileTabs,.mobileClose{display:none}
@@ -280,7 +283,7 @@ button.voice-selected {
 </style>
 
 <style>
-/* V3.0.3 — contexte 2+2 définitif : Mac + mobile */
+/* V3.0.4 — contexte 2+2 définitif : Mac + mobile */
 .contextLine{min-height:118px!important;max-height:190px!important;padding:12px 14px!important}
 .contextStack{gap:7px!important}
 .ctxItem{padding:5px 0!important}
@@ -300,7 +303,7 @@ button.voice-selected {
 </style>
 </head>
 <body>
-<header><div><h1>Macbeth, mec bête ? <span style="opacity:.55">— Répétition</span></h1><div class="tag">V3.0.3 · contexte 2+2</div></div><div class="toolbar">
+<header><div><h1>Macbeth, mec bête ? <span style="opacity:.55">— Répétition</span></h1><div class="tag">V3.0.4 · contexte 2+2</div></div><div class="toolbar">
 <button id="muteBtn" class="topControl"><span class="controlLabel">🔊 Son</span><span class="tooltip">Activer/désactiver la lecture vocale</span></button>
 <div class="volumeControl"><span class="volumeTooltip">Volume de lecture</span>
   <span class="volumeText">Vol.</span>
@@ -327,10 +330,6 @@ button.voice-selected {
   </div>
   <div class="v2-progress-labels"><span>Début</span><span id="v2ProgressPct">0 %</span><span>Fin</span></div>
 </div>
-</div>
-<div class="settingsPanel card" id="settingsPanel">
-
-<h3>Voix des partenaires</h3><div id="voices"></div><p class="status">Les voix disponibles dépendent de macOS et du navigateur. Les choix sont enregistrés sur ce Mac.</p>
 </div>
 <div class="footerHelp">Espace : continuer · ←/→ : naviguer · R : réécouter</div>
 </main></div>
@@ -472,8 +471,6 @@ function updateTopControls(){
 function paramsFor(c){const p=voiceParams[c]||{};return {rate:Number.isFinite(+p.rate)?+p.rate:1,pitch:Number.isFinite(+p.pitch)?+p.pitch:1}}
 function saveVoiceParams(){localStorage.setItem('macbethVoiceParams',JSON.stringify(voiceParams))}
 function voices(){return speechSynthesis.getVoices().filter(v=>v.lang.toLowerCase().startsWith('fr'))}
-function renderVoices(){const vs=voices(),box=$('voices');box.innerHTML='';chars.forEach(c=>{const p=paramsFor(c);let row=document.createElement('div');row.className='voiceRow';let opts=vs.map((v,n)=>`<option value="${n}" ${voiceMap[c]===v.name?'selected':''}>${v.name}</option>`).join('');row.innerHTML=`<b>${c}</b><select aria-label="Voix de ${c}">${opts}</select><label class="voiceControl"><span>Vitesse</span><input class="rateSlider" type="range" min="0.65" max="1.35" step="0.05" value="${p.rate}"><span class="voiceValue rateValue">${p.rate.toFixed(2)}×</span></label><label class="voiceControl"><span>Pitch</span><input class="pitchSlider" type="range" min="0.60" max="1.40" step="0.05" value="${p.pitch}"><span class="voiceValue pitchValue">${p.pitch.toFixed(2)}</span></label><button class="voiceTest">Tester</button>`;let sel=row.querySelector('select');sel.onchange=()=>{voiceMap[c]=vs[+sel.value]?.name;localStorage.setItem('macbethVoices',JSON.stringify(voiceMap))};const rate=row.querySelector('.rateSlider'),pitch=row.querySelector('.pitchSlider'),rateV=row.querySelector('.rateValue'),pitchV=row.querySelector('.pitchValue');rate.oninput=()=>{voiceParams[c]={...paramsFor(c),rate:+rate.value};rateV.textContent=(+rate.value).toFixed(2)+'×';saveVoiceParams()};pitch.oninput=()=>{voiceParams[c]={...paramsFor(c),pitch:+pitch.value};pitchV.textContent=(+pitch.value).toFixed(2);saveVoiceParams()};row.querySelector('.voiceTest').onclick=()=>speakText(c,'Je joue '+c);box.appendChild(row)})}
-speechSynthesis.onvoiceschanged=renderVoices;
 function baseChar(c){if(!c)return '';let best='',bestPos=Infinity;for(const [canon,names] of Object.entries(aliases)){for(const n of names){const pos=c.toLocaleLowerCase('fr').indexOf(n.toLocaleLowerCase('fr'));if(pos>=0&&pos<bestPos){best=canon;bestPos=pos}}}return best||c.split(/\s*\+\s*|\s+et\s+|,|\//i)[0].trim()}
 function clearAutoTimers(){if(stageTimer){clearTimeout(stageTimer);stageTimer=null}if(speechStartTimer){clearTimeout(speechStartTimer);speechStartTimer=null}}
 
@@ -616,25 +613,13 @@ $('replayBtn').onclick=()=>{paused=false;let e=L[i];if(e.c&&!mine(e)){stopPlayba
 $('muteBtn').onclick=()=>{muted=!muted;localStorage.setItem('macbethMuted',muted?'1':'0');stopPlayback();paused=false;updateTopControls();if(started&&!mine(L[i]))scheduleCurrent()};
 $('speedBtn').onclick=()=>{const n=(speedSteps.indexOf(globalSpeed)+1)%speedSteps.length;globalSpeed=speedSteps[n];localStorage.setItem('macbethGlobalSpeed',globalSpeed);stopPlayback();paused=false;updateTopControls();if(started&&!mine(L[i]))scheduleCurrent()};
 let voiceMode=false;
-$('settingsBtn').onclick=()=>{
- const p=$('settingsPanel'),btn=$('settingsBtn');
- voiceMode=!voiceMode;
- btn.classList.toggle('controlActive',voiceMode);
- btn.setAttribute('aria-pressed',voiceMode?'true':'false');
- if(voiceMode){
-   p.classList.add('open');renderVoices();
-   requestAnimationFrame(()=>{p.scrollIntoView({behavior:'smooth',block:'start'});p.classList.remove('voiceFlash');void p.offsetWidth;p.classList.add('voiceFlash');setTimeout(()=>p.classList.remove('voiceFlash'),1200)});
- }else{
-   $('card').scrollIntoView({behavior:'smooth',block:'start'});
- }
-};
 $('revealBtn').onclick=()=>{if(!mine(L[i]))return;revealed=!revealed;line.classList.toggle('revealedline',revealed);$('revealBtn').textContent=revealed?'🙈 Masquer ma réplique':'👁 Afficher ma réplique'};
 function setupUI(){
  const roles=[...sortedRoles],menu=$('roleMenu'),picker=$('rolePicker'),pickerBtn=$('rolePickerBtn');
  function updateRoleLabel(){$('rolePickerLabel').textContent=learningRoles.length===0?'Sélectionner le(s) personnage(s) joué(s)':(learningRoles.length<=2?learningRoles.join(' + '):learningRoles.length+' rôles sélectionnés')}
  menu.innerHTML=roles.map(r=>`<label class="roleChoice"><input type="checkbox" value="${r}" ${learningRoles.includes(r)?'checked':''}><span>${r}</span></label>`).join('');
  pickerBtn.onclick=()=>picker.classList.toggle('open');
- menu.querySelectorAll('input').forEach(cb=>cb.onchange=()=>{picker.classList.remove('open');let chosen=[...menu.querySelectorAll('input:checked')].map(x=>x.value);learningRoles=chosen;localStorage.setItem('macbethRoles',JSON.stringify(learningRoles));updateRoleLabel();started=false;paused=false;i=0;updateChars();renderVoices();render()});
+ menu.querySelectorAll('input').forEach(cb=>cb.onchange=()=>{picker.classList.remove('open');let chosen=[...menu.querySelectorAll('input:checked')].map(x=>x.value);learningRoles=chosen;localStorage.setItem('macbethRoles',JSON.stringify(learningRoles));updateRoleLabel();started=false;paused=false;i=0;updateChars();render()});
  updateRoleLabel();
  const nav=$('sceneNav');
  const prologue=scenes.find(s=>s.id==='prologue');
@@ -668,7 +653,7 @@ function setupUI(){
    };
  }
 
- updateChars();renderVoices();updateTopControls();
+ updateChars();updateTopControls();
 }
 document.addEventListener('keydown',e=>{if(['SELECT','INPUT'].includes(e.target.tagName))return;if(e.code==='Space'){e.preventDefault();$('mainBtn').click()}else if(e.key==='ArrowLeft')$('prevBtn').click();else if(e.key==='ArrowRight')$('nextBtn').click();else if(e.key.toLowerCase()==='r')$('replayBtn').click()});setupUI();render();
 
@@ -698,29 +683,24 @@ document.addEventListener('keydown',e=>{if(['SELECT','INPUT'].includes(e.target.
 </script>
 
 <script>
-/* V2.2.1 : le menu mobile manipule les vrais contrôles, sans clonage. */
+/* V3.0.4 : menu mobile — Personnages + Actes & scènes uniquement. */
 (function(){
  const mobile=()=>window.matchMedia('(max-width:850px)').matches;
  const panel=document.getElementById('mobileNavPanel');
  const btn=document.getElementById('mobileNavBtn');
- const bar=document.querySelector('.mobileNavBar');
  const roleBox=panel.querySelector('.roleBox');
  const navTitle=panel.querySelector('.navTitle');
- const settings=document.getElementById('settingsPanel');
- const originalSettingsParent=settings.parentNode;
- const originalSettingsNext=settings.nextSibling;
  const head=document.createElement('div');head.className='mobileMenuHead';
  head.innerHTML='<span>Répétition</span><button type="button" class="mobileClose" aria-label="Fermer le menu">×</button>';
  const tabs=document.createElement('div');tabs.className='mobileTabs';
  tabs.innerHTML='<button type="button" data-mobile-tab="roles">Personnages</button><button type="button" data-mobile-tab="scenes">Actes & scènes</button>';
- const voiceArea=document.createElement('div');voiceArea.className='mobileVoiceArea';
- panel.insertBefore(head,panel.firstChild);panel.insertBefore(tabs,head.nextSibling);panel.appendChild(voiceArea);
- function setTab(t){panel.dataset.mobileTab=t;tabs.querySelectorAll('button').forEach(b=>b.classList.toggle('active',b.dataset.mobileTab===t));if(t==='voices'&&typeof renderVoices==='function')renderVoices()}
+ panel.insertBefore(head,panel.firstChild);panel.insertBefore(tabs,head.nextSibling);
+ function setTab(t){panel.dataset.mobileTab=t;tabs.querySelectorAll('button').forEach(b=>b.classList.toggle('active',b.dataset.mobileTab===t))}
  function close(){panel.classList.remove('mobileOpen');btn.setAttribute('aria-expanded','false')}
  function open(t){setTab(t);panel.classList.add('mobileOpen');btn.setAttribute('aria-expanded','true')}
- function place(){if(mobile()){if(roleBox.parentNode!==panel)panel.insertBefore(roleBox,navTitle);if(settings.parentNode!==voiceArea)voiceArea.appendChild(settings)}else{if(settings.parentNode!==originalSettingsParent)originalSettingsParent.insertBefore(settings,originalSettingsNext);close()}}
+ function place(){if(mobile()){if(roleBox.parentNode!==panel)panel.insertBefore(roleBox,navTitle)}else close()}
  place();setTab('roles');
- btn.addEventListener('click',()=>{if(!mobile())return; if(panel.classList.contains('mobileOpen'))close();else open('roles')});
+ btn.addEventListener('click',()=>{if(!mobile())return;panel.classList.contains('mobileOpen')?close():open('roles')});
  head.querySelector('button').addEventListener('click',close);
  tabs.addEventListener('click',e=>{const b=e.target.closest('[data-mobile-tab]');if(b)setTab(b.dataset.mobileTab)});
  document.getElementById('sceneNav').addEventListener('click',e=>{if(mobile()&&e.target.closest('button[data-id]'))close()});
