@@ -434,13 +434,13 @@ speechSynthesis.onvoiceschanged=renderVoices;
 function baseChar(c){if(!c)return '';let best='',bestPos=Infinity;for(const [canon,names] of Object.entries(aliases)){for(const n of names){const pos=c.toLocaleLowerCase('fr').indexOf(n.toLocaleLowerCase('fr'));if(pos>=0&&pos<bestPos){best=canon;bestPos=pos}}}return best||c.split(/\s*\+\s*|\s+et\s+|,|\//i)[0].trim()}
 function clearAutoTimers(){if(stageTimer){clearTimeout(stageTimer);stageTimer=null}if(speechStartTimer){clearTimeout(speechStartTimer);speechStartTimer=null}}
 
-// V2.3.0 — pilote audio pré-généré pour Acte I · Scène 3.
-// Les 55 MP3 doivent être placés dans audio/a1s3/ à côté de index.html.
+// Audio pré-généré pour l’ensemble de la pièce.
+// Les MP3 sont chargés automatiquement depuis audio/<scene>/<scene>_XXX.mp3.
 let recordedAudio=null;
 function recordedSrcFor(c,x){
- if(currentScene!=='a1s3'||!L[i]||L[i].t==='stage'||L[i].c!==c||L[i].x!==x)return null;
+ if(!currentScene||!L[i]||L[i].t==='stage'||L[i].c!==c||L[i].x!==x)return null;
  let spoken=0;for(let n=0;n<=i;n++)if(L[n]&&L[n].c)spoken++;
- return `audio/a1s3/a1s3_${String(spoken).padStart(3,'0')}.mp3`;
+ return `audio/${currentScene}/${currentScene}_${String(spoken).padStart(3,'0')}.mp3`;
 }
 function stopRecordedAudio(){
  if(recordedAudio){recordedAudio.onended=null;recordedAudio.onerror=null;try{recordedAudio.pause()}catch(e){};recordedAudio=null}
