@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Macbeth, mec bête ? — Répétition V3.0.1</title>
+<title>Macbeth, mec bête ? — Répétition V3.0.2</title>
 <style>
 :root{--bg:#100f12;--panel:#1a181d;--ink:#f5f0e8;--muted:#aaa2a8;--gold:#e7b85c;--red:#9d302f;--green:#274b3d}
 *{box-sizing:border-box} body{margin:0;background:radial-gradient(circle at 50% -20%,#34292b 0,#100f12 42%);color:var(--ink);font-family:Georgia,'Times New Roman',serif;min-height:100vh}
@@ -274,9 +274,29 @@ button.voice-selected {
  .sidebar[data-mobile-tab='voices'] .settingsPanel{display:block!important}
 }
 </style>
+
+<style>
+/* V3.0.2 — contexte 2+2 définitif : Mac + mobile */
+.contextLine{min-height:118px!important;max-height:190px!important;padding:12px 14px!important}
+.contextStack{gap:7px!important}
+.ctxItem{padding:5px 0!important}
+.ctxItem .ctxSpeaker{font-size:13px!important}
+.ctxItem .ctxText{font-size:16px!important;line-height:1.32!important}
+@media(max-width:850px){
+ #prevContext,#nextContext{height:106px!important;min-height:106px!important;max-height:106px!important;overflow:hidden!important;padding:8px 10px!important;margin:0!important;display:block!important;-webkit-line-clamp:unset!important;-webkit-box-orient:initial!important}
+ .contextStack{display:flex!important;flex-direction:column!important;gap:4px!important}
+ .ctxItem{display:block!important;padding:3px 0!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important}
+ .ctxItem .ctxSpeaker{display:inline!important;margin-right:5px!important;font-size:10px!important}
+ .ctxItem .ctxText{display:inline!important;font-size:12px!important;line-height:1.2!important}
+}
+@media(max-width:390px){
+ #prevContext,#nextContext{height:92px!important;min-height:92px!important;max-height:92px!important}
+ .ctxItem .ctxText{font-size:11px!important}
+}
+</style>
 </head>
 <body>
-<header><div><h1>Macbeth, mec bête ? <span style="opacity:.55">— Répétition</span></h1><div class="tag">V3.0.1 · contexte étendu</div></div><div class="toolbar">
+<header><div><h1>Macbeth, mec bête ? <span style="opacity:.55">— Répétition</span></h1><div class="tag">V3.0.2 · contexte 2+2</div></div><div class="toolbar">
 <button id="muteBtn" class="topControl"><span class="controlLabel">🔊 Son</span><span class="tooltip">Activer/désactiver la lecture vocale</span></button>
 <div class="volumeControl"><span class="volumeTooltip">Volume de lecture</span>
   <span class="volumeText">Vol.</span>
@@ -488,8 +508,8 @@ function contextItemHTML(e,distance){
 }
 function renderContext(){
  const prev=$('prevContext'),next=$('nextContext'),before=[],after=[];
- for(let d=3;d>=1;d--)if(L[i-d])before.push(contextItemHTML(L[i-d],d));
- for(let d=1;d<=3;d++)if(L[i+d])after.push(contextItemHTML(L[i+d],d));
+ for(let d=2;d>=1;d--)if(L[i-d])before.push(contextItemHTML(L[i-d],d));
+ for(let d=1;d<=2;d++)if(L[i+d])after.push(contextItemHTML(L[i+d],d));
  prev.className='contextLine'+(!before.length?' empty':'');
  next.className='contextLine'+(!after.length?' empty':'');
  prev.innerHTML=`<div class="ctxLabel">Avant</div><div class="contextStack">${before.join('')}</div>`;
