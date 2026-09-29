@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Macbeth, mec bête ? — Répétition V2.1.1</title>
+<title>Macbeth, mec bête ? — Répétition V3.0.0</title>
 <style>
 :root{--bg:#100f12;--panel:#1a181d;--ink:#f5f0e8;--muted:#aaa2a8;--gold:#e7b85c;--red:#9d302f;--green:#274b3d}
 *{box-sizing:border-box} body{margin:0;background:radial-gradient(circle at 50% -20%,#34292b 0,#100f12 42%);color:var(--ink);font-family:Georgia,'Times New Roman',serif;min-height:100vh}
@@ -42,22 +42,10 @@ button,select{appearance:none;border:1px solid #ffffff22;background:#27242a;colo
 .v2-progress:hover .v2-progress-thumb { transform:translateX(-50%) scale(1.2); }
 .v2-tick { position:absolute; top:10px; width:1px; height:9px; background:#9ca3af; opacity:.55; }
 .v2-progress-labels { display:flex; justify-content:space-between; font-size:11px; color:#6b7280; margin-top:-2px; }
-#voiceSettings.v2-highlight { animation:v2flash 1.05s ease; }
 @keyframes v2flash { 0%,100%{box-shadow:none} 35%{box-shadow:0 0 0 4px rgba(37,99,235,.20)} }
 @media (prefers-reduced-motion: reduce) {
   #currentCard,#prevCard,#nextCard,.v2-progress-fill,.v2-progress-thumb,.top-action { transition:none !important; }
-  #voiceSettings.v2-highlight { animation:none; }
-}
-
-
-/* V2.0.4 — état actif du bouton Voix */
-#voiceBtn.voice-selected,
-button.voice-selected {
-  background: #dbeafe !important;
-  color: #1d4ed8 !important;
-  border-color: #93c5fd !important;
-  box-shadow: inset 0 0 0 1px rgba(37,99,235,.28) !important;
-}
+  }
 
 
 /* V2.0.4 */
@@ -252,12 +240,11 @@ button.voice-selected {
  .sidebar[data-mobile-tab='roles'] .roleBox{display:block!important;visibility:visible!important}
  .sidebar[data-mobile-tab='roles'] .rolePicker{display:block!important}
  .sidebar[data-mobile-tab='roles'] .roleMenu{max-height:calc(100dvh - 210px)!important;overflow-y:auto!important}
- .sidebar[data-mobile-tab='voices'] .settingsPanel{display:block!important}
-}
+ }
 </style>
 </head>
 <body>
-<header><div><h1>Macbeth, mec bête ? <span style="opacity:.55">— Répétition</span></h1><div class="tag">V2.3.0 · prompteur mobile</div></div><div class="toolbar">
+<header><div><h1>Macbeth, mec bête ? <span style="opacity:.55">— Répétition</span></h1><div class="tag">V3.0.0 · voix pré-générées</div></div><div class="toolbar">
 <button id="muteBtn" class="topControl"><span class="controlLabel">🔊 Son</span><span class="tooltip">Activer/désactiver la lecture vocale</span></button>
 <div class="volumeControl"><span class="volumeTooltip">Volume de lecture</span>
   <span class="volumeText">Vol.</span>
@@ -265,7 +252,6 @@ button.voice-selected {
   <span id="volumeValue">100%</span>
 </div>
 <button id="speedBtn" class="topControl"><span class="controlLabel">⏩ 1×</span><span class="tooltip">Vitesse de lecture</span></button>
-<button id="settingsBtn" class="topControl" aria-pressed="false"><span class="controlLabel">⚙︎ Voix</span><span class="tooltip">Paramétrage des voix</span></button>
 </div></header>
 <div class="mobileNavBar"><button id="mobileNavBtn" type="button" aria-expanded="false" aria-controls="mobileNavPanel">☰ Actes et scènes <span aria-hidden="true">▾</span></button><span id="mobileSceneLabel">Prologue</span></div><div class="appLayout"><aside class="sidebar" id="mobileNavPanel"><div class="roleBox"><label>J’apprends le(s) rôle(s)</label><div id="rolePicker" class="rolePicker"><button id="rolePickerBtn" type="button"><span id="rolePickerLabel"></span><span>▾</span></button><div id="roleMenu" class="roleMenu"></div></div></div><div class="navTitle">Navigation</div><div class="sceneNavWrap"><div id="sceneNav" class="sceneNav"></div><div id="navScrollbar" class="navScrollbar" aria-hidden="true"><div id="navScrollbarThumb" class="navScrollbarThumb"></div></div></div></aside><main class="wrap">
 <div class="card" id="card">
@@ -284,10 +270,6 @@ button.voice-selected {
   </div>
   <div class="v2-progress-labels"><span>Début</span><span id="v2ProgressPct">0 %</span><span>Fin</span></div>
 </div>
-</div>
-<div class="settingsPanel card" id="settingsPanel">
-
-<h3>Voix des partenaires</h3><div id="voices"></div><p class="status">Les voix disponibles dépendent de macOS et du navigateur. Les choix sont enregistrés sur ce Mac.</p>
 </div>
 <div class="footerHelp">Espace : continuer · ←/→ : naviguer · R : réécouter</div>
 </main></div>
@@ -429,8 +411,6 @@ function updateTopControls(){
 function paramsFor(c){const p=voiceParams[c]||{};return {rate:Number.isFinite(+p.rate)?+p.rate:1,pitch:Number.isFinite(+p.pitch)?+p.pitch:1}}
 function saveVoiceParams(){localStorage.setItem('macbethVoiceParams',JSON.stringify(voiceParams))}
 function voices(){return speechSynthesis.getVoices().filter(v=>v.lang.toLowerCase().startsWith('fr'))}
-function renderVoices(){const vs=voices(),box=$('voices');box.innerHTML='';chars.forEach(c=>{const p=paramsFor(c);let row=document.createElement('div');row.className='voiceRow';let opts=vs.map((v,n)=>`<option value="${n}" ${voiceMap[c]===v.name?'selected':''}>${v.name}</option>`).join('');row.innerHTML=`<b>${c}</b><select aria-label="Voix de ${c}">${opts}</select><label class="voiceControl"><span>Vitesse</span><input class="rateSlider" type="range" min="0.65" max="1.35" step="0.05" value="${p.rate}"><span class="voiceValue rateValue">${p.rate.toFixed(2)}×</span></label><label class="voiceControl"><span>Pitch</span><input class="pitchSlider" type="range" min="0.60" max="1.40" step="0.05" value="${p.pitch}"><span class="voiceValue pitchValue">${p.pitch.toFixed(2)}</span></label><button class="voiceTest">Tester</button>`;let sel=row.querySelector('select');sel.onchange=()=>{voiceMap[c]=vs[+sel.value]?.name;localStorage.setItem('macbethVoices',JSON.stringify(voiceMap))};const rate=row.querySelector('.rateSlider'),pitch=row.querySelector('.pitchSlider'),rateV=row.querySelector('.rateValue'),pitchV=row.querySelector('.pitchValue');rate.oninput=()=>{voiceParams[c]={...paramsFor(c),rate:+rate.value};rateV.textContent=(+rate.value).toFixed(2)+'×';saveVoiceParams()};pitch.oninput=()=>{voiceParams[c]={...paramsFor(c),pitch:+pitch.value};pitchV.textContent=(+pitch.value).toFixed(2);saveVoiceParams()};row.querySelector('.voiceTest').onclick=()=>speakText(c,'Je joue '+c);box.appendChild(row)})}
-speechSynthesis.onvoiceschanged=renderVoices;
 function baseChar(c){if(!c)return '';let best='',bestPos=Infinity;for(const [canon,names] of Object.entries(aliases)){for(const n of names){const pos=c.toLocaleLowerCase('fr').indexOf(n.toLocaleLowerCase('fr'));if(pos>=0&&pos<bestPos){best=canon;bestPos=pos}}}return best||c.split(/\s*\+\s*|\s+et\s+|,|\//i)[0].trim()}
 function clearAutoTimers(){if(stageTimer){clearTimeout(stageTimer);stageTimer=null}if(speechStartTimer){clearTimeout(speechStartTimer);speechStartTimer=null}}
 
@@ -568,19 +548,6 @@ $('nextBtn').onclick=()=>{started=true;paused=false;if(i<L.length-1){i++;render(
 $('replayBtn').onclick=()=>{paused=false;let e=L[i];if(e.c&&!mine(e)){stopPlayback();if(!muted)speakText(e.c,e.x,()=>{});else render()}else render()};
 $('muteBtn').onclick=()=>{muted=!muted;localStorage.setItem('macbethMuted',muted?'1':'0');stopPlayback();paused=false;updateTopControls();if(started&&!mine(L[i]))scheduleCurrent()};
 $('speedBtn').onclick=()=>{const n=(speedSteps.indexOf(globalSpeed)+1)%speedSteps.length;globalSpeed=speedSteps[n];localStorage.setItem('macbethGlobalSpeed',globalSpeed);stopPlayback();paused=false;updateTopControls();if(started&&!mine(L[i]))scheduleCurrent()};
-let voiceMode=false;
-$('settingsBtn').onclick=()=>{
- const p=$('settingsPanel'),btn=$('settingsBtn');
- voiceMode=!voiceMode;
- btn.classList.toggle('controlActive',voiceMode);
- btn.setAttribute('aria-pressed',voiceMode?'true':'false');
- if(voiceMode){
-   p.classList.add('open');renderVoices();
-   requestAnimationFrame(()=>{p.scrollIntoView({behavior:'smooth',block:'start'});p.classList.remove('voiceFlash');void p.offsetWidth;p.classList.add('voiceFlash');setTimeout(()=>p.classList.remove('voiceFlash'),1200)});
- }else{
-   $('card').scrollIntoView({behavior:'smooth',block:'start'});
- }
-};
 $('revealBtn').onclick=()=>{if(!mine(L[i]))return;revealed=!revealed;line.classList.toggle('revealedline',revealed);$('revealBtn').textContent=revealed?'🙈 Masquer ma réplique':'👁 Afficher ma réplique'};
 function setupUI(){
  const roles=[...sortedRoles],menu=$('roleMenu'),picker=$('rolePicker'),pickerBtn=$('rolePickerBtn');
@@ -659,19 +626,15 @@ document.addEventListener('keydown',e=>{if(['SELECT','INPUT'].includes(e.target.
  const bar=document.querySelector('.mobileNavBar');
  const roleBox=panel.querySelector('.roleBox');
  const navTitle=panel.querySelector('.navTitle');
- const settings=document.getElementById('settingsPanel');
- const originalSettingsParent=settings.parentNode;
- const originalSettingsNext=settings.nextSibling;
  const head=document.createElement('div');head.className='mobileMenuHead';
  head.innerHTML='<span>Répétition</span><button type="button" class="mobileClose" aria-label="Fermer le menu">×</button>';
  const tabs=document.createElement('div');tabs.className='mobileTabs';
- tabs.innerHTML='<button type="button" data-mobile-tab="roles">Personnages</button><button type="button" data-mobile-tab="scenes">Actes & scènes</button><button type="button" data-mobile-tab="voices">Voix</button>';
- const voiceArea=document.createElement('div');voiceArea.className='mobileVoiceArea';
- panel.insertBefore(head,panel.firstChild);panel.insertBefore(tabs,head.nextSibling);panel.appendChild(voiceArea);
- function setTab(t){panel.dataset.mobileTab=t;tabs.querySelectorAll('button').forEach(b=>b.classList.toggle('active',b.dataset.mobileTab===t));if(t==='voices'&&typeof renderVoices==='function')renderVoices()}
+ tabs.innerHTML='<button type="button" data-mobile-tab="roles">Personnages</button><button type="button" data-mobile-tab="scenes">Actes & scènes</button>';
+ panel.insertBefore(head,panel.firstChild);panel.insertBefore(tabs,head.nextSibling);
+ function setTab(t){panel.dataset.mobileTab=t;tabs.querySelectorAll('button').forEach(b=>b.classList.toggle('active',b.dataset.mobileTab===t))}
  function close(){panel.classList.remove('mobileOpen');btn.setAttribute('aria-expanded','false')}
  function open(t){setTab(t);panel.classList.add('mobileOpen');btn.setAttribute('aria-expanded','true')}
- function place(){if(mobile()){if(roleBox.parentNode!==panel)panel.insertBefore(roleBox,navTitle);if(settings.parentNode!==voiceArea)voiceArea.appendChild(settings)}else{if(settings.parentNode!==originalSettingsParent)originalSettingsParent.insertBefore(settings,originalSettingsNext);close()}}
+ function place(){if(mobile()){if(roleBox.parentNode!==panel)panel.insertBefore(roleBox,navTitle)}else{close()}}
  place();setTab('roles');
  btn.addEventListener('click',()=>{if(!mobile())return; if(panel.classList.contains('mobileOpen'))close();else open('roles')});
  head.querySelector('button').addEventListener('click',close);
