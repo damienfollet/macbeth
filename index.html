@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Macbeth, mec bête ? — Répétition V3.0.2</title>
+<title>Macbeth, mec bête ? — Répétition V3.0.3</title>
 <style>
 :root{--bg:#100f12;--panel:#1a181d;--ink:#f5f0e8;--muted:#aaa2a8;--gold:#e7b85c;--red:#9d302f;--green:#274b3d}
 *{box-sizing:border-box} body{margin:0;background:radial-gradient(circle at 50% -20%,#34292b 0,#100f12 42%);color:var(--ink);font-family:Georgia,'Times New Roman',serif;min-height:100vh}
@@ -205,6 +205,10 @@ button.voice-selected {
  .ctxItem .ctxText{font-size:10px!important;line-height:1.15!important}
 }
 
+
+/* V3.0.3 — interface Voix retirée */
+#settingsBtn,#settingsPanel,.mobileVoiceArea,[data-mobile-tab="voices"]{display:none!important}
+
 </style><style>
 /* V2.2.1 : prompteur mobile, CSS indépendant du mode Mac */
 .mobileTabs,.mobileClose{display:none}
@@ -276,7 +280,7 @@ button.voice-selected {
 </style>
 
 <style>
-/* V3.0.2 — contexte 2+2 définitif : Mac + mobile */
+/* V3.0.3 — contexte 2+2 définitif : Mac + mobile */
 .contextLine{min-height:118px!important;max-height:190px!important;padding:12px 14px!important}
 .contextStack{gap:7px!important}
 .ctxItem{padding:5px 0!important}
@@ -296,7 +300,7 @@ button.voice-selected {
 </style>
 </head>
 <body>
-<header><div><h1>Macbeth, mec bête ? <span style="opacity:.55">— Répétition</span></h1><div class="tag">V3.0.2 · contexte 2+2</div></div><div class="toolbar">
+<header><div><h1>Macbeth, mec bête ? <span style="opacity:.55">— Répétition</span></h1><div class="tag">V3.0.3 · contexte 2+2</div></div><div class="toolbar">
 <button id="muteBtn" class="topControl"><span class="controlLabel">🔊 Son</span><span class="tooltip">Activer/désactiver la lecture vocale</span></button>
 <div class="volumeControl"><span class="volumeTooltip">Volume de lecture</span>
   <span class="volumeText">Vol.</span>
@@ -304,7 +308,7 @@ button.voice-selected {
   <span id="volumeValue">100%</span>
 </div>
 <button id="speedBtn" class="topControl"><span class="controlLabel">⏩ 1×</span><span class="tooltip">Vitesse de lecture</span></button>
-<button id="settingsBtn" class="topControl" aria-pressed="false"><span class="controlLabel">⚙︎ Voix</span><span class="tooltip">Paramétrage des voix</span></button>
+
 </div></header>
 <div class="mobileNavBar"><button id="mobileNavBtn" type="button" aria-expanded="false" aria-controls="mobileNavPanel">☰ Actes et scènes <span aria-hidden="true">▾</span></button><span id="mobileSceneLabel">Prologue</span></div><div class="appLayout"><aside class="sidebar" id="mobileNavPanel"><div class="roleBox"><label>J’apprends le(s) rôle(s)</label><div id="rolePicker" class="rolePicker"><button id="rolePickerBtn" type="button"><span id="rolePickerLabel"></span><span>▾</span></button><div id="roleMenu" class="roleMenu"></div></div></div><div class="navTitle">Navigation</div><div class="sceneNavWrap"><div id="sceneNav" class="sceneNav"></div><div id="navScrollbar" class="navScrollbar" aria-hidden="true"><div id="navScrollbarThumb" class="navScrollbarThumb"></div></div></div></aside><main class="wrap">
 <div class="card" id="card">
@@ -708,7 +712,7 @@ document.addEventListener('keydown',e=>{if(['SELECT','INPUT'].includes(e.target.
  const head=document.createElement('div');head.className='mobileMenuHead';
  head.innerHTML='<span>Répétition</span><button type="button" class="mobileClose" aria-label="Fermer le menu">×</button>';
  const tabs=document.createElement('div');tabs.className='mobileTabs';
- tabs.innerHTML='<button type="button" data-mobile-tab="roles">Personnages</button><button type="button" data-mobile-tab="scenes">Actes & scènes</button><button type="button" data-mobile-tab="voices">Voix</button>';
+ tabs.innerHTML='<button type="button" data-mobile-tab="roles">Personnages</button><button type="button" data-mobile-tab="scenes">Actes & scènes</button>';
  const voiceArea=document.createElement('div');voiceArea.className='mobileVoiceArea';
  panel.insertBefore(head,panel.firstChild);panel.insertBefore(tabs,head.nextSibling);panel.appendChild(voiceArea);
  function setTab(t){panel.dataset.mobileTab=t;tabs.querySelectorAll('button').forEach(b=>b.classList.toggle('active',b.dataset.mobileTab===t));if(t==='voices'&&typeof renderVoices==='function')renderVoices()}
