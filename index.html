@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Macbeth, mec bête ? — Répétition V1</title>
+<title>Macbeth, mec bête ? — Répétition V2.1.0</title>
 <style>
 :root{--bg:#100f12;--panel:#1a181d;--ink:#f5f0e8;--muted:#aaa2a8;--gold:#e7b85c;--red:#9d302f;--green:#274b3d}
 *{box-sizing:border-box} body{margin:0;background:radial-gradient(circle at 50% -20%,#34292b 0,#100f12 42%);color:var(--ink);font-family:Georgia,'Times New Roman',serif;min-height:100vh}
@@ -120,9 +120,66 @@ button.voice-selected {
  .navScrollbarThumb:hover{background:#aaa0aa}.navScrollbarThumb.dragging{cursor:grabbing;background:#c2b7c2;}
 }
 @media (max-width:850px){.sceneNavWrap{position:relative}.navScrollbar{display:none}}
+
+/* V2.1.0 — smartphone, sans modification de l'interface Mac */
+.mobileNavBar{display:none}
+@media (max-width:850px){
+ html{scroll-padding-top:10px}
+ body{overflow-x:hidden}
+ header{position:relative;display:block;padding:15px 16px 12px;z-index:6}
+ header h1{font-size:clamp(20px,5vw,27px);line-height:1.13}
+ header .tag{font-size:10px;letter-spacing:.075em;margin-top:5px}
+ header .toolbar{margin-top:12px;display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:7px}
+ header .toolbar .topControl{min-height:42px;padding:9px 12px;font-size:13px}
+ header .toolbar .volumeControl{min-width:0;max-width:none;width:auto;padding:7px 9px;gap:6px}
+ header .toolbar .volumeText{font-size:12px}
+ header .toolbar #volumeSlider{min-width:24px;width:100%}
+ header .toolbar #volumeValue{font-size:12px;white-space:nowrap}
+ #settingsBtn{grid-column:1/-1;width:100%;justify-content:center}
+ .mobileNavBar{display:flex;position:relative;z-index:4;align-items:center;gap:12px;padding:9px 14px;background:#19161a;border-bottom:1px solid #ffffff22}
+ #mobileNavBtn{flex:0 0 auto;display:flex;align-items:center;gap:12px;padding:11px 13px;font:700 13px system-ui;background:#2b272d;border:1px solid #ffffff33;border-radius:11px;color:#fff}
+ #mobileNavBtn[aria-expanded="true"]{background:#e7b85c;color:#20170d}
+ #mobileSceneLabel{flex:1;min-width:0;font:600 12px system-ui;color:#d6c7b5;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+ .appLayout{display:block;max-width:100%;min-width:0}
+ .sidebar{display:none!important;position:relative!important;top:auto!important;height:auto!important;max-height:none!important;overflow:visible!important;width:100%;padding:14px 14px 18px;border-right:0;border-bottom:1px solid #ffffff28;background:#19161a}
+ .sidebar.mobileOpen{display:flex!important;flex-direction:column!important;gap:0}
+ .roleBox{margin:0 0 14px}
+ .rolePicker>button{min-height:44px}
+ .roleMenu{z-index:30}
+ .navTitle{margin:4px 5px 9px}
+ .sceneNavWrap{position:relative!important;display:block!important;height:auto!important;min-height:0!important;max-height:48dvh!important;overflow-y:auto!important;overflow-x:hidden!important;padding:0!important}
+ .sceneNav{display:flex!important;flex-direction:column!important;gap:8px!important;position:relative!important;inset:auto!important;height:auto!important;max-height:none!important;min-height:0!important;overflow:visible!important;padding:0 3px 10px 0!important;scrollbar-width:auto!important}
+ .sceneNav > *{flex:0 0 auto!important;height:auto!important;max-height:none!important;min-height:min-content!important}
+ .sceneNav .actGroup{flex:0 0 auto!important;height:auto!important;max-height:none!important;overflow:hidden!important}
+ .sceneNav .actGroup.open .actScenes{display:flex!important;flex-direction:column!important;height:auto!important;max-height:none!important;overflow:visible!important}
+ .sceneNav .actScenes>button{flex:0 0 auto!important;min-height:44px;font-size:13px}
+ .sceneNav .prologueNav{min-height:43px}
+ .navScrollbar{display:none!important}
+ .wrap{padding:10px 10px 26px;max-width:100%;min-width:0}
+ .card{border-radius:16px;padding:14px 13px;box-shadow:none}
+ .scene{font-size:10px;line-height:1.45;letter-spacing:.09em}
+ .scriptArea{height:clamp(290px,47dvh,540px)!important;min-height:0;overflow-y:auto;padding:0 3px 12px 0;scrollbar-gutter:auto}
+ .speaker{font-size:16px;margin-top:19px}
+ .line{font-size:clamp(24px,6.3vw,36px)!important;line-height:1.24;margin:12px 0 18px;overflow-wrap:anywhere}
+ .direction{font-size:15px;line-height:1.4}
+ .contextLine{max-width:100%;overflow-wrap:anywhere}
+ .fixedControls{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;min-height:0;padding:9px;border-radius:12px}
+ .fixedControls button{min-width:0;width:100%;font-size:12px;padding:11px 5px;min-height:44px;white-space:normal}
+ #mainBtn{grid-column:1/-1;grid-row:1;font-size:16px}
+ #prevBtn{grid-column:1;grid-row:2}
+ #nextBtn{grid-column:2;grid-row:2}
+ #replayBtn{grid-column:1/-1;grid-row:3}
+ .status{font-size:12px}
+ .v2-progress-wrap{max-width:100%}
+ .settingsPanel{margin-top:14px}
+ .voiceRow{grid-template-columns:1fr!important;gap:8px}
+ .voiceControl{grid-column:auto!important}
+ .footerHelp{font-size:11px;text-align:center}
+}
+@media (max-width:390px){header .toolbar{grid-template-columns:auto minmax(0,1fr) auto;gap:5px}header .toolbar .topControl{padding:8px}header .toolbar .volumeControl{padding:6px}header .toolbar #volumeValue{font-size:11px}.line{font-size:24px!important}}
 </style></head>
 <body>
-<header><div><h1>Macbeth, mec bête ? <span style="opacity:.55">— Répétition</span></h1><div class="tag">V2.0.10 · navigation texte + voix</div></div><div class="toolbar">
+<header><div><h1>Macbeth, mec bête ? <span style="opacity:.55">— Répétition</span></h1><div class="tag">V2.1.0 · navigation texte + voix</div></div><div class="toolbar">
 <button id="muteBtn" class="topControl"><span class="controlLabel">🔊 Son</span><span class="tooltip">Activer/désactiver la lecture vocale</span></button>
 <div class="volumeControl"><span class="volumeTooltip">Volume de lecture</span>
   <span class="volumeText">Vol.</span>
@@ -132,7 +189,7 @@ button.voice-selected {
 <button id="speedBtn" class="topControl"><span class="controlLabel">⏩ 1×</span><span class="tooltip">Vitesse de lecture</span></button>
 <button id="settingsBtn" class="topControl" aria-pressed="false"><span class="controlLabel">⚙︎ Voix</span><span class="tooltip">Paramétrage des voix</span></button>
 </div></header>
-<div class="appLayout"><aside class="sidebar"><div class="roleBox"><label>J’apprends le(s) rôle(s)</label><div id="rolePicker" class="rolePicker"><button id="rolePickerBtn" type="button"><span id="rolePickerLabel"></span><span>▾</span></button><div id="roleMenu" class="roleMenu"></div></div></div><div class="navTitle">Navigation</div><div class="sceneNavWrap"><div id="sceneNav" class="sceneNav"></div><div id="navScrollbar" class="navScrollbar" aria-hidden="true"><div id="navScrollbarThumb" class="navScrollbarThumb"></div></div></div></aside><main class="wrap">
+<div class="mobileNavBar"><button id="mobileNavBtn" type="button" aria-expanded="false" aria-controls="mobileNavPanel">☰ Actes et scènes <span aria-hidden="true">▾</span></button><span id="mobileSceneLabel">Prologue</span></div><div class="appLayout"><aside class="sidebar" id="mobileNavPanel"><div class="roleBox"><label>J’apprends le(s) rôle(s)</label><div id="rolePicker" class="rolePicker"><button id="rolePickerBtn" type="button"><span id="rolePickerLabel"></span><span>▾</span></button><div id="roleMenu" class="roleMenu"></div></div></div><div class="navTitle">Navigation</div><div class="sceneNavWrap"><div id="sceneNav" class="sceneNav"></div><div id="navScrollbar" class="navScrollbar" aria-hidden="true"><div id="navScrollbarThumb" class="navScrollbarThumb"></div></div></div></aside><main class="wrap">
 <div class="card" id="card">
 <div class="scene" id="sceneTitle"></div>
 <div class="scriptArea">
@@ -484,6 +541,28 @@ document.addEventListener('keydown',e=>{if(['SELECT','INPUT'].includes(e.target.
  thumb.addEventListener('pointerup',e=>{try{thumb.releasePointerCapture(e.pointerId)}catch(_){ } thumb.classList.remove('dragging')});
  track.addEventListener('pointerdown',e=>{if(e.target===thumb)return; const r=track.getBoundingClientRect(), ratio=(e.clientY-r.top)/r.height; nav.scrollTop=ratio*(nav.scrollHeight-nav.clientHeight)-nav.clientHeight/2;});
  window.addEventListener('load',()=>setTimeout(update,50)); requestAnimationFrame(update);
+})();
+</script>
+
+<script>
+/* Menu mobile autonome : aucun changement à la navigation Mac */
+(function(){
+ const btn=document.getElementById('mobileNavBtn');
+ const panel=document.getElementById('mobileNavPanel');
+ const label=document.getElementById('mobileSceneLabel');
+ if(!btn||!panel)return;
+ const isMobile=()=>window.matchMedia('(max-width:850px)').matches;
+ function toggle(open){panel.classList.toggle('mobileOpen',open);btn.setAttribute('aria-expanded',String(open));}
+ btn.addEventListener('click',()=>toggle(!panel.classList.contains('mobileOpen')));
+ panel.addEventListener('click',e=>{
+   const sceneBtn=e.target.closest('button[data-id]');
+   if(sceneBtn&&isMobile()){
+     label.textContent=sceneBtn.dataset.id==='prologue'?'Prologue':(sceneBtn.closest('.actGroup')?.querySelector('.actToggle span')?.textContent||'')+' · '+sceneBtn.childNodes[0].textContent.trim();
+     toggle(false);
+     document.getElementById('card')?.scrollIntoView({behavior:'smooth',block:'start'});
+   }
+ });
+ window.addEventListener('resize',()=>{if(!isMobile())toggle(false)});
 })();
 </script>
 </body></html>
