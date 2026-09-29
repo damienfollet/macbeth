@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Macbeth, mec bête ? — Répétition V3.0.0</title>
+<title>Macbeth, mec bête ? — Répétition V3.0.1</title>
 <style>
 :root{--bg:#100f12;--panel:#1a181d;--ink:#f5f0e8;--muted:#aaa2a8;--gold:#e7b85c;--red:#9d302f;--green:#274b3d}
 *{box-sizing:border-box} body{margin:0;background:radial-gradient(circle at 50% -20%,#34292b 0,#100f12 42%);color:var(--ink);font-family:Georgia,'Times New Roman',serif;min-height:100vh}
@@ -65,7 +65,7 @@ button.voice-selected {
 .topControl:hover{transform:translateY(-1px)}
 .topControl .tooltip{position:absolute;z-index:10000;top:calc(100% + 8px);left:50%;transform:translate(-50%,-3px);opacity:0;visibility:hidden;pointer-events:none;white-space:nowrap;background:#08080a;color:#fff;border:1px solid #ffffff24;border-radius:8px;padding:7px 9px;font:600 12px system-ui;box-shadow:0 8px 24px #0009;transition:opacity .15s,transform .15s,visibility .15s}
 .topControl:hover .tooltip{opacity:1;visibility:visible;transform:translate(-50%,0)}
-.topControl.controlActive{background:#dbeafe!important;color:#1d4ed8!important;border-color:#93c5fd!important;box-shadow:inset 0 0 0 1px #2563eb44}
+.topControl.controlActive,#settingsBtn.controlActive{background:#dbeafe!important;color:#1d4ed8!important;border-color:#93c5fd!important;box-shadow:inset 0 0 0 1px #2563eb44}
 .v2-progress-wrap{margin-top:13px;padding:2px 3px 0}
 .v2-progress{height:31px;position:relative;cursor:pointer;overflow:visible}
 .v2-progress-track{position:absolute;left:0;right:0;top:13px;height:5px;border-radius:99px;background:#ffffff18;overflow:hidden}
@@ -144,6 +144,7 @@ button.voice-selected {
  header .toolbar .volumeText{font-size:12px}
  header .toolbar #volumeSlider{min-width:24px;width:100%}
  header .toolbar #volumeValue{font-size:12px;white-space:nowrap}
+ #settingsBtn{grid-column:1/-1;width:100%;justify-content:center}
  .mobileNavBar{display:flex;position:relative;z-index:4;align-items:center;gap:12px;padding:9px 14px;background:#19161a;border-bottom:1px solid #ffffff22}
  #mobileNavBtn{flex:0 0 auto;display:flex;align-items:center;gap:12px;padding:11px 13px;font:700 13px system-ui;background:#2b272d;border:1px solid #ffffff33;border-radius:11px;color:#fff}
  #mobileNavBtn[aria-expanded="true"]{background:#e7b85c;color:#20170d}
@@ -185,6 +186,25 @@ button.voice-selected {
  .footerHelp{font-size:11px;text-align:center}
 }
 @media (max-width:390px){header .toolbar{grid-template-columns:auto minmax(0,1fr) auto;gap:5px}header .toolbar .topControl{padding:8px}header .toolbar .volumeControl{padding:6px}header .toolbar #volumeValue{font-size:11px}.line{font-size:24px!important}}
+
+/* V3.0.1 — contexte étendu : 3 éléments avant / 3 après */
+.contextLine{min-height:92px;max-height:142px;overflow:hidden;padding:9px 12px}
+.contextStack{display:flex;flex-direction:column;gap:4px}
+.ctxItem{padding:3px 0;border-bottom:1px solid #ffffff0a}
+.ctxItem:last-child{border-bottom:0}
+.ctxItem .ctxSpeaker{display:inline;margin:0 6px 0 0;font-size:11px}
+.ctxItem .ctxText{display:inline;font-size:13px;line-height:1.25}
+.ctxItem.ctxFar{opacity:.48}.ctxItem.ctxMid{opacity:.68}.ctxItem.ctxNear{opacity:.92}
+.ctxItem.mineContext .ctxText{filter:blur(6px);user-select:none}
+.ctxItem.ctxStage .ctxText{font-style:italic;color:#aaa1a7}
+@media(max-width:850px){
+ #prevContext,#nextContext{max-height:86px!important;padding:5px 7px!important;display:block!important;-webkit-line-clamp:unset!important}
+ .contextStack{gap:1px}
+ .ctxItem{padding:1px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+ .ctxItem .ctxSpeaker{font-size:9px!important}
+ .ctxItem .ctxText{font-size:10px!important;line-height:1.15!important}
+}
+
 </style><style>
 /* V2.2.1 : prompteur mobile, CSS indépendant du mode Mac */
 .mobileTabs,.mobileClose{display:none}
@@ -196,7 +216,7 @@ button.voice-selected {
  header h1{font-size:clamp(13px,3.65vw,17px)!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important;line-height:1.2!important;margin:0!important}
  header h1 span,header .tag{display:none!important}
  header .toolbar{margin:0!important;display:flex!important;align-items:center!important;gap:4px!important;flex:0 0 auto!important}
- header .toolbar .volumeControl{display:none!important}
+ header .toolbar .volumeControl,header #settingsBtn{display:none!important}
  header .toolbar .topControl{height:37px!important;min-height:37px!important;padding:5px 7px!important;font-size:11px!important;white-space:nowrap!important;border-radius:9px!important}
  .mobileNavBar{display:block!important;position:fixed!important;top:7px!important;left:8px!important;width:38px!important;height:38px!important;padding:0!important;margin:0!important;border:0!important;background:transparent!important;z-index:60!important}
  #mobileNavBtn{display:flex!important;align-items:center!important;justify-content:center!important;width:38px!important;height:38px!important;min-height:0!important;padding:0!important;border-radius:9px!important;font-size:0!important;gap:0!important;background:#29262d!important}
@@ -256,7 +276,7 @@ button.voice-selected {
 </style>
 </head>
 <body>
-<header><div><h1>Macbeth, mec bête ? <span style="opacity:.55">— Répétition</span></h1><div class="tag">V3.0.0 · voix pré-générées</div></div><div class="toolbar">
+<header><div><h1>Macbeth, mec bête ? <span style="opacity:.55">— Répétition</span></h1><div class="tag">V3.0.1 · contexte étendu</div></div><div class="toolbar">
 <button id="muteBtn" class="topControl"><span class="controlLabel">🔊 Son</span><span class="tooltip">Activer/désactiver la lecture vocale</span></button>
 <div class="volumeControl"><span class="volumeTooltip">Volume de lecture</span>
   <span class="volumeText">Vol.</span>
@@ -264,6 +284,7 @@ button.voice-selected {
   <span id="volumeValue">100%</span>
 </div>
 <button id="speedBtn" class="topControl"><span class="controlLabel">⏩ 1×</span><span class="tooltip">Vitesse de lecture</span></button>
+<button id="settingsBtn" class="topControl" aria-pressed="false"><span class="controlLabel">⚙︎ Voix</span><span class="tooltip">Paramétrage des voix</span></button>
 </div></header>
 <div class="mobileNavBar"><button id="mobileNavBtn" type="button" aria-expanded="false" aria-controls="mobileNavPanel">☰ Actes et scènes <span aria-hidden="true">▾</span></button><span id="mobileSceneLabel">Prologue</span></div><div class="appLayout"><aside class="sidebar" id="mobileNavPanel"><div class="roleBox"><label>J’apprends le(s) rôle(s)</label><div id="rolePicker" class="rolePicker"><button id="rolePickerBtn" type="button"><span id="rolePickerLabel"></span><span>▾</span></button><div id="roleMenu" class="roleMenu"></div></div></div><div class="navTitle">Navigation</div><div class="sceneNavWrap"><div id="sceneNav" class="sceneNav"></div><div id="navScrollbar" class="navScrollbar" aria-hidden="true"><div id="navScrollbarThumb" class="navScrollbarThumb"></div></div></div></aside><main class="wrap">
 <div class="card" id="card">
@@ -282,6 +303,10 @@ button.voice-selected {
   </div>
   <div class="v2-progress-labels"><span>Début</span><span id="v2ProgressPct">0 %</span><span>Fin</span></div>
 </div>
+</div>
+<div class="settingsPanel card" id="settingsPanel">
+
+<h3>Voix des partenaires</h3><div id="voices"></div><p class="status">Les voix disponibles dépendent de macOS et du navigateur. Les choix sont enregistrés sur ce Mac.</p>
 </div>
 <div class="footerHelp">Espace : continuer · ←/→ : naviguer · R : réécouter</div>
 </main></div>
@@ -407,6 +432,9 @@ const mine=e=>e.c&&learningRoles.some(role=>roleInSpeaker(role,e.c));
 
 const $=id=>document.getElementById(id), card=$('card'), line=$('line'), speaker=$('speaker'), dir=$('direction'), status=$('status'), cue=$('cue');
 let stageTimer=null, speechStartTimer=null;
+let chars=[]; function updateChars(){const speakers=scenes.flatMap(s=>s.lines).filter(e=>e.c).map(e=>e.c);chars=Object.keys(aliases).filter(c=>speakers.some(sp=>roleInSpeaker(c,sp))&&!learningRoles.some(r=>r===c)).sort((a,b)=>a.localeCompare(b,'fr',{sensitivity:'base'}));}
+let voiceMap=JSON.parse(localStorage.getItem('macbethVoices')||'{}');
+let voiceParams=JSON.parse(localStorage.getItem('macbethVoiceParams')||'{}');
 let muted=localStorage.getItem('macbethMuted')==='1';
 let masterVolume=1;
 const speedSteps=[1,1.3,1.5]; let globalSpeed=+localStorage.getItem('macbethGlobalSpeed')||1;if(!speedSteps.includes(globalSpeed))globalSpeed=1;
@@ -417,7 +445,12 @@ function updateTopControls(){
  mb.classList.toggle('controlActive',muted);
  sb.classList.toggle('controlActive',globalSpeed!==1);
 }
+function paramsFor(c){const p=voiceParams[c]||{};return {rate:Number.isFinite(+p.rate)?+p.rate:1,pitch:Number.isFinite(+p.pitch)?+p.pitch:1}}
+function saveVoiceParams(){localStorage.setItem('macbethVoiceParams',JSON.stringify(voiceParams))}
 function voices(){return speechSynthesis.getVoices().filter(v=>v.lang.toLowerCase().startsWith('fr'))}
+function renderVoices(){const vs=voices(),box=$('voices');box.innerHTML='';chars.forEach(c=>{const p=paramsFor(c);let row=document.createElement('div');row.className='voiceRow';let opts=vs.map((v,n)=>`<option value="${n}" ${voiceMap[c]===v.name?'selected':''}>${v.name}</option>`).join('');row.innerHTML=`<b>${c}</b><select aria-label="Voix de ${c}">${opts}</select><label class="voiceControl"><span>Vitesse</span><input class="rateSlider" type="range" min="0.65" max="1.35" step="0.05" value="${p.rate}"><span class="voiceValue rateValue">${p.rate.toFixed(2)}×</span></label><label class="voiceControl"><span>Pitch</span><input class="pitchSlider" type="range" min="0.60" max="1.40" step="0.05" value="${p.pitch}"><span class="voiceValue pitchValue">${p.pitch.toFixed(2)}</span></label><button class="voiceTest">Tester</button>`;let sel=row.querySelector('select');sel.onchange=()=>{voiceMap[c]=vs[+sel.value]?.name;localStorage.setItem('macbethVoices',JSON.stringify(voiceMap))};const rate=row.querySelector('.rateSlider'),pitch=row.querySelector('.pitchSlider'),rateV=row.querySelector('.rateValue'),pitchV=row.querySelector('.pitchValue');rate.oninput=()=>{voiceParams[c]={...paramsFor(c),rate:+rate.value};rateV.textContent=(+rate.value).toFixed(2)+'×';saveVoiceParams()};pitch.oninput=()=>{voiceParams[c]={...paramsFor(c),pitch:+pitch.value};pitchV.textContent=(+pitch.value).toFixed(2);saveVoiceParams()};row.querySelector('.voiceTest').onclick=()=>speakText(c,'Je joue '+c);box.appendChild(row)})}
+speechSynthesis.onvoiceschanged=renderVoices;
+function baseChar(c){if(!c)return '';let best='',bestPos=Infinity;for(const [canon,names] of Object.entries(aliases)){for(const n of names){const pos=c.toLocaleLowerCase('fr').indexOf(n.toLocaleLowerCase('fr'));if(pos>=0&&pos<bestPos){best=canon;bestPos=pos}}}return best||c.split(/\s*\+\s*|\s+et\s+|,|\//i)[0].trim()}
 function clearAutoTimers(){if(stageTimer){clearTimeout(stageTimer);stageTimer=null}if(speechStartTimer){clearTimeout(speechStartTimer);speechStartTimer=null}}
 
 // Audio pré-généré pour l’ensemble de la pièce.
@@ -445,18 +478,22 @@ function speakText(c,x,onend){
  speakSystemVoice(c,x,onend);
 }
 function speakSystemVoice(c,x,onend){
- let u=new SpeechSynthesisUtterance(x),vs=voices();u.volume=masterVolume;if(vs.length)u.voice=vs[0];u.lang='fr-FR';u.rate=Math.max(.5,Math.min(4,globalSpeed));u.pitch=1;u.onend=()=>{speaking=false;if(!paused)onend&&onend()};u.onerror=()=>{speaking=false};speaking=true;speechSynthesis.speak(u)
+ let u=new SpeechSynthesisUtterance(x),vs=voices(),bc=baseChar(c),chosen=vs.find(v=>v.name===voiceMap[bc]);u.volume=masterVolume;if(!chosen&&vs.length)chosen=vs[Math.abs(chars.indexOf(bc))%vs.length];if(chosen)u.voice=chosen;u.lang='fr-FR';const p=paramsFor(bc);u.rate=Math.max(.5,Math.min(4,p.rate*globalSpeed));u.pitch=Math.max(.5,Math.min(2,p.pitch));u.onend=()=>{speaking=false;if(!paused)onend&&onend()};u.onerror=()=>{speaking=false};speaking=true;speechSynthesis.speak(u)
 }
-function contextHTML(e,label){
- if(!e)return '<div class="ctxLabel">'+label+'</div>';
- const isStage=e.t==='stage'; const who=isStage?'DIDASCALIE':e.c;
- return `<div class="ctxLabel">${label}</div><div class="ctxSpeaker">${who||''}</div><div class="ctxText">${e.x||''}</div>`;
+function contextItemHTML(e,distance){
+ if(!e)return '';
+ const isStage=e.t==='stage',who=isStage?'DIDASCALIE':e.c;
+ const level=distance===1?'ctxNear':distance===2?'ctxMid':'ctxFar';
+ return `<div class="ctxItem ${level}${mine(e)?' mineContext':''}${isStage?' ctxStage':''}"><span class="ctxSpeaker">${who||''}</span><span class="ctxText">${e.x||''}</span></div>`;
 }
 function renderContext(){
- const prev=$('prevContext'),next=$('nextContext'),pe=L[i-1],ne=L[i+1];
- prev.className='contextLine'+(!pe?' empty':'')+(pe&&mine(pe)?' mineContext':'')+(pe&&pe.t==='stage'?' stageContext':'');
- next.className='contextLine'+(!ne?' empty':'')+(ne&&mine(ne)?' mineContext':'')+(ne&&ne.t==='stage'?' stageContext':'');
- prev.innerHTML=contextHTML(pe,'Réplique précédente'); next.innerHTML=contextHTML(ne,'Réplique suivante');
+ const prev=$('prevContext'),next=$('nextContext'),before=[],after=[];
+ for(let d=3;d>=1;d--)if(L[i-d])before.push(contextItemHTML(L[i-d],d));
+ for(let d=1;d<=3;d++)if(L[i+d])after.push(contextItemHTML(L[i+d],d));
+ prev.className='contextLine'+(!before.length?' empty':'');
+ next.className='contextLine'+(!after.length?' empty':'');
+ prev.innerHTML=`<div class="ctxLabel">Avant</div><div class="contextStack">${before.join('')}</div>`;
+ next.innerHTML=`<div class="ctxLabel">Après</div><div class="contextStack">${after.join('')}</div>`;
 }
 let mobileSceneTap=false;
 function scheduleCurrent(){
@@ -554,13 +591,26 @@ $('nextBtn').onclick=()=>{started=true;paused=false;if(i<L.length-1){i++;render(
 $('replayBtn').onclick=()=>{paused=false;let e=L[i];if(e.c&&!mine(e)){stopPlayback();if(!muted)speakText(e.c,e.x,()=>{});else render()}else render()};
 $('muteBtn').onclick=()=>{muted=!muted;localStorage.setItem('macbethMuted',muted?'1':'0');stopPlayback();paused=false;updateTopControls();if(started&&!mine(L[i]))scheduleCurrent()};
 $('speedBtn').onclick=()=>{const n=(speedSteps.indexOf(globalSpeed)+1)%speedSteps.length;globalSpeed=speedSteps[n];localStorage.setItem('macbethGlobalSpeed',globalSpeed);stopPlayback();paused=false;updateTopControls();if(started&&!mine(L[i]))scheduleCurrent()};
+let voiceMode=false;
+$('settingsBtn').onclick=()=>{
+ const p=$('settingsPanel'),btn=$('settingsBtn');
+ voiceMode=!voiceMode;
+ btn.classList.toggle('controlActive',voiceMode);
+ btn.setAttribute('aria-pressed',voiceMode?'true':'false');
+ if(voiceMode){
+   p.classList.add('open');renderVoices();
+   requestAnimationFrame(()=>{p.scrollIntoView({behavior:'smooth',block:'start'});p.classList.remove('voiceFlash');void p.offsetWidth;p.classList.add('voiceFlash');setTimeout(()=>p.classList.remove('voiceFlash'),1200)});
+ }else{
+   $('card').scrollIntoView({behavior:'smooth',block:'start'});
+ }
+};
 $('revealBtn').onclick=()=>{if(!mine(L[i]))return;revealed=!revealed;line.classList.toggle('revealedline',revealed);$('revealBtn').textContent=revealed?'🙈 Masquer ma réplique':'👁 Afficher ma réplique'};
 function setupUI(){
  const roles=[...sortedRoles],menu=$('roleMenu'),picker=$('rolePicker'),pickerBtn=$('rolePickerBtn');
  function updateRoleLabel(){$('rolePickerLabel').textContent=learningRoles.length===0?'Sélectionner le(s) personnage(s) joué(s)':(learningRoles.length<=2?learningRoles.join(' + '):learningRoles.length+' rôles sélectionnés')}
  menu.innerHTML=roles.map(r=>`<label class="roleChoice"><input type="checkbox" value="${r}" ${learningRoles.includes(r)?'checked':''}><span>${r}</span></label>`).join('');
  pickerBtn.onclick=()=>picker.classList.toggle('open');
- menu.querySelectorAll('input').forEach(cb=>cb.onchange=()=>{picker.classList.remove('open');let chosen=[...menu.querySelectorAll('input:checked')].map(x=>x.value);learningRoles=chosen;localStorage.setItem('macbethRoles',JSON.stringify(learningRoles));updateRoleLabel();started=false;paused=false;i=0;render()});
+ menu.querySelectorAll('input').forEach(cb=>cb.onchange=()=>{picker.classList.remove('open');let chosen=[...menu.querySelectorAll('input:checked')].map(x=>x.value);learningRoles=chosen;localStorage.setItem('macbethRoles',JSON.stringify(learningRoles));updateRoleLabel();started=false;paused=false;i=0;updateChars();renderVoices();render()});
  updateRoleLabel();
  const nav=$('sceneNav');
  const prologue=scenes.find(s=>s.id==='prologue');
@@ -594,7 +644,7 @@ function setupUI(){
    };
  }
 
- updateTopControls();
+ updateChars();renderVoices();updateTopControls();
 }
 document.addEventListener('keydown',e=>{if(['SELECT','INPUT'].includes(e.target.tagName))return;if(e.code==='Space'){e.preventDefault();$('mainBtn').click()}else if(e.key==='ArrowLeft')$('prevBtn').click();else if(e.key==='ArrowRight')$('nextBtn').click();else if(e.key.toLowerCase()==='r')$('replayBtn').click()});setupUI();render();
 
@@ -632,15 +682,19 @@ document.addEventListener('keydown',e=>{if(['SELECT','INPUT'].includes(e.target.
  const bar=document.querySelector('.mobileNavBar');
  const roleBox=panel.querySelector('.roleBox');
  const navTitle=panel.querySelector('.navTitle');
+ const settings=document.getElementById('settingsPanel');
+ const originalSettingsParent=settings.parentNode;
+ const originalSettingsNext=settings.nextSibling;
  const head=document.createElement('div');head.className='mobileMenuHead';
  head.innerHTML='<span>Répétition</span><button type="button" class="mobileClose" aria-label="Fermer le menu">×</button>';
  const tabs=document.createElement('div');tabs.className='mobileTabs';
- tabs.innerHTML='<button type="button" data-mobile-tab="roles">Personnages</button><button type="button" data-mobile-tab="scenes">Actes & scènes</button>';
- panel.insertBefore(head,panel.firstChild);panel.insertBefore(tabs,head.nextSibling);
- function setTab(t){panel.dataset.mobileTab=t;tabs.querySelectorAll('button').forEach(b=>b.classList.toggle('active',b.dataset.mobileTab===t))}
+ tabs.innerHTML='<button type="button" data-mobile-tab="roles">Personnages</button><button type="button" data-mobile-tab="scenes">Actes & scènes</button><button type="button" data-mobile-tab="voices">Voix</button>';
+ const voiceArea=document.createElement('div');voiceArea.className='mobileVoiceArea';
+ panel.insertBefore(head,panel.firstChild);panel.insertBefore(tabs,head.nextSibling);panel.appendChild(voiceArea);
+ function setTab(t){panel.dataset.mobileTab=t;tabs.querySelectorAll('button').forEach(b=>b.classList.toggle('active',b.dataset.mobileTab===t));if(t==='voices'&&typeof renderVoices==='function')renderVoices()}
  function close(){panel.classList.remove('mobileOpen');btn.setAttribute('aria-expanded','false')}
  function open(t){setTab(t);panel.classList.add('mobileOpen');btn.setAttribute('aria-expanded','true')}
- function place(){if(mobile()){if(roleBox.parentNode!==panel)panel.insertBefore(roleBox,navTitle)}else{close()}}
+ function place(){if(mobile()){if(roleBox.parentNode!==panel)panel.insertBefore(roleBox,navTitle);if(settings.parentNode!==voiceArea)voiceArea.appendChild(settings)}else{if(settings.parentNode!==originalSettingsParent)originalSettingsParent.insertBefore(settings,originalSettingsNext);close()}}
  place();setTab('roles');
  btn.addEventListener('click',()=>{if(!mobile())return; if(panel.classList.contains('mobileOpen'))close();else open('roles')});
  head.querySelector('button').addEventListener('click',close);
