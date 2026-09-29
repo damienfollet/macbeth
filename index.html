@@ -243,10 +243,21 @@ button.voice-selected {
  .sidebar[data-mobile-tab='voices'] .voiceRow{grid-template-columns:1fr!important}
  .navScrollbar{display:none!important}
 }
+
+@media(max-width:850px){
+ .line{font-size:clamp(21px,5.5vw,27px)!important;line-height:1.28!important}
+ .direction{font-size:clamp(17px,4.8vw,23px)!important}
+ #prevContext,#nextContext{max-height:46px!important}
+ .activeLine{scroll-behavior:smooth}
+ .sidebar[data-mobile-tab='roles'] .roleBox{display:block!important;visibility:visible!important}
+ .sidebar[data-mobile-tab='roles'] .rolePicker{display:block!important}
+ .sidebar[data-mobile-tab='roles'] .roleMenu{max-height:calc(100dvh - 210px)!important;overflow-y:auto!important}
+ .sidebar[data-mobile-tab='voices'] .settingsPanel{display:block!important}
+}
 </style>
 </head>
 <body>
-<header><div><h1>Macbeth, mec bête ? <span style="opacity:.55">— Répétition</span></h1><div class="tag">V2.2.1 · navigation texte + voix</div></div><div class="toolbar">
+<header><div><h1>Macbeth, mec bête ? <span style="opacity:.55">— Répétition</span></h1><div class="tag">V2.2.2 · prompteur mobile</div></div><div class="toolbar">
 <button id="muteBtn" class="topControl"><span class="controlLabel">🔊 Son</span><span class="tooltip">Activer/désactiver la lecture vocale</span></button>
 <div class="volumeControl"><span class="volumeTooltip">Volume de lecture</span>
   <span class="volumeText">Vol.</span>
@@ -613,32 +624,6 @@ document.addEventListener('keydown',e=>{if(['SELECT','INPUT'].includes(e.target.
 </script>
 
 <script>
-/* Menu mobile autonome + sélection des rôles avant les scènes */
-(function(){
- const btn=document.getElementById('mobileNavBtn');
- const panel=document.getElementById('mobileNavPanel');
- const label=document.getElementById('mobileSceneLabel');
- const roleBox=panel?.querySelector('.roleBox');
- const mobileBar=document.querySelector('.mobileNavBar');
- const navTitle=panel?.querySelector('.navTitle');
- function positionRolePicker(){if(!roleBox||!mobileBar||!navTitle)return;if(window.matchMedia('(max-width:850px)').matches){mobileBar.parentNode.insertBefore(roleBox,mobileBar)}else{panel.insertBefore(roleBox,navTitle)}}
- positionRolePicker();
- if(!btn||!panel)return;
- const isMobile=()=>window.matchMedia('(max-width:850px)').matches;
- function toggle(open){panel.classList.toggle('mobileOpen',open);btn.setAttribute('aria-expanded',String(open));}
- btn.addEventListener('click',()=>toggle(!panel.classList.contains('mobileOpen')));
- panel.addEventListener('click',e=>{
-   const sceneBtn=e.target.closest('button[data-id]');
-   if(sceneBtn&&isMobile()){
-     label.textContent=sceneBtn.dataset.id==='prologue'?'Prologue':(sceneBtn.closest('.actGroup')?.querySelector('.actToggle span')?.textContent||'')+' · '+sceneBtn.childNodes[0].textContent.trim();
-     toggle(false);
-     document.getElementById('card')?.scrollIntoView({behavior:'smooth',block:'start'});
-   }
- });
- window.addEventListener('resize',()=>{positionRolePicker();if(!isMobile())toggle(false)});
-})();
-</script>
-<script>
 /* V2.2.1 : le menu mobile manipule les vrais contrôles, sans clonage. */
 (function(){
  const mobile=()=>window.matchMedia('(max-width:850px)').matches;
@@ -667,9 +652,9 @@ document.addEventListener('keydown',e=>{if(['SELECT','INPUT'].includes(e.target.
  document.getElementById('sceneNav').addEventListener('click',e=>{if(mobile()&&e.target.closest('button[data-id]'))close()});
  window.addEventListener('resize',place);
  const main=document.getElementById('mainBtn');
- const observer=new MutationObserver(()=>{main.classList.toggle('mobilePlaying',started&&!paused)});
+ const observer=new MutationObserver(()=>{main.classList.toggle('mobilePlaying',/^\s*⏸/.test(main.textContent))});
  observer.observe(main,{childList:true,subtree:true,characterData:true});
- main.classList.toggle('mobilePlaying',started&&!paused);
+ main.classList.toggle('mobilePlaying',/^\s*⏸/.test(main.textContent));
 })();
 </script>
 </body></html>
