@@ -1,0 +1,288 @@
+{
+  "sceneId": "a2s1",
+  "label": "Acte 2 — Scène 1",
+  "title": "Réception du Roi Duncan",
+  "count": 35,
+  "files": [
+    {
+      "n": 1,
+      "file": "a2s1_001.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Ah, Sire, notre roi à tous, quel honneur, mais quel honneur pour nous de vous accueillir en notre modeste demeure d’Ilsemeure- elle se prosterne et lui baise la main. Voyez combien on se fait un plaisir de vous accueillir au balcon !"
+    },
+    {
+      "n": 2,
+      "file": "a2s1_002.mp3",
+      "speaker": "Duncan",
+      "voiceCharacter": "Duncan",
+      "pitch": -2,
+      "text": "En effet, je vois ça. (coup d’œil sur décolleté de Lady Co). Mais dîtes-moi, où est votre valeureux mari chevalier, nouvellement promu Comte de Cador ?"
+    },
+    {
+      "n": 3,
+      "file": "a2s1_003.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Il se prépare, Sire, il se prépare Sire, vous savez pour nous c’est une grande soirée, nous n’avons pas de temps à tuer (aparté enfin, pas tout de suite…) tout doit être planifié à la seconde près !"
+    },
+    {
+      "n": 4,
+      "file": "a2s1_004.mp3",
+      "speaker": "Duncan",
+      "voiceCharacter": "Duncan",
+      "pitch": -2,
+      "text": "Allons , Lady Commandement, n’exagérons rien !"
+    },
+    {
+      "n": 5,
+      "file": "a2s1_005.mp3",
+      "speaker": "Présentateur",
+      "voiceCharacter": "Présentateur",
+      "pitch": 0,
+      "text": "Sa majesté Le Roi Duncan, Roi en charge du Royaume d’Ecosse …."
+    },
+    {
+      "n": 6,
+      "file": "a2s1_006.mp3",
+      "speaker": "Présentateur",
+      "voiceCharacter": "Présentateur",
+      "pitch": 0,
+      "text": "Pour régaler le palais de sa Majesté voici le menu de la soirée :"
+    },
+    {
+      "n": 7,
+      "file": "a2s1_007.mp3",
+      "speaker": "Page 1",
+      "voiceCharacter": "Page 1",
+      "pitch": 1,
+      "text": "Pavé de saumon lancé des barricades norvégiennes"
+    },
+    {
+      "n": 8,
+      "file": "a2s1_008.mp3",
+      "speaker": "Page 2",
+      "voiceCharacter": "Page 2",
+      "pitch": 1,
+      "text": "Traduction : A piece of fish tired from the barrières of the omelettes"
+    },
+    {
+      "n": 9,
+      "file": "a2s1_009.mp3",
+      "speaker": "Duncan",
+      "voiceCharacter": "Duncan",
+      "pitch": -2,
+      "text": "Tired from the omelettes ?"
+    },
+    {
+      "n": 10,
+      "file": "a2s1_010.mp3",
+      "speaker": "Page 1",
+      "voiceCharacter": "Page 1",
+      "pitch": 1,
+      "text": "Son Altesse, en cuisine on traduit norvégien/ne par omelette"
+    },
+    {
+      "n": 11,
+      "file": "a2s1_011.mp3",
+      "speaker": "Duncan",
+      "voiceCharacter": "Duncan",
+      "pitch": -2,
+      "text": "Bien, dans ce cas-là, grâce à notre victoire, nous associerons les 2 : « Omelettes et Norvégiennes », nous parlerons d’omelettes norvégiennes."
+    },
+    {
+      "n": 12,
+      "file": "a2s1_012.mp3",
+      "speaker": "Page 2",
+      "voiceCharacter": "Page 2",
+      "pitch": 1,
+      "text": "(prenant sa respiration et annonçant lentement) Faux filet…"
+    },
+    {
+      "n": 13,
+      "file": "a2s1_013.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Mais, mais …Son Altesse et vous tous, pourquoi partez-vous ?"
+    },
+    {
+      "n": 14,
+      "file": "a2s1_014.mp3",
+      "speaker": "Macduff",
+      "voiceCharacter": "Macduff",
+      "pitch": 1,
+      "text": "N’avez-vous pas entendu « Faut filer »"
+    },
+    {
+      "n": 15,
+      "file": "a2s1_015.mp3",
+      "speaker": "Malcolm",
+      "voiceCharacter": "Malcolm",
+      "pitch": 2,
+      "text": "En effet, c’est tout à fait cela, Père."
+    },
+    {
+      "n": 16,
+      "file": "a2s1_016.mp3",
+      "speaker": "Page 2",
+      "voiceCharacter": "Page 2",
+      "pitch": 1,
+      "text": "(reprenant) Plat de résistance Faux filet de bovin"
+    },
+    {
+      "n": 17,
+      "file": "a2s1_017.mp3",
+      "speaker": "Page 3",
+      "voiceCharacter": "Page 3",
+      "pitch": 1,
+      "text": "wrong filet of « meuh »"
+    },
+    {
+      "n": 18,
+      "file": "a2s1_018.mp3",
+      "speaker": "Page 2",
+      "voiceCharacter": "Page 2",
+      "pitch": 1,
+      "text": "Pommes de terre braisées"
+    },
+    {
+      "n": 19,
+      "file": "a2s1_019.mp3",
+      "speaker": "Page 3",
+      "voiceCharacter": "Page 3",
+      "pitch": 1,
+      "text": "potatoz cuisined in Bretagne"
+    },
+    {
+      "n": 20,
+      "file": "a2s1_020.mp3",
+      "speaker": "Page 3",
+      "voiceCharacter": "Page 3",
+      "pitch": 1,
+      "text": "Et pour terminer, votre Altesse, la crème de la crème pour le dessert, La Ronde des Prénoms :"
+    },
+    {
+      "n": 21,
+      "file": "a2s1_021.mp3",
+      "speaker": "Page 1",
+      "voiceCharacter": "Page 1",
+      "pitch": 1,
+      "text": "Charlotte aux fraises- (chanté) Strawberry fields for ever"
+    },
+    {
+      "n": 22,
+      "file": "a2s1_022.mp3",
+      "speaker": "Page 2",
+      "voiceCharacter": "Page 2",
+      "pitch": 1,
+      "text": "Avec des madeleines – (chanté) Ce soir j’attends des Madeleines/ Tonight I’m waiting for Madeleine"
+    },
+    {
+      "n": 23,
+      "file": "a2s1_023.mp3",
+      "speaker": "Page 3",
+      "voiceCharacter": "Page 3",
+      "pitch": 1,
+      "text": "Façon Poire-Belle Hélène- (chanté) Hélène my name is Hélène"
+    },
+    {
+      "n": 24,
+      "file": "a2s1_024.mp3",
+      "speaker": "Page 1",
+      "voiceCharacter": "Page 1",
+      "pitch": 1,
+      "text": "Le tout arrosé d’un Crémant de Loire"
+    },
+    {
+      "n": 25,
+      "file": "a2s1_025.mp3",
+      "speaker": "Page 2",
+      "voiceCharacter": "Page 2",
+      "pitch": 1,
+      "text": "oui, en fait, il s’agit d’un Crémant autrefois classé"
+    },
+    {
+      "n": 26,
+      "file": "a2s1_026.mp3",
+      "speaker": "Page 3",
+      "voiceCharacter": "Page 3",
+      "pitch": 1,
+      "text": "Autrement dit, le tout arrosé d’un ex-Crémant !"
+    },
+    {
+      "n": 27,
+      "file": "a2s1_027.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "(en aparté) Autant dire au Roi qu’on va lui faire bouffer d’la merde !"
+    },
+    {
+      "n": 28,
+      "file": "a2s1_028.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Mais qu’est-ce qui m’a foutu des p’tits cons de traducteurs pareils !"
+    },
+    {
+      "n": 29,
+      "file": "a2s1_029.mp3",
+      "speaker": "Pages 1 2 3",
+      "voiceCharacter": "Pages 1 2 3",
+      "pitch": 1,
+      "text": "On n’est pas des p’tits cons ! On nous avait dit que le Roi ne comprenait pas notre langue."
+    },
+    {
+      "n": 30,
+      "file": "a2s1_030.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Le Roi peut-être – bon, le public ne comprend pas, sans doute ; même les traductions ils ne sont pas sûrs d’avoir compris."
+    },
+    {
+      "n": 31,
+      "file": "a2s1_031.mp3",
+      "speaker": "Pages 1 2 3",
+      "voiceCharacter": "Pages 1 2 3",
+      "pitch": 1,
+      "text": "C’est vraiment trop injuste !"
+    },
+    {
+      "n": 32,
+      "file": "a2s1_032.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Puisque c’est ainsi, vous serez tous traduits"
+    },
+    {
+      "n": 33,
+      "file": "a2s1_033.mp3",
+      "speaker": "Pages 1 2 3",
+      "voiceCharacter": "Pages 1 2 3",
+      "pitch": 1,
+      "text": "Traduits ?"
+    },
+    {
+      "n": 34,
+      "file": "a2s1_034.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "traduits en justice"
+    },
+    {
+      "n": 35,
+      "file": "a2s1_035.mp3",
+      "speaker": "Pages 1 2 3",
+      "voiceCharacter": "Pages 1 2 3",
+      "pitch": 1,
+      "text": "(en sortant) Quand je pense que c’est Lady co qui va traduire des pages en justice !"
+    }
+  ]
+}

@@ -1,0 +1,224 @@
+{
+  "sceneId": "a2s4",
+  "label": "Acte 2 — Scène 4",
+  "title": "Découverte du crime",
+  "count": 27,
+  "files": [
+    {
+      "n": 1,
+      "file": "a2s4_001.mp3",
+      "speaker": "Macduff",
+      "voiceCharacter": "Macduff",
+      "pitch": 1,
+      "text": "(rentrant dans la pénombre, dos au lit royal) Buen Giorno, good morning, buenos dias, guten tag, bonjour, votre majesté, vostra maestà, your majesty, su majesta, eure majestät, …"
+    },
+    {
+      "n": 2,
+      "file": "a2s4_002.mp3",
+      "speaker": "Garde 1",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "il est con, ou quoi, pourquoi faire tout ce charabia ?"
+    },
+    {
+      "n": 3,
+      "file": "a2s4_003.mp3",
+      "speaker": "Garde 2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "Faut toujours qu’il se fasse remarquer !"
+    },
+    {
+      "n": 4,
+      "file": "a2s4_004.mp3",
+      "speaker": "Macduff",
+      "voiceCharacter": "Macduff",
+      "pitch": 1,
+      "text": "il est l’heure, es ist Zeit, it is team"
+    },
+    {
+      "n": 5,
+      "file": "a2s4_005.mp3",
+      "speaker": "Garde 2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "(le corrigeant) « time »"
+    },
+    {
+      "n": 6,
+      "file": "a2s4_006.mp3",
+      "speaker": "Macduff",
+      "voiceCharacter": "Macduff",
+      "pitch": 1,
+      "text": "oui, on va pas chipoter, « it is time », e il momento, (dit mo-men-to et non momène-to)"
+    },
+    {
+      "n": 7,
+      "file": "a2s4_007.mp3",
+      "speaker": "Garde 2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "( corrigeant) « moméne-to »"
+    },
+    {
+      "n": 8,
+      "file": "a2s4_008.mp3",
+      "speaker": "Macduff",
+      "voiceCharacter": "Macduff",
+      "pitch": 1,
+      "text": "Oh, ça suffit, à ce que je sache vous n’êtes pas les gardiens de la langue."
+    },
+    {
+      "n": 9,
+      "file": "a2s4_009.mp3",
+      "speaker": "Gardes 1 2",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "(en chœur) Non, on est gardes tout court."
+    },
+    {
+      "n": 10,
+      "file": "a2s4_010.mp3",
+      "speaker": "Macduff",
+      "voiceCharacter": "Macduff",
+      "pitch": 1,
+      "text": "Oui, et morts aussi !"
+    },
+    {
+      "n": 11,
+      "file": "a2s4_011.mp3",
+      "speaker": "Gardes 1 2",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "(se regardant) Ah, oui, c’est exact. (retombant en position « mort »)"
+    },
+    {
+      "n": 12,
+      "file": "a2s4_012.mp3",
+      "speaker": "Macduff",
+      "voiceCharacter": "Macduff",
+      "pitch": 1,
+      "text": "(reprenant son rôle) Il est l’heure, Votre Majesté… Allons Majesté, vous avez vraiment un sommeil de plomb ! (se retourne et revient vers lit royal et découvre la macabre scène). Oh, horreur ! Horreur !"
+    },
+    {
+      "n": 13,
+      "file": "a2s4_013.mp3",
+      "speaker": "Malcolm",
+      "voiceCharacter": "Malcolm",
+      "pitch": 2,
+      "text": "(des coulisses) Allons, que se passe-t-il ?"
+    },
+    {
+      "n": 14,
+      "file": "a2s4_014.mp3",
+      "speaker": "Macduff",
+      "voiceCharacter": "Macduff",
+      "pitch": 1,
+      "text": "Si tu savais, quelle désolation !"
+    },
+    {
+      "n": 15,
+      "file": "a2s4_015.mp3",
+      "speaker": "Malcolm",
+      "voiceCharacter": "Malcolm",
+      "pitch": 2,
+      "text": "Le Pen a pris le pouvoir ?"
+    },
+    {
+      "n": 16,
+      "file": "a2s4_016.mp3",
+      "speaker": "Macduff",
+      "voiceCharacter": "Macduff",
+      "pitch": 1,
+      "text": "C’est aussi tragique !"
+    },
+    {
+      "n": 17,
+      "file": "a2s4_017.mp3",
+      "speaker": "Malcolm",
+      "voiceCharacter": "Malcolm",
+      "pitch": 2,
+      "text": "Mélenchon est devenu 1er Ministre !"
+    },
+    {
+      "n": 18,
+      "file": "a2s4_018.mp3",
+      "speaker": "Macduff",
+      "voiceCharacter": "Macduff",
+      "pitch": 1,
+      "text": "(revenant vers le lit royal) Mais non, voyons, on vient d’assassiner ton père Le Roi Duncan."
+    },
+    {
+      "n": 19,
+      "file": "a2s4_019.mp3",
+      "speaker": "Malcolm",
+      "voiceCharacter": "Malcolm",
+      "pitch": 2,
+      "text": "(entrant, puis découvrant la scène) Ah, mon Dieu ! Mais enfin, qui a pu vouloir mettre fin à sa vie de manière aussi cruelle ?"
+    },
+    {
+      "n": 20,
+      "file": "a2s4_020.mp3",
+      "speaker": "Macduff",
+      "voiceCharacter": "Macduff",
+      "pitch": 1,
+      "text": "Regarde les gardes sont couverts de sang et les couteaux semblent témoigner de leur crime."
+    },
+    {
+      "n": 21,
+      "file": "a2s4_021.mp3",
+      "speaker": "Macduff",
+      "voiceCharacter": "Macduff",
+      "pitch": 1,
+      "text": "Ouéah"
+    },
+    {
+      "n": 22,
+      "file": "a2s4_022.mp3",
+      "speaker": "Malcolm",
+      "voiceCharacter": "Malcolm",
+      "pitch": 2,
+      "text": "Ouéah"
+    },
+    {
+      "n": 23,
+      "file": "a2s4_023.mp3",
+      "speaker": "Macduff",
+      "voiceCharacter": "Macduff",
+      "pitch": 1,
+      "text": "Ouéah"
+    },
+    {
+      "n": 24,
+      "file": "a2s4_024.mp3",
+      "speaker": "Malcolm",
+      "voiceCharacter": "Malcolm",
+      "pitch": 2,
+      "text": "Ouéah"
+    },
+    {
+      "n": 25,
+      "file": "a2s4_025.mp3",
+      "speaker": "Macduff + Malcolm",
+      "voiceCharacter": "Macduff",
+      "pitch": 1,
+      "text": "Dans son lit, son tout petit lit\nOn a tué le Roi cette nuit\nOn a voulu mett’fin à sa vie\nOn a tué le Roi cette nuit"
+    },
+    {
+      "n": 26,
+      "file": "a2s4_026.mp3",
+      "speaker": "Gardes 1 2",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "(se relevant) Ah ou- ou – ou wimboé (puis retombant)."
+    },
+    {
+      "n": 27,
+      "file": "a2s4_027.mp3",
+      "speaker": "Malcolm",
+      "voiceCharacter": "Malcolm",
+      "pitch": 2,
+      "text": "(sortant) Je ne peux rester une seconde de plus ici !"
+    }
+  ]
+}

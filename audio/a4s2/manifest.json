@@ -1,0 +1,144 @@
+{
+  "sceneId": "a4s2",
+  "label": "Acte 4 — Scène 2",
+  "title": "Lady Macbeth et son obsession",
+  "count": 17,
+  "files": [
+    {
+      "n": 1,
+      "file": "a4s2_001.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Ah ! cette maudite tache ne partira donc jamais ! Qui aurait cru que le vieux Roi Duncan avait tant de sang dans le corps ! …"
+    },
+    {
+      "n": 2,
+      "file": "a4s2_002.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Elle se lave les mains sans relâche"
+    },
+    {
+      "n": 3,
+      "file": "a4s2_003.mp3",
+      "speaker": "Médecin",
+      "voiceCharacter": "Médecin",
+      "pitch": 0,
+      "text": "Je connais des personnes qui se promenaient dans leur sommeil – Lady Macbeth semble bien troublée tout de même… Cette maladie est au-dessus de mon art…"
+    },
+    {
+      "n": 4,
+      "file": "a4s2_004.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "(puis sentant l’air ambiant, et reniflant sans cesse) Il y a une odeur de sang… Comment faire disparaître et purifier tout ceci ! … Ah !.. (se dirigeant vers public)"
+    },
+    {
+      "n": 5,
+      "file": "a4s2_005.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Pourvu qu’elle ne tombe pas !"
+    },
+    {
+      "n": 6,
+      "file": "a4s2_006.mp3",
+      "speaker": "Médecin",
+      "voiceCharacter": "Médecin",
+      "pitch": 0,
+      "text": "Elle est déjà tombée… dans un sommeil second !"
+    },
+    {
+      "n": 7,
+      "file": "a4s2_007.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Regardez, comme elle se dirige directement vers cet homme !"
+    },
+    {
+      "n": 8,
+      "file": "a4s2_008.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Ah ! ça sent le mâle ! Au lit ! Au lit ! Venez, donnez-moi votre main ! … Ah, ça sent le mâle !"
+    },
+    {
+      "n": 9,
+      "file": "a4s2_009.mp3",
+      "speaker": "Médecin",
+      "voiceCharacter": "Médecin",
+      "pitch": 0,
+      "text": "Il faut croire que c’était un mâle attendu !"
+    },
+    {
+      "n": 10,
+      "file": "a4s2_010.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Ou un mâle adroit !..."
+    },
+    {
+      "n": 11,
+      "file": "a4s2_011.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "(entraînant l’homme du public et revenant sur scène) Lavez vos mains , mettez votre robe de nuit, ne savez-vous pas que Banquo a été enterré ; il ne peut pas sortir de son tombeau !"
+    },
+    {
+      "n": 12,
+      "file": "a4s2_012.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Qu’est-ce qu’elle raconte ? Va-t-elle retourner à son lit ?"
+    },
+    {
+      "n": 13,
+      "file": "a4s2_013.mp3",
+      "speaker": "Médecin",
+      "voiceCharacter": "Médecin",
+      "pitch": 0,
+      "text": "Tout droit."
+    },
+    {
+      "n": 14,
+      "file": "a4s2_014.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "(arrivée à hauteur de Macbeth, elle s’arrête et hume l’air. Elle lâche la main de l’homme du public) Ah ! Mais ça sent le mâle ici, ça sent la bête … Comme un Mac animal, un Mac bête… (reprise Metro Goldwynn Meyer- Lion) … mais et ça sent aussi le mal, oui surtout le mal ! (Elle sort, Macbeth)."
+    },
+    {
+      "n": 15,
+      "file": "a4s2_015.mp3",
+      "speaker": "Médecin",
+      "voiceCharacter": "Médecin",
+      "pitch": 0,
+      "text": "Il a été murmuré de terribles secrets ! Des actions contre nature peuvent produire des désordres contre nature !"
+    },
+    {
+      "n": 16,
+      "file": "a4s2_016.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Que faire, Docteur ?"
+    },
+    {
+      "n": 17,
+      "file": "a4s2_017.mp3",
+      "speaker": "Médecin",
+      "voiceCharacter": "Médecin",
+      "pitch": 0,
+      "text": "Ayez toujours l’œil sur elle et écartez d’elle tout ce qui pourrait la déranger. Mais pour l’instant, détendez-vous pour retrouver votre tranquillité. (Le médecin sort, Macbeth est seul sur scène)"
+    }
+  ]
+}

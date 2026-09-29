@@ -1,0 +1,168 @@
+{
+  "sceneId": "a1s4",
+  "label": "Acte I · Scène 4",
+  "title": "Au palais du Roi, Duncan concrétise la prophétie",
+  "count": 20,
+  "files": [
+    {
+      "n": 1,
+      "file": "a1s4_001.mp3",
+      "speaker": "Duncan",
+      "voiceCharacter": "Duncan",
+      "pitch": -2,
+      "text": "Ah vous voilà ! Valeureux chevaliers ! Entrez !"
+    },
+    {
+      "n": 2,
+      "file": "a1s4_002.mp3",
+      "speaker": "Macbeth et Banco",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Bonjour votre majesté, Bonjour votre Majesté, Je salue votre Majesté,…"
+    },
+    {
+      "n": 3,
+      "file": "a1s4_003.mp3",
+      "speaker": "Duncan",
+      "voiceCharacter": "Duncan",
+      "pitch": -2,
+      "text": "Sachez que votre victoire sur la menace norvégienne renforce ma couronne."
+    },
+    {
+      "n": 4,
+      "file": "a1s4_004.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Nous sommes à votre servi…"
+    },
+    {
+      "n": 5,
+      "file": "a1s4_005.mp3",
+      "speaker": "Malcolm",
+      "voiceCharacter": "Malcolm",
+      "pitch": 2,
+      "text": "Père, votre Majesté, Banco, Macbeth,"
+    },
+    {
+      "n": 6,
+      "file": "a1s4_006.mp3",
+      "speaker": "Duncan",
+      "voiceCharacter": "Duncan",
+      "pitch": -2,
+      "text": "Ah, mon fils Malcolm !"
+    },
+    {
+      "n": 7,
+      "file": "a1s4_007.mp3",
+      "speaker": "Banco",
+      "voiceCharacter": "Banco",
+      "pitch": 0,
+      "text": "Non ! Mais il nous coupe la parole le fiston !"
+    },
+    {
+      "n": 8,
+      "file": "a1s4_008.mp3",
+      "speaker": "Malcolm",
+      "voiceCharacter": "Malcolm",
+      "pitch": 2,
+      "text": "après avoir fait couper une tête, il m’est tout à fait facile de couper la parole."
+    },
+    {
+      "n": 9,
+      "file": "a1s4_009.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Couper la tête ?"
+    },
+    {
+      "n": 10,
+      "file": "a1s4_010.mp3",
+      "speaker": "Banco",
+      "voiceCharacter": "Banco",
+      "pitch": 0,
+      "text": "mais de qui?"
+    },
+    {
+      "n": 11,
+      "file": "a1s4_011.mp3",
+      "speaker": "Duncan",
+      "voiceCharacter": "Duncan",
+      "pitch": -2,
+      "text": "Du traître !"
+    },
+    {
+      "n": 12,
+      "file": "a1s4_012.mp3",
+      "speaker": "Malcolm",
+      "voiceCharacter": "Malcolm",
+      "pitch": 2,
+      "text": "De ce renégat de Comte de Cador !"
+    },
+    {
+      "n": 13,
+      "file": "a1s4_013.mp3",
+      "speaker": "Duncan",
+      "voiceCharacter": "Duncan",
+      "pitch": -2,
+      "text": "Grâce à tes faits héroïques, ce titre désormais t’échoit, mon brave Macbeth."
+    },
+    {
+      "n": 14,
+      "file": "a1s4_014.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Qui m’échoit ? Donc, j’ai pas l’choix."
+    },
+    {
+      "n": 15,
+      "file": "a1s4_015.mp3",
+      "speaker": "Duncan",
+      "voiceCharacter": "Duncan",
+      "pitch": -2,
+      "text": "En effet à partir de ce jour, tu deviens titré au plus haut rang : tu es Macbeth, Comte de Cador !"
+    },
+    {
+      "n": 16,
+      "file": "a1s4_016.mp3",
+      "speaker": "Malcolm",
+      "voiceCharacter": "Malcolm",
+      "pitch": 2,
+      "text": "Oui/Lui, Cador, tous les jours, un peu plus fort!"
+    },
+    {
+      "n": 17,
+      "file": "a1s4_017.mp3",
+      "speaker": "Banco",
+      "voiceCharacter": "Banco",
+      "pitch": 0,
+      "text": "Lui, Cador ça alors c’est un peu fort !"
+    },
+    {
+      "n": 18,
+      "file": "a1s4_018.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Oui, Cador, c’était prédit dans mon sort !"
+    },
+    {
+      "n": 19,
+      "file": "a1s4_019.mp3",
+      "speaker": "Duncan",
+      "voiceCharacter": "Duncan",
+      "pitch": -2,
+      "text": "Bien, bien, ne traînons plus, Macbeth, allez informer votre épouse de votre titre sur le champ et précisez que je veux vous honorer de ma visite en votre demeure."
+    },
+    {
+      "n": 20,
+      "file": "a1s4_020.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Ainsi, les créatures-arbres rencontrées portaient-elles en elles un fruit de vérité ? Fruit de vérité, ou fruit défendu…Le pouvoir me tend les bras. Je dois en informer ma Lady, Lady Commandement."
+    }
+  ]
+}

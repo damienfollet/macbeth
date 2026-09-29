@@ -1,0 +1,32 @@
+{
+  "sceneId": "a2intro",
+  "label": "Acte 2 — Introduction",
+  "title": "L’arme du crime",
+  "count": 3,
+  "files": [
+    {
+      "n": 1,
+      "file": "a2intro_001.mp3",
+      "speaker": "Présentateur",
+      "voiceCharacter": "Présentateur",
+      "pitch": 0,
+      "text": "Vous hésitez souvent avant de prendre vos décisions ? Avec ce couteau vous pourrez trancher ! Idéal pour vos viandes crues ou cuites. N’attendez plus. Ce couteau est disponible dans toutes les boutiques Francis Lalame au prix de 40 livres."
+    },
+    {
+      "n": 2,
+      "file": "a2intro_002.mp3",
+      "speaker": "Présentateur",
+      "voiceCharacter": "Présentateur",
+      "pitch": 0,
+      "text": "Votre viande vous échappe ? Devenez maître de vos gigots, méchouis et cochonailles, saisissez –les grâce au poignard Cotrafic, avec le poignard Cotrafic, gardez votre festin en main pour de meilleurs lendemains ; Le poignard Cotrafic, l’arme royale par excellence, au prix de 70 livres ! Pour votre consommation…Et bien plus encore !"
+    },
+    {
+      "n": 3,
+      "file": "a2intro_003.mp3",
+      "speaker": "Présentateur",
+      "voiceCharacter": "Présentateur",
+      "pitch": 0,
+      "text": "Marre de passer un temps infini à découper cochons braisés, moutons rôtis ? Facilitez-vous la tâche grâce à la tronçonneuse DECHAINE, aucun os ne vous résistera, obtenez de belles tranches régulières. Pas d’effort nécessaire, coupez un bras, une jambe, tout ce que vous souhaitez, déchaînez-vous avec la tronçonneuse DECHAINE !"
+    }
+  ]
+}

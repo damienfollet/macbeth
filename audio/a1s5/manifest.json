@@ -1,0 +1,208 @@
+{
+  "sceneId": "a1s5",
+  "label": "Acte I · Scène 5",
+  "title": "Château d’Ilsemeur — annonce à Lady Macbeth",
+  "count": 25,
+  "files": [
+    {
+      "n": 1,
+      "file": "a1s5_001.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Oui c’est quoi encore ? Pas moyen d’être tranquille !"
+    },
+    {
+      "n": 2,
+      "file": "a1s5_002.mp3",
+      "speaker": "Messager",
+      "voiceCharacter": "Messager",
+      "pitch": 0,
+      "text": "Un message de la plus grande importance Madame…"
+    },
+    {
+      "n": 3,
+      "file": "a1s5_003.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Mme Lady Commandement, femme de Macbeth ."
+    },
+    {
+      "n": 4,
+      "file": "a1s5_004.mp3",
+      "speaker": "Messager",
+      "voiceCharacter": "Messager",
+      "pitch": 0,
+      "text": "Donc ce message pour vous Lady Macbeth, c’est un SMS"
+    },
+    {
+      "n": 5,
+      "file": "a1s5_005.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Un SMS ?"
+    },
+    {
+      "n": 6,
+      "file": "a1s5_006.mp3",
+      "speaker": "Messager",
+      "voiceCharacter": "Messager",
+      "pitch": 0,
+      "text": "Oui un service de messages secrets de la part de votre mari Macbeth."
+    },
+    {
+      "n": 7,
+      "file": "a1s5_007.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Et pourquoi ton message ne serait pas un piège ?"
+    },
+    {
+      "n": 8,
+      "file": "a1s5_008.mp3",
+      "speaker": "Messager",
+      "voiceCharacter": "Messager",
+      "pitch": 0,
+      "text": "Mais parce que…"
+    },
+    {
+      "n": 9,
+      "file": "a1s5_009.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Qu’est-ce qui me prouve que tu es un messager fiable ?"
+    },
+    {
+      "n": 10,
+      "file": "a1s5_010.mp3",
+      "speaker": "Messager",
+      "voiceCharacter": "Messager",
+      "pitch": 0,
+      "text": "Eh bien, je peux…."
+    },
+    {
+      "n": 11,
+      "file": "a1s5_011.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Sur quels critères t’a-t-on recruté ?"
+    },
+    {
+      "n": 12,
+      "file": "a1s5_012.mp3",
+      "speaker": "Messager",
+      "voiceCharacter": "Messager",
+      "pitch": 0,
+      "text": "Madame, je vous en prie, si vous voulez que je vous réponde, laissez-moi parler ?"
+    },
+    {
+      "n": 13,
+      "file": "a1s5_013.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Eh bien, parlez."
+    },
+    {
+      "n": 14,
+      "file": "a1s5_014.mp3",
+      "speaker": "Messager",
+      "voiceCharacter": "Messager",
+      "pitch": 0,
+      "text": "A condition de m’en donner l’occasion, à moi, employé d’Orange, laissez faire !"
+    },
+    {
+      "n": 15,
+      "file": "a1s5_015.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Faîtes vite !"
+    },
+    {
+      "n": 16,
+      "file": "a1s5_016.mp3",
+      "speaker": "Messager",
+      "voiceCharacter": "Messager",
+      "pitch": 0,
+      "text": "Moi, Amy, Amy Serre, employé d’Orange, peux vous assurer que, je suis mandaté.e pour livrer des messages !"
+    },
+    {
+      "n": 17,
+      "file": "a1s5_017.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Et alors ?"
+    },
+    {
+      "n": 18,
+      "file": "a1s5_018.mp3",
+      "speaker": "Messager",
+      "voiceCharacter": "Messager",
+      "pitch": 0,
+      "text": "Et alors, voici ce message, grâce à mon sens de la relation, car comme tous mes collègues, j’ai la fibre, voici donc"
+    },
+    {
+      "n": 19,
+      "file": "a1s5_019.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Ca alors! Mon Macbeth, héros de la bataille contre les Norvégiens …. Promu Comte de Cador… Et le Roi Duncan qui nous fait l’honneur de sa visite… Voilà une opportunité inattendue !"
+    },
+    {
+      "n": 20,
+      "file": "a1s5_020.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Mais qu’est-ce que vous faîtes là ?"
+    },
+    {
+      "n": 21,
+      "file": "a1s5_021.mp3",
+      "speaker": "Messager",
+      "voiceCharacter": "Messager",
+      "pitch": 0,
+      "text": "C’est-à-dire que la 1ère commission c’’était pour moi, mais la 2ème c’est pour mon supérieur, Votre Majesté…"
+    },
+    {
+      "n": 22,
+      "file": "a1s5_022.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Ah bon ? C’est qui votre supérieur ?"
+    },
+    {
+      "n": 23,
+      "file": "a1s5_023.mp3",
+      "speaker": "Messager",
+      "voiceCharacter": "Messager",
+      "pitch": 0,
+      "text": "Vous devez le connaître, c’est Hubert."
+    },
+    {
+      "n": 24,
+      "file": "a1s5_024.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Tiens, va pour Uber ! Et vous lui direz que c’est pour ses grosses commissions !"
+    },
+    {
+      "n": 25,
+      "file": "a1s5_025.mp3",
+      "speaker": "Messager",
+      "voiceCharacter": "Messager",
+      "pitch": 0,
+      "text": "Comptez sur moi, Lady Commandement."
+    }
+  ]
+}

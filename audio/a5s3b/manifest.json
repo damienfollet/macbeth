@@ -1,0 +1,216 @@
+{
+  "sceneId": "a5s3b",
+  "label": "Acte 5 — Scène 3",
+  "title": "Le dernier Combat",
+  "count": 26,
+  "files": [
+    {
+      "n": 1,
+      "file": "a5s3b_001.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "(faisant face à la forêt -qui reprend « Des branches, … » et fait avancer les branches) Avance ! Maudite forêt de Birnam, avant que tu envahisses Ilsemeur, mon château, je t’aurai débranchée !"
+    },
+    {
+      "n": 2,
+      "file": "a5s3b_002.mp3",
+      "speaker": "Macduff",
+      "voiceCharacter": "Macduff",
+      "pitch": 1,
+      "text": "(apparaît sur scène derrière Macbeth) Oui, mais tu oublies les chevaliers que nous sommes, Macbeth, Roi d’Ecosse…"
+    },
+    {
+      "n": 3,
+      "file": "a5s3b_003.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Oui, Macduff, je suis Roi d’Ecosse, et peux ordonner ta mise à mort sans délai !"
+    },
+    {
+      "n": 4,
+      "file": "a5s3b_004.mp3",
+      "speaker": "Macduff",
+      "voiceCharacter": "Macduff",
+      "pitch": 1,
+      "text": "Roi d’Ecosse et tyran, meurtrier de ma famille (dégainant son épée) et ça tu le sais !"
+    },
+    {
+      "n": 5,
+      "file": "a5s3b_005.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Oui, je le sais – (il essaie de dégainer, mais son épée est bloquée) mais ma vie est sous un charme qui me garantit ce titre suprême !"
+    },
+    {
+      "n": 6,
+      "file": "a5s3b_006.mp3",
+      "speaker": "Macduff",
+      "voiceCharacter": "Macduff",
+      "pitch": 1,
+      "text": "(s’approchant, épée à la main) Tiens, tiens, qui t’a rapporté ces vérités ?"
+    },
+    {
+      "n": 7,
+      "file": "a5s3b_007.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "(toujours tirant sur son épée, sans succès) Les sœurs de la forêt. Je ne peux craindre un homme né naturellement d’une femme !"
+    },
+    {
+      "n": 8,
+      "file": "a5s3b_008.mp3",
+      "speaker": "Macduff",
+      "voiceCharacter": "Macduff",
+      "pitch": 1,
+      "text": "Tiens, tiens, elles t’ont dit ça ?"
+    },
+    {
+      "n": 9,
+      "file": "a5s3b_009.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "(dégainant son épée nerveusement – mais son armure inférieure lui couvrant bassin et jambes tombe – il se retrouve en calçon)"
+    },
+    {
+      "n": 10,
+      "file": "a5s3b_010.mp3",
+      "speaker": "Macduff",
+      "voiceCharacter": "Macduff",
+      "pitch": 1,
+      "text": "(s’esclaffe) Le Roi est presque nu…"
+    },
+    {
+      "n": 11,
+      "file": "a5s3b_011.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Maudit Macduff ! Amène-toi maintenant que j’ai dégainé mon épée !"
+    },
+    {
+      "n": 12,
+      "file": "a5s3b_012.mp3",
+      "speaker": "Macduff",
+      "voiceCharacter": "Macduff",
+      "pitch": 1,
+      "text": "Oui, tu l’as dégainée, mais en tyran ! En tirant trop fort ! (Ils se battent)"
+    },
+    {
+      "n": 13,
+      "file": "a5s3b_013.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Et rappelle toi que je ne crains pas, homme né d’une femme !"
+    },
+    {
+      "n": 14,
+      "file": "a5s3b_014.mp3",
+      "speaker": "Macduff",
+      "voiceCharacter": "Macduff",
+      "pitch": 1,
+      "text": "Tu oublies que je suis né par Césarienne !"
+    },
+    {
+      "n": 15,
+      "file": "a5s3b_015.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "(soudain abattu) Alors, s’il en est ainsi, je ne veux point combattre contre toi !"
+    },
+    {
+      "n": 16,
+      "file": "a5s3b_016.mp3",
+      "speaker": "Macduff",
+      "voiceCharacter": "Macduff",
+      "pitch": 1,
+      "text": "Lâche que tu es !"
+    },
+    {
+      "n": 17,
+      "file": "a5s3b_017.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Oui, mais imagine-toi ! Cette nouvelle me coupe les pattes !"
+    },
+    {
+      "n": 18,
+      "file": "a5s3b_018.mp3",
+      "speaker": "Macduff",
+      "voiceCharacter": "Macduff",
+      "pitch": 1,
+      "text": "Et alors ? Ca m’fait une belle jambe ! Rends-toi donc à notre peuple, pour être jugé !"
+    },
+    {
+      "n": 19,
+      "file": "a5s3b_019.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "S’il en est ainsi, battons-nous ! Ces sorcières ne sont que des vilaines fées !"
+    },
+    {
+      "n": 20,
+      "file": "a5s3b_020.mp3",
+      "speaker": "Macduff",
+      "voiceCharacter": "Macduff",
+      "pitch": 1,
+      "text": "Elles semblent dire la vérité"
+    },
+    {
+      "n": 21,
+      "file": "a5s3b_021.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Qu’en sais-tu, Macduff de mes deux ! Viens plutôt goûter mon épée !"
+    },
+    {
+      "n": 22,
+      "file": "a5s3b_022.mp3",
+      "speaker": "Foule",
+      "voiceCharacter": "Foule",
+      "pitch": 0,
+      "text": "Vive Malcom, Roi d’Ecosse !"
+    },
+    {
+      "n": 23,
+      "file": "a5s3b_023.mp3",
+      "speaker": "Malcolm",
+      "voiceCharacter": "Malcolm",
+      "pitch": 2,
+      "text": "Mais où est Macduff, notre valeureux guerrier, qui a mis fin à la tyrannie de Macbeth ?"
+    },
+    {
+      "n": 24,
+      "file": "a5s3b_024.mp3",
+      "speaker": "Macduff",
+      "voiceCharacter": "Macduff",
+      "pitch": 1,
+      "text": "(arrivant – ou y faisant allusion pour être moins gore- avec la tête de Macbeth sur une pique/ un plateau) Votre Majesté, est-ce que cette tête vous revient ?"
+    },
+    {
+      "n": 25,
+      "file": "a5s3b_025.mp3",
+      "speaker": "Malcolm",
+      "voiceCharacter": "Malcolm",
+      "pitch": 2,
+      "text": "Débarrassons-nous à jamais notre pays de cette tête"
+    },
+    {
+      "n": 26,
+      "file": "a5s3b_026.mp3",
+      "speaker": "Macduff",
+      "voiceCharacter": "Macduff",
+      "pitch": 1,
+      "text": "Surtout qu’on lui a déjà coupé les jambes !"
+    }
+  ]
+}

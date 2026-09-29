@@ -1,0 +1,80 @@
+{
+  "sceneId": "prologue",
+  "label": "Prologue",
+  "title": "Prologue",
+  "count": 9,
+  "files": [
+    {
+      "n": 1,
+      "file": "prologue_001.mp3",
+      "speaker": "Présentateur",
+      "voiceCharacter": "Présentateur",
+      "pitch": 0,
+      "text": "Mesdames Messieurs nous sommes heureux d’accueillir ce soir monsieur Sherlock Ness, grand spécialiste de l’histoire britannique et plus spécialement de l’Écosse."
+    },
+    {
+      "n": 2,
+      "file": "prologue_002.mp3",
+      "speaker": "Présentateur",
+      "voiceCharacter": "Présentateur",
+      "pitch": 0,
+      "text": "Monsieur Sherlock Ness, sommité de l’histoire écossaise, va nous parler de l’histoire de ce pays pour les siècles et des siècles, amen… ah, amenez vous Monsieur Ness."
+    },
+    {
+      "n": 3,
+      "file": "prologue_003.mp3",
+      "speaker": "Présentateur",
+      "voiceCharacter": "Présentateur",
+      "pitch": 0,
+      "text": "Arrêtez-moi cette musique ! …. Arrêtez-moi cette musique ! La corne m’use !"
+    },
+    {
+      "n": 4,
+      "file": "prologue_004.mp3",
+      "speaker": "Présentateur",
+      "voiceCharacter": "Présentateur",
+      "pitch": 0,
+      "text": "Voilà, …bien, à présent, direction l’Écosse aux 10e et 11e siècles. Monsieur Ness -dont on m’a dit souvent « c’est bien ce qu’a fait Ness ! » - Monsieur Ness, donc, la parole est à vous."
+    },
+    {
+      "n": 5,
+      "file": "prologue_005.mp3",
+      "speaker": "Sherlock Ness",
+      "voiceCharacter": "Sherlock Ness",
+      "pitch": -2,
+      "text": "Chers amis, notre histoire commence il y a environ 1000 ans au pays des Scottish, pays de la Calédonie qu’allait donner l’Écosse – euh Pays de la Calédonie. Donc, en ces temps reculés vivaient sur cette île : des Vikings, des Celtes, du sel, du poivre, 3 œufs, 2 cuillerées à soupe d’huile, 4 cuisses de poulet, des petits pois à écosser, à Ecossais ?, Pois à écosser ? …."
+    },
+    {
+      "n": 6,
+      "file": "prologue_006.mp3",
+      "speaker": "Sherlock Ness",
+      "voiceCharacter": "Sherlock Ness",
+      "pitch": -2,
+      "text": "Hmmmm … Ah !...En ces temps reculés au 11ème siècle vivaient donc sur cette île des Vikings, des Celtes et des Pictes. Tous ces peuples vont cohabiter sous le Royaume de McDonald’s."
+    },
+    {
+      "n": 7,
+      "file": "prologue_007.mp3",
+      "speaker": "Sherlock Ness",
+      "voiceCharacter": "Sherlock Ness",
+      "pitch": -2,
+      "text": "Le pays connaît alors un épisode de développement alimentaire sans précédent, sous notamment 2 rois, 2 chefs : le 1er Etchebestof McDonald’s, puis Maxime Best of McDonald avant de subir les conséquences d’une hypertension généralisée par les savarins…. euh les souverains de l’époque."
+    },
+    {
+      "n": 8,
+      "file": "prologue_008.mp3",
+      "speaker": "Sherlock Ness",
+      "voiceCharacter": "Sherlock Ness",
+      "pitch": -2,
+      "text": "C’est alors que leur succède le Roi Duncan pour rétablir un régime sans Celtes. L’Ecosse reprend à l’eau-de-vie, … L’Ecosse reprend alors vie malgré la menace norvégienne. Nous sommes en 1040 et une ère nouvelle s’ouvre pour le Royaume."
+    },
+    {
+      "n": 9,
+      "file": "prologue_009.mp3",
+      "speaker": "Sherlock Ness",
+      "voiceCharacter": "Sherlock Ness",
+      "pitch": -2,
+      "text": "L’Ecosse reprend alors vie malgré la menace norvégienne. Nous sommes en 1040 et une ère nouvelle s’ouvre pour le Royaume avec le ."
+    }
+  ]
+}

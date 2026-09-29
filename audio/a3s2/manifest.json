@@ -1,0 +1,440 @@
+{
+  "sceneId": "a3s2",
+  "label": "Acte 3 — Scène 2",
+  "title": "Un crime organisé",
+  "count": 54,
+  "files": [
+    {
+      "n": 1,
+      "file": "a3s2_001.mp3",
+      "speaker": "AG1",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "ah ! tu m’as fait peur"
+    },
+    {
+      "n": 2,
+      "file": "a3s2_002.mp3",
+      "speaker": "AG2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "Eh toi, t’aurais pu faire attention !"
+    },
+    {
+      "n": 3,
+      "file": "a3s2_003.mp3",
+      "speaker": "AG1",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "Je faisais justement attention. (Un temps)"
+    },
+    {
+      "n": 4,
+      "file": "a3s2_004.mp3",
+      "speaker": "AG2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "je te donne le mot « 2 passes »."
+    },
+    {
+      "n": 5,
+      "file": "a3s2_005.mp3",
+      "speaker": "AG1",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "Non, c’est 2 passes"
+    },
+    {
+      "n": 6,
+      "file": "a3s2_006.mp3",
+      "speaker": "AG2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "Donc on est bien d’accord, le code c’est « 2 passes »."
+    },
+    {
+      "n": 7,
+      "file": "a3s2_007.mp3",
+      "speaker": "AG1",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "Ok, c’est le mot « 2 passes »."
+    },
+    {
+      "n": 8,
+      "file": "a3s2_008.mp3",
+      "speaker": "AG2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "Bon, qu’est ce que tu fous avec ce pantalon ?"
+    },
+    {
+      "n": 9,
+      "file": "a3s2_009.mp3",
+      "speaker": "AG1",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "Quoi ? Qu’est-ce qu’il a mon pantalon ?"
+    },
+    {
+      "n": 10,
+      "file": "a3s2_010.mp3",
+      "speaker": "AG2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "T’as pas vu que les poches de derrière sont devant ?"
+    },
+    {
+      "n": 11,
+      "file": "a3s2_011.mp3",
+      "speaker": "AG1",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "Et alors ? T’as pas compris qu’ainsi, j’aurai pas besoin de m’retourner pour pisser !"
+    },
+    {
+      "n": 12,
+      "file": "a3s2_012.mp3",
+      "speaker": "AG2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "Ah, bon … et tu l’as trouvé où ?"
+    },
+    {
+      "n": 13,
+      "file": "a3s2_013.mp3",
+      "speaker": "AG1",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "Allons, je l’ai fait venir en kit !"
+    },
+    {
+      "n": 14,
+      "file": "a3s2_014.mp3",
+      "speaker": "AG2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "Ah ouais, pas con… faire venir un pantalon en kit."
+    },
+    {
+      "n": 15,
+      "file": "a3s2_015.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Notre mot"
+    },
+    {
+      "n": 16,
+      "file": "a3s2_016.mp3",
+      "speaker": "AG1 + AG2",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "« 2 passes »."
+    },
+    {
+      "n": 17,
+      "file": "a3s2_017.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "(rassuré) : Bien, je vois que le secret a été bien gardé . (Les mettant dans la confidence). Je vais vous mandater pour une lourde tâche."
+    },
+    {
+      "n": 18,
+      "file": "a3s2_018.mp3",
+      "speaker": "AG1 + AG2",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "Ah bon ? Une lourde tâche ?"
+    },
+    {
+      "n": 19,
+      "file": "a3s2_019.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Vous avez compris que Banquo vous veut du mal ? ( en aparté ) et ses enfants sont censés prendre ma place… en tant que roi, il est une menace,\nAurais-je tué Duncan pour que ses enfants en profitent !"
+    },
+    {
+      "n": 20,
+      "file": "a3s2_020.mp3",
+      "speaker": "AG1",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "Qu’est-ce que vous voulez dire , Sire ?"
+    },
+    {
+      "n": 21,
+      "file": "a3s2_021.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Allons, ce que vous avez découvert hier lors de notre rencontre ?"
+    },
+    {
+      "n": 22,
+      "file": "a3s2_022.mp3",
+      "speaker": "AG2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "Ah oui, que nous étions un lointain parent de Banquo (AG1 acquiesce)."
+    },
+    {
+      "n": 23,
+      "file": "a3s2_023.mp3",
+      "speaker": "AG1",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "Et même que vous avez dit, que nos ancêtres étaient pas « fute, fute »"
+    },
+    {
+      "n": 24,
+      "file": "a3s2_024.mp3",
+      "speaker": "AG2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "(s’amusant entre eux) Eh, oui, et comme ils étaient pas fute fute, ils sont passés au kilt"
+    },
+    {
+      "n": 25,
+      "file": "a3s2_025.mp3",
+      "speaker": "AG1",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "(riant de plus belle) Pas cons, quand même, c’est peut-être eux qui l’ont inventé !"
+    },
+    {
+      "n": 26,
+      "file": "a3s2_026.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "(s’emportant, et impressionnant AG1 AG2) : Ecoutez, bande d’idiots, j’ai aussi parlé de la misère et la pauvreté que Banquo a pu provoquer dans vos familles."
+    },
+    {
+      "n": 27,
+      "file": "a3s2_027.mp3",
+      "speaker": "AG1",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "(naïf) Ah oui, ça c’est vrai aussi, vous l’avez dit Sire."
+    },
+    {
+      "n": 28,
+      "file": "a3s2_028.mp3",
+      "speaker": "AG2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "(s’appesantissant sur leur sort) Oui, quand je pense à la masure dans laquelle mes aïeuls et mes parents vivaient !"
+    },
+    {
+      "n": 29,
+      "file": "a3s2_029.mp3",
+      "speaker": "AG1",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "Moi, pareil, c’était pas une masure, c’était un taudis"
+    },
+    {
+      "n": 30,
+      "file": "a3s2_030.mp3",
+      "speaker": "AG2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "Et c’était pas Le Roi de l’époque qui les a aidés ! (Macbeth s’agace)"
+    },
+    {
+      "n": 31,
+      "file": "a3s2_031.mp3",
+      "speaker": "AG1",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "Oh, non ! Pour les aider à réparer, il aurait fallu un…."
+    },
+    {
+      "n": 32,
+      "file": "a3s2_032.mp3",
+      "speaker": "AG2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "Un Leroy Merlin ! (AG2 AG1 se marrent ensemble)"
+    },
+    {
+      "n": 33,
+      "file": "a3s2_033.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Ca suffit ! Donc vous vous rendez compte du tort que Banquo a pu vous causer ?"
+    },
+    {
+      "n": 34,
+      "file": "a3s2_034.mp3",
+      "speaker": "AG1 + AG2",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "Oh, oui …"
+    },
+    {
+      "n": 35,
+      "file": "a3s2_035.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Donc le seul moyen d’enrayer cette spirale est de vous venger en éliminant Banquo ?"
+    },
+    {
+      "n": 36,
+      "file": "a3s2_036.mp3",
+      "speaker": "AG1 + AG2",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "En éliminant Banquo ?"
+    },
+    {
+      "n": 37,
+      "file": "a3s2_037.mp3",
+      "speaker": "AG1",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "Ah oui, quand même !"
+    },
+    {
+      "n": 38,
+      "file": "a3s2_038.mp3",
+      "speaker": "AG2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "Ca rigole pas ."
+    },
+    {
+      "n": 39,
+      "file": "a3s2_039.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "(redevenant plus mielleux) Enfin, vous allez le supprimer, gentiment, calmement."
+    },
+    {
+      "n": 40,
+      "file": "a3s2_040.mp3",
+      "speaker": "AG1",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "Gentiment."
+    },
+    {
+      "n": 41,
+      "file": "a3s2_041.mp3",
+      "speaker": "AG2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "Calmement."
+    },
+    {
+      "n": 42,
+      "file": "a3s2_042.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "J’ai invité Banquo à mon banquet d’intronisation ; il doit donc se présenter ici avant ce soir."
+    },
+    {
+      "n": 43,
+      "file": "a3s2_043.mp3",
+      "speaker": "AG1",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "(répétant comme pout mémoriser) Banquo invité…"
+    },
+    {
+      "n": 44,
+      "file": "a3s2_044.mp3",
+      "speaker": "AG2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "(comme pour compléter) Pour un banquet"
+    },
+    {
+      "n": 45,
+      "file": "a3s2_045.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Dès son arrivée, il faudra le faire disparaître"
+    },
+    {
+      "n": 46,
+      "file": "a3s2_046.mp3",
+      "speaker": "AG1",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "(même jeu) Banquo arrivé"
+    },
+    {
+      "n": 47,
+      "file": "a3s2_047.mp3",
+      "speaker": "AG2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "Faire disparaître"
+    },
+    {
+      "n": 48,
+      "file": "a3s2_048.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Mais vous veillerez à ne pas laisser de trace."
+    },
+    {
+      "n": 49,
+      "file": "a3s2_049.mp3",
+      "speaker": "AG1",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "Faudra qu’on fasse le ménage, sire ?"
+    },
+    {
+      "n": 50,
+      "file": "a3s2_050.mp3",
+      "speaker": "AG2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "Et qu’on enlève nos chaussures, Sire ?"
+    },
+    {
+      "n": 51,
+      "file": "a3s2_051.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "(exaspéré) Vous vous débrouillez et surtout, tenez-moi au courant, une fois votre tâche exécutée. ( il quitte la scène)"
+    },
+    {
+      "n": 52,
+      "file": "a3s2_052.mp3",
+      "speaker": "AG1",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "Il est pas commode, le Roi Macbeth !"
+    },
+    {
+      "n": 53,
+      "file": "a3s2_053.mp3",
+      "speaker": "AG2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "Dis, donc, comment qu’on va faire ?"
+    },
+    {
+      "n": 54,
+      "file": "a3s2_054.mp3",
+      "speaker": "AG1",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "Beh oui, comment qu’on va faire ?"
+    }
+  ]
+}

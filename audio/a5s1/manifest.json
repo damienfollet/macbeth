@@ -1,0 +1,112 @@
+{
+  "sceneId": "a5s1",
+  "label": "Acte 5 — Scène 1",
+  "title": "L’attaque se prépare",
+  "count": 13,
+  "files": [
+    {
+      "n": 1,
+      "file": "a5s1_001.mp3",
+      "speaker": "Macduff",
+      "voiceCharacter": "Macduff",
+      "pitch": 1,
+      "text": "Approchons-nous du château d’Ilsemeur et de son tyran, cette ordure de Macbeth !"
+    },
+    {
+      "n": 2,
+      "file": "a5s1_002.mp3",
+      "speaker": "Malcolm",
+      "voiceCharacter": "Malcolm",
+      "pitch": 2,
+      "text": "Gardez votre sang froid, Macduff, nous devons être prudents pour le vaincre !"
+    },
+    {
+      "n": 3,
+      "file": "a5s1_003.mp3",
+      "speaker": "Macduff",
+      "voiceCharacter": "Macduff",
+      "pitch": 1,
+      "text": "Prudents mais intraitables ! Je vous rappelle qu’il a décimé femmes et enfants – ma propre famille est passée au fil de son épée !"
+    },
+    {
+      "n": 4,
+      "file": "a5s1_004.mp3",
+      "speaker": "Malcolm",
+      "voiceCharacter": "Malcolm",
+      "pitch": 2,
+      "text": "Nous voici à présent dans la forêt de Dunsinane, soyons plus rusés que cruels. Je propose de tailler quelques branchages et d’avancer ainsi masqués pour nous camoufler !"
+    },
+    {
+      "n": 5,
+      "file": "a5s1_005.mp3",
+      "speaker": "Macduff",
+      "voiceCharacter": "Macduff",
+      "pitch": 1,
+      "text": "Et pour éviter le camouflet ! Bonne idée Malcom- voyons voir (se mêlant au public)… il y a pas mal de vieilles souches par ici."
+    },
+    {
+      "n": 6,
+      "file": "a5s1_006.mp3",
+      "speaker": "Malcolm",
+      "voiceCharacter": "Malcolm",
+      "pitch": 2,
+      "text": "(allant sur une autre zone du public) Approche donc par ici, y’a plus de futaies !"
+    },
+    {
+      "n": 7,
+      "file": "a5s1_007.mp3",
+      "speaker": "Macduff",
+      "voiceCharacter": "Macduff",
+      "pitch": 1,
+      "text": "J’espère que c’est des futaies assez futées,… parce que si c’est pas fut’fut ‘ , tu oublies !"
+    },
+    {
+      "n": 8,
+      "file": "a5s1_008.mp3",
+      "speaker": "Malcolm",
+      "voiceCharacter": "Malcolm",
+      "pitch": 2,
+      "text": "(touchant quelques spectateurs/trices) Oh, mais c’est qu’il y a de la verdeur , attention ! le fluide est tonique, vigoureux !"
+    },
+    {
+      "n": 9,
+      "file": "a5s1_009.mp3",
+      "speaker": "Macduff",
+      "voiceCharacter": "Macduff",
+      "pitch": 1,
+      "text": "(arrivant pour vérifier) tonique, tonique, … Ces deux -là sont de vieilles branches…"
+    },
+    {
+      "n": 10,
+      "file": "a5s1_010.mp3",
+      "speaker": "Malcolm",
+      "voiceCharacter": "Malcolm",
+      "pitch": 2,
+      "text": "Evidemment, ils s’connaissent trop ! C’est un peu l’arbre qui cache la forêt !"
+    },
+    {
+      "n": 11,
+      "file": "a5s1_011.mp3",
+      "speaker": "Macduff",
+      "voiceCharacter": "Macduff",
+      "pitch": 1,
+      "text": "Ne traînons plus ! Regarde, j’aperçois à nouveau ce tyran de Macbeth ! (Macbeth dans la pénombre- apparaît toujours avec un (canne bois)club de golf en bois et une boule en forme de mappemonde)"
+    },
+    {
+      "n": 12,
+      "file": "a5s1_012.mp3",
+      "speaker": "Malcolm",
+      "voiceCharacter": "Malcolm",
+      "pitch": 2,
+      "text": "Allons-y (se saisissant d’une poignée de branchages et en en passant aux différents spectateurs d’un rang ou de quelques rangs)."
+    },
+    {
+      "n": 13,
+      "file": "a5s1_013.mp3",
+      "speaker": "Macduff",
+      "voiceCharacter": "Macduff",
+      "pitch": 1,
+      "text": "(imitant Malcom et invitant les spectateurs à chanter de même sur l’air de « Débranche » de France Gall)\n« Des branches, des branches, tous !\nDes branches, des branches, des branches, tous\nPour qu’on avance tous ! » (à doubler/tripler selon adaptation)"
+    }
+  ]
+}

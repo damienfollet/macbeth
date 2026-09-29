@@ -1,0 +1,304 @@
+{
+  "sceneId": "a1s1",
+  "label": "Acte I · Scène 1",
+  "title": "La rencontre des sorcières",
+  "count": 37,
+  "files": [
+    {
+      "n": 1,
+      "file": "a1s1_001.mp3",
+      "speaker": "Fifite",
+      "voiceCharacter": "Fifite",
+      "pitch": 2,
+      "text": "Salut Ririte !"
+    },
+    {
+      "n": 2,
+      "file": "a1s1_002.mp3",
+      "speaker": "Ririte",
+      "voiceCharacter": "Ririte",
+      "pitch": 2,
+      "text": "Salut Fifite !"
+    },
+    {
+      "n": 3,
+      "file": "a1s1_003.mp3",
+      "speaker": "Fifite",
+      "voiceCharacter": "Fifite",
+      "pitch": 2,
+      "text": "Tu n’as pas vu Liloute ?"
+    },
+    {
+      "n": 4,
+      "file": "a1s1_004.mp3",
+      "speaker": "Ririte",
+      "voiceCharacter": "Ririte",
+      "pitch": 2,
+      "text": "Ben non, j’étais chez le meccano (trouver d’autres éléments sur véhicule…)"
+    },
+    {
+      "n": 5,
+      "file": "a1s1_005.mp3",
+      "speaker": "Fifite",
+      "voiceCharacter": "Fifite",
+      "pitch": 2,
+      "text": "Chez le meccano ?"
+    },
+    {
+      "n": 6,
+      "file": "a1s1_006.mp3",
+      "speaker": "Ririte",
+      "voiceCharacter": "Ririte",
+      "pitch": 2,
+      "text": "Oui, j’avais ma révision des 40 balais !"
+    },
+    {
+      "n": 7,
+      "file": "a1s1_007.mp3",
+      "speaker": "Fifite",
+      "voiceCharacter": "Fifite",
+      "pitch": 2,
+      "text": "T’as raison, faut toujours balayer devant sa porte !"
+    },
+    {
+      "n": 8,
+      "file": "a1s1_008.mp3",
+      "speaker": "Liloute",
+      "voiceCharacter": "Liloute",
+      "pitch": -2,
+      "text": "Salut les filles. Désolée, mais il faut bien une voiture balai ; donc me voici !"
+    },
+    {
+      "n": 9,
+      "file": "a1s1_009.mp3",
+      "speaker": "Fifite",
+      "voiceCharacter": "Fifite",
+      "pitch": 2,
+      "text": "Eh, je voulais qu’on s’voie pour savoir quand est-ce qu’on s’voie ?"
+    },
+    {
+      "n": 10,
+      "file": "a1s1_010.mp3",
+      "speaker": "Ririte",
+      "voiceCharacter": "Ririte",
+      "pitch": 2,
+      "text": "Quand est-ce qu’on se rencontre pour la prochaine fois ?"
+    },
+    {
+      "n": 11,
+      "file": "a1s1_011.mp3",
+      "speaker": "Ririte",
+      "voiceCharacter": "Ririte",
+      "pitch": 2,
+      "text": "Oui, pour marquer la victoire de Macbeth ?"
+    },
+    {
+      "n": 12,
+      "file": "a1s1_012.mp3",
+      "speaker": "Liloute",
+      "voiceCharacter": "Liloute",
+      "pitch": -2,
+      "text": "Pour marquer la victoire de Macbeth, et c’est qui c’Macbeth ?"
+    },
+    {
+      "n": 13,
+      "file": "a1s1_013.mp3",
+      "speaker": "Fifite",
+      "voiceCharacter": "Fifite",
+      "pitch": 2,
+      "text": "C’est ce valeureux chevalier et son compère Banco !"
+    },
+    {
+      "n": 14,
+      "file": "a1s1_014.mp3",
+      "speaker": "Ririte",
+      "voiceCharacter": "Ririte",
+      "pitch": 2,
+      "text": "Macbeth, alias Comte de Glamis, Macbeth, qui a gagné et repoussé l’ennemi !"
+    },
+    {
+      "n": 15,
+      "file": "a1s1_015.mp3",
+      "speaker": "Liloute",
+      "voiceCharacter": "Liloute",
+      "pitch": -2,
+      "text": "Non, Macbeth a gagné et repoussé l’ennemi ?"
+    },
+    {
+      "n": 16,
+      "file": "a1s1_016.mp3",
+      "speaker": "Ririte",
+      "voiceCharacter": "Ririte",
+      "pitch": 2,
+      "text": "Mais oui, mais oui, les Norvégiens ! Il les a attirés par gourmandise en leur livrant des plats préparés pour les empoisonner."
+    },
+    {
+      "n": 17,
+      "file": "a1s1_017.mp3",
+      "speaker": "Liloute",
+      "voiceCharacter": "Liloute",
+      "pitch": -2,
+      "text": "Non ? Des plats préparés ?"
+    },
+    {
+      "n": 18,
+      "file": "a1s1_018.mp3",
+      "speaker": "Fifite",
+      "voiceCharacter": "Fifite",
+      "pitch": 2,
+      "text": "Mais oui avec des norvégiennes !"
+    },
+    {
+      "n": 19,
+      "file": "a1s1_019.mp3",
+      "speaker": "Liloute",
+      "voiceCharacter": "Liloute",
+      "pitch": -2,
+      "text": "Non, des Norvégiennes ?"
+    },
+    {
+      "n": 20,
+      "file": "a1s1_020.mp3",
+      "speaker": "Ririte",
+      "voiceCharacter": "Ririte",
+      "pitch": 2,
+      "text": "Ils ont pris des femmes pour les cuisiner !"
+    },
+    {
+      "n": 21,
+      "file": "a1s1_021.mp3",
+      "speaker": "Liloute",
+      "voiceCharacter": "Liloute",
+      "pitch": -2,
+      "text": "Non ? Des femmes pour les cuisiner ?"
+    },
+    {
+      "n": 22,
+      "file": "a1s1_022.mp3",
+      "speaker": "Fifite",
+      "voiceCharacter": "Fifite",
+      "pitch": 2,
+      "text": "Et des hommes aux plats pour les épauler !"
+    },
+    {
+      "n": 23,
+      "file": "a1s1_023.mp3",
+      "speaker": "Liloute",
+      "voiceCharacter": "Liloute",
+      "pitch": -2,
+      "text": "Non ? Et des hommes aux plats pour les épauler ?"
+    },
+    {
+      "n": 24,
+      "file": "a1s1_024.mp3",
+      "speaker": "Ririte",
+      "voiceCharacter": "Ririte",
+      "pitch": 2,
+      "text": "Puis il les a trucidés."
+    },
+    {
+      "n": 25,
+      "file": "a1s1_025.mp3",
+      "speaker": "Liloute",
+      "voiceCharacter": "Liloute",
+      "pitch": -2,
+      "text": "Non ? Il les a trucidés ?"
+    },
+    {
+      "n": 26,
+      "file": "a1s1_026.mp3",
+      "speaker": "Fifite",
+      "voiceCharacter": "Fifite",
+      "pitch": 2,
+      "text": "Bon, on va peut-être s’arrêter là ?"
+    },
+    {
+      "n": 27,
+      "file": "a1s1_027.mp3",
+      "speaker": "Liloute",
+      "voiceCharacter": "Liloute",
+      "pitch": -2,
+      "text": "Non ? on va s’arrêter là ?"
+    },
+    {
+      "n": 28,
+      "file": "a1s1_028.mp3",
+      "speaker": "Ririte",
+      "voiceCharacter": "Ririte",
+      "pitch": 2,
+      "text": "Ah ben non ! On se donne rendez-vous dans la forêt près du château d’Ilsemeur à la prochaine lune – pour annoncer nos prophéties à Macbeth et Banco."
+    },
+    {
+      "n": 29,
+      "file": "a1s1_029.mp3",
+      "speaker": "Liloute",
+      "voiceCharacter": "Liloute",
+      "pitch": -2,
+      "text": "OK, mais dans quel quartier ?"
+    },
+    {
+      "n": 30,
+      "file": "a1s1_030.mp3",
+      "speaker": "Fifite",
+      "voiceCharacter": "Fifite",
+      "pitch": 2,
+      "text": "Et si on prenait le 1er quartier ?"
+    },
+    {
+      "n": 31,
+      "file": "a1s1_031.mp3",
+      "speaker": "Liloute",
+      "voiceCharacter": "Liloute",
+      "pitch": -2,
+      "text": "Moi, j’aurais préféré le dernier…"
+    },
+    {
+      "n": 32,
+      "file": "a1s1_032.mp3",
+      "speaker": "Ririte",
+      "voiceCharacter": "Ririte",
+      "pitch": 2,
+      "text": "Bon, on va prendre la pleine lune, comme ça, y’aura pas de jalouse !"
+    },
+    {
+      "n": 33,
+      "file": "a1s1_033.mp3",
+      "speaker": "Liloute et Fifite",
+      "voiceCharacter": "Liloute",
+      "pitch": -2,
+      "text": "Avec ces annonces à Macbeth, Comte de Glamis, et Banco, t’as pas peur qu’on provoque un désastre ?"
+    },
+    {
+      "n": 34,
+      "file": "a1s1_034.mp3",
+      "speaker": "Ririte",
+      "voiceCharacter": "Ririte",
+      "pitch": 2,
+      "text": "De toute façon, la lune, c’est déjà un des astres, alors ça change pas grand’chose…"
+    },
+    {
+      "n": 35,
+      "file": "a1s1_035.mp3",
+      "speaker": "Liloute et Fifite",
+      "voiceCharacter": "Liloute",
+      "pitch": -2,
+      "text": "En effet,"
+    },
+    {
+      "n": 36,
+      "file": "a1s1_036.mp3",
+      "speaker": "Ririte",
+      "voiceCharacter": "Ririte",
+      "pitch": 2,
+      "text": "Allez salut les filles !"
+    },
+    {
+      "n": 37,
+      "file": "a1s1_037.mp3",
+      "speaker": "Liloute et Fifite",
+      "voiceCharacter": "Liloute",
+      "pitch": -2,
+      "text": "Salut"
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "sceneId": "a5s3a",
+  "label": "Acte 5 — Scène 3",
+  "title": "Macbeth informé et acculé",
+  "count": 18,
+  "files": [
+    {
+      "n": 1,
+      "file": "a5s3a_001.mp3",
+      "speaker": "Serviteur",
+      "voiceCharacter": "Serviteur",
+      "pitch": 0,
+      "text": "Si..Si…Si…Si…"
+    },
+    {
+      "n": 2,
+      "file": "a5s3a_002.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Si quoi ? Qu’y a-t-il ?"
+    },
+    {
+      "n": 3,
+      "file": "a5s3a_003.mp3",
+      "speaker": "Serviteur",
+      "voiceCharacter": "Serviteur",
+      "pitch": 0,
+      "text": "Si-si-si-si…Sire… Y’…Y’…Y’…"
+    },
+    {
+      "n": 4,
+      "file": "a5s3a_004.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "(recouvert d’une armure menaçant son serviteur l’épée à la main) Tu accouches ? Oui ou non ?"
+    },
+    {
+      "n": 5,
+      "file": "a5s3a_005.mp3",
+      "speaker": "Serviteur",
+      "voiceCharacter": "Serviteur",
+      "pitch": 0,
+      "text": "(Apercevant Macbeth en armure- reprenant un flot de paroles) Qu’est-ce que vous faîtes dans cette tenue à cette heure?"
+    },
+    {
+      "n": 6,
+      "file": "a5s3a_006.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Ca n’se voit pas non ! Triple idiot ! Avec mon armure, je suis paré à toute bataille, même couché pour la nuit, mon armure me protège !"
+    },
+    {
+      "n": 7,
+      "file": "a5s3a_007.mp3",
+      "speaker": "Serviteur",
+      "voiceCharacter": "Serviteur",
+      "pitch": 0,
+      "text": "D’acc… D’acc… D’acc… mais j’ai vu… J’ai vu…. J’ai vu…"
+    },
+    {
+      "n": 8,
+      "file": "a5s3a_008.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "T’as vu.. T’as vu … T’as vu quoi ?"
+    },
+    {
+      "n": 9,
+      "file": "a5s3a_009.mp3",
+      "speaker": "Serviteur",
+      "voiceCharacter": "Serviteur",
+      "pitch": 0,
+      "text": "La fo… La fo.."
+    },
+    {
+      "n": 10,
+      "file": "a5s3a_010.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "La fo ? La fo quoi ?"
+    },
+    {
+      "n": 11,
+      "file": "a5s3a_011.mp3",
+      "speaker": "Serviteur",
+      "voiceCharacter": "Serviteur",
+      "pitch": 0,
+      "text": "…Bi…Bi…Bi…"
+    },
+    {
+      "n": 12,
+      "file": "a5s3a_012.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "La Fobi ? Mais enfin, tu racontes n’importe quoi ? (Menaçant avec son épée)"
+    },
+    {
+      "n": 13,
+      "file": "a5s3a_013.mp3",
+      "speaker": "Serviteur",
+      "voiceCharacter": "Serviteur",
+      "pitch": 0,
+      "text": "Mamac… Mamac .. La fofo…la fofo qui boubou qui boubou…"
+    },
+    {
+      "n": 14,
+      "file": "a5s3a_014.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Ca suffit maintenant fous moi la paix !"
+    },
+    {
+      "n": 15,
+      "file": "a5s3a_015.mp3",
+      "speaker": "Serviteur",
+      "voiceCharacter": "Serviteur",
+      "pitch": 0,
+      "text": "Mais…mais regaga… regaga… (il désigne la direction de la forêt)"
+    },
+    {
+      "n": 16,
+      "file": "a5s3a_016.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Oui, eh bien c’est toi qui es gaga ! (puis regarde en direction de la forêt)\nAh ! La fofo… La fobi.. La Fobi… Mamac….Mamac… (se retourne vers le serviteur , le menaçant/ frappant) – Mais enfin, tu n’pouvais pas le dire plus tôt !"
+    },
+    {
+      "n": 17,
+      "file": "a5s3a_017.mp3",
+      "speaker": "Serviteur",
+      "voiceCharacter": "Serviteur",
+      "pitch": 0,
+      "text": "Mais votre majesté, c’est…"
+    },
+    {
+      "n": 18,
+      "file": "a5s3a_018.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Tais-toi ! A présent laisse-moi me préparer pour affronter et éliminer mes ennemis ! (il bouscule son serviteur qui disparaît apeuré)"
+    }
+  ]
+}

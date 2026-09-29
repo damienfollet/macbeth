@@ -1,0 +1,272 @@
+{
+  "sceneId": "a2s5",
+  "label": "Acte 2 — Scène 5",
+  "title": "Découverte du crime (suite)",
+  "count": 33,
+  "files": [
+    {
+      "n": 1,
+      "file": "a2s5_001.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Ah, mon Dieu !"
+    },
+    {
+      "n": 2,
+      "file": "a2s5_002.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Ah, mon Dieu ! (exagérant)"
+    },
+    {
+      "n": 3,
+      "file": "a2s5_003.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Qu’est-il arrivé ?"
+    },
+    {
+      "n": 4,
+      "file": "a2s5_004.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Oui, qu’est-il arrivé ? (exagérant)"
+    },
+    {
+      "n": 5,
+      "file": "a2s5_005.mp3",
+      "speaker": "Macduff",
+      "voiceCharacter": "Macduff",
+      "pitch": 1,
+      "text": "On a tué notre bon Roi Duncan !"
+    },
+    {
+      "n": 6,
+      "file": "a2s5_006.mp3",
+      "speaker": "Gardes 1 2",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "(se relevant) Ah ou- ou – ou wimboé (puis retombant)."
+    },
+    {
+      "n": 7,
+      "file": "a2s5_007.mp3",
+      "speaker": "Macduff",
+      "voiceCharacter": "Macduff",
+      "pitch": 1,
+      "text": "et ses gardes aussi"
+    },
+    {
+      "n": 8,
+      "file": "a2s5_008.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Mais, comment est-ce possible ?"
+    },
+    {
+      "n": 9,
+      "file": "a2s5_009.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Et Malcom où est-il ?"
+    },
+    {
+      "n": 10,
+      "file": "a2s5_010.mp3",
+      "speaker": "Macduff",
+      "voiceCharacter": "Macduff",
+      "pitch": 1,
+      "text": "il n’a pas pu rester une minute de plus, et vient de partir."
+    },
+    {
+      "n": 11,
+      "file": "a2s5_011.mp3",
+      "speaker": "Lady Commandement + Macbeth",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Comment ?"
+    },
+    {
+      "n": 12,
+      "file": "a2s5_012.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Voilà qui est bizarre…"
+    },
+    {
+      "n": 13,
+      "file": "a2s5_013.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Bizarre, en effet, bizarre.."
+    },
+    {
+      "n": 14,
+      "file": "a2s5_014.mp3",
+      "speaker": "Macduff",
+      "voiceCharacter": "Macduff",
+      "pitch": 1,
+      "text": "En attendant, restons sur nos gardes, car l’assassin ou les assassins sont peut-être parmi nous… (il sort)"
+    },
+    {
+      "n": 15,
+      "file": "a2s5_015.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Tu as entendu, mon Mac, ma bête"
+    },
+    {
+      "n": 16,
+      "file": "a2s5_016.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Oui, … plus que jamais, restons sur nos gardes. (ils sortent)."
+    },
+    {
+      "n": 17,
+      "file": "a2s5_017.mp3",
+      "speaker": "Garde 1",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "Tu as entendu, restons sur nos gardes."
+    },
+    {
+      "n": 18,
+      "file": "a2s5_018.mp3",
+      "speaker": "Garde 2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "Oui, restons sur NOS GARDES…"
+    },
+    {
+      "n": 19,
+      "file": "a2s5_019.mp3",
+      "speaker": "Gardes 1 2",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "(se regardant) Sur nos gardes ? Ah non !"
+    },
+    {
+      "n": 20,
+      "file": "a2s5_020.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Dis donc l’coq, viens ici tout de suite, tout de suite, j’ai dit !"
+    },
+    {
+      "n": 21,
+      "file": "a2s5_021.mp3",
+      "speaker": "Coq",
+      "voiceCharacter": "Coq",
+      "pitch": 3,
+      "text": "(qui apparaît milieu de scène par un poursuite focalisée sur lui, face public, comme pour un tribunal) Oui, Sire, vous avez vu, j’ai poussé mon cri comme vous l’avez demandé."
+    },
+    {
+      "n": 22,
+      "file": "a2s5_022.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Tu parles d’un cri ! A cause de toi, je suis arrivé en retard, triple idiot ! Qu’est-ce qui m’a foutu un coq aussi faiblard !"
+    },
+    {
+      "n": 23,
+      "file": "a2s5_023.mp3",
+      "speaker": "Coq",
+      "voiceCharacter": "Coq",
+      "pitch": 3,
+      "text": "J’y peux rien, moi, déjà, je suis cuit, alors !"
+    },
+    {
+      "n": 24,
+      "file": "a2s5_024.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "T’es cuit ! C’est pas une raison pour faire un « Bê ! bê » au lieu d’un cocorico !"
+    },
+    {
+      "n": 25,
+      "file": "a2s5_025.mp3",
+      "speaker": "Coq",
+      "voiceCharacter": "Coq",
+      "pitch": 3,
+      "text": "J’vous l’dis, j’suis cuit ! J’suis un coq au vin ! Donc j’peux pas faire autrement qu’un « Bê ! »"
+    },
+    {
+      "n": 26,
+      "file": "a2s5_026.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Un coq ovin qui fait « bê », on aura tout vu ! Allez, approche-toi ! (Le coq s’avance un peu avec des « bê… bê » timides) ; enfin, comment t’as pu en arriver là !?"
+    },
+    {
+      "n": 27,
+      "file": "a2s5_027.mp3",
+      "speaker": "Coq",
+      "voiceCharacter": "Coq",
+      "pitch": 3,
+      "text": "Vous savez, moi j’ai été élevé comme un coq sportif, sauf que j’ai perdu mon Cocorico quand j’ai côtoyé un coq paraguayen !"
+    },
+    {
+      "n": 28,
+      "file": "a2s5_028.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "De mieux en mieux ! Je veux un coq, moi, Macbeth, Roi d’Ecosse, un vrai coq ! Tu vas donc finir grillé ! A la casserole !"
+    },
+    {
+      "n": 29,
+      "file": "a2s5_029.mp3",
+      "speaker": "Coq",
+      "voiceCharacter": "Coq",
+      "pitch": 3,
+      "text": "Non, non ! S’il vous plaît, Votre Majesté ! J’ai une solution de remplacement, un coq, un vrai !"
+    },
+    {
+      "n": 30,
+      "file": "a2s5_030.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Ah, oui ? … Et c’est quoi, cette solution !"
+    },
+    {
+      "n": 31,
+      "file": "a2s5_031.mp3",
+      "speaker": "Coq",
+      "voiceCharacter": "Coq",
+      "pitch": 3,
+      "text": "Un vrai coq, j’vous l’dis ! Qui sait gérer ! C’est le Coq Des Champs !"
+    },
+    {
+      "n": 32,
+      "file": "a2s5_032.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Bon, te voilà en sursis, Coq au vin et va pour le Coq Des Champs !"
+    },
+    {
+      "n": 33,
+      "file": "a2s5_033.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Le voilà cuit pour de bon ! Place au coq Des champs !"
+    }
+  ]
+}

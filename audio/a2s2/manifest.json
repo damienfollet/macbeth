@@ -1,0 +1,240 @@
+{
+  "sceneId": "a2s2",
+  "label": "Acte 2 — Scène 2",
+  "title": "Bientôt l’heure du « grand ouvrage »",
+  "count": 29,
+  "files": [
+    {
+      "n": 1,
+      "file": "a2s2_001.mp3",
+      "speaker": "Présentateur",
+      "voiceCharacter": "Présentateur",
+      "pitch": 0,
+      "text": "La réception du Roi Duncan se déroule comme prévu ; le Roi profite de la présence de ses valeureux chevaliers…"
+    },
+    {
+      "n": 2,
+      "file": "a2s2_002.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Duncan chez moi, pour fêter ma promotion- Comte de Cador ; je luis dois déjà ce titre… et si les sorcières disaient vrai !"
+    },
+    {
+      "n": 3,
+      "file": "a2s2_003.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Eh Mac, on t’attend, le saumon est servi"
+    },
+    {
+      "n": 4,
+      "file": "a2s2_004.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "J’arrive ma Lady Co…mais je repense et m’interroge sur notre grand ouvrage…"
+    },
+    {
+      "n": 5,
+      "file": "a2s2_005.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Grand ouvrage qui va nous ouvrir les portes du Royaume, pour un avenir plein de promesses."
+    },
+    {
+      "n": 6,
+      "file": "a2s2_006.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "J’aimerais déjà y être, mais sans avoir à perpétrer le grand ouvrage."
+    },
+    {
+      "n": 7,
+      "file": "a2s2_007.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "(plus câline) De quoi t’inquiètes-tu mon Mac ? En alcoolisant les deux gardes, on passera à l’ouvrage facilement !"
+    },
+    {
+      "n": 8,
+      "file": "a2s2_008.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Il n’empêche, sans Duncan, jamais je n’aurais eu ce titre."
+    },
+    {
+      "n": 9,
+      "file": "a2s2_009.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Justement, te voilà Cador ! Réveille la bête qui est en toi ! (le secouant tendrement) Deviens mon Macbeth ! Mon lion enragé !"
+    },
+    {
+      "n": 10,
+      "file": "a2s2_010.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Ah oui ?"
+    },
+    {
+      "n": 11,
+      "file": "a2s2_011.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Oh, oui !, Mon Macbeth, Ma bête, mon mec, Macbeth !"
+    },
+    {
+      "n": 12,
+      "file": "a2s2_012.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Oh oui ! Ton Macbeth, oh oui !"
+    },
+    {
+      "n": 13,
+      "file": "a2s2_013.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Cette nuit, nous allons changer de rang et devenir grand !"
+    },
+    {
+      "n": 14,
+      "file": "a2s2_014.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Oh, oui ! Oh oui ! (un temps)... Mais comment allons-nous procéder ? Quelle arme allons-nous utiliser ?"
+    },
+    {
+      "n": 15,
+      "file": "a2s2_015.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "(générique téléachat) - Grâce au Téléachat( à voir), j’ai déjà tout anticipé, mon Mac !"
+    },
+    {
+      "n": 16,
+      "file": "a2s2_016.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "La tronçonneuse ?"
+    },
+    {
+      "n": 17,
+      "file": "a2s2_017.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "trop bruyante"
+    },
+    {
+      "n": 18,
+      "file": "a2s2_018.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Le hachoir ?"
+    },
+    {
+      "n": 19,
+      "file": "a2s2_019.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "trop lourd à manœuvrer !"
+    },
+    {
+      "n": 20,
+      "file": "a2s2_020.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Le couteau ?"
+    },
+    {
+      "n": 21,
+      "file": "a2s2_021.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Voilà ce qu’il nous faut ! Bien vu mon Mac, t’es une bête !"
+    },
+    {
+      "n": 22,
+      "file": "a2s2_022.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Oh, oui ! (re-Goldwynn Meyer !) - En route pour le saumon !"
+    },
+    {
+      "n": 23,
+      "file": "a2s2_023.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "et l’omelette norvégienne !"
+    },
+    {
+      "n": 24,
+      "file": "a2s2_024.mp3",
+      "speaker": "Duncan",
+      "voiceCharacter": "Duncan",
+      "pitch": -2,
+      "text": "Mon brave Macbeth, désormais Comte de Cador, je vous remercie pour cette merveilleuse soirée."
+    },
+    {
+      "n": 25,
+      "file": "a2s2_025.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Le bonsoir, Roi Duncan, merci Sire pour votre visite"
+    },
+    {
+      "n": 26,
+      "file": "a2s2_026.mp3",
+      "speaker": "Duncan",
+      "voiceCharacter": "Duncan",
+      "pitch": -2,
+      "text": "Il est temps pour moi de regagner ma couche"
+    },
+    {
+      "n": 27,
+      "file": "a2s2_027.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Votre Majesté, on vous souhaite une longue nuit !"
+    },
+    {
+      "n": 28,
+      "file": "a2s2_028.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Longue nuit d’un sommeil profond, votre Altesse !"
+    },
+    {
+      "n": 29,
+      "file": "a2s2_029.mp3",
+      "speaker": "Duncan",
+      "voiceCharacter": "Duncan",
+      "pitch": -2,
+      "text": "Voilà ce qui s’appelle un vœu pieu !"
+    }
+  ]
+}

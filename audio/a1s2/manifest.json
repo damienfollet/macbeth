@@ -1,0 +1,176 @@
+{
+  "sceneId": "a1s2",
+  "label": "Acte I · Scène 2",
+  "title": "Des nouvelles du front pour le Roi Duncan",
+  "count": 21,
+  "files": [
+    {
+      "n": 1,
+      "file": "a1s2_001.mp3",
+      "speaker": "Malcolm",
+      "voiceCharacter": "Malcolm",
+      "pitch": 2,
+      "text": "Je vous salue, mon Père, Roi Duncan."
+    },
+    {
+      "n": 2,
+      "file": "a1s2_002.mp3",
+      "speaker": "Duncan",
+      "voiceCharacter": "Duncan",
+      "pitch": -2,
+      "text": "Bien Malcolm, mon petit, venons-en au rapport."
+    },
+    {
+      "n": 3,
+      "file": "a1s2_003.mp3",
+      "speaker": "Malcolm",
+      "voiceCharacter": "Malcolm",
+      "pitch": 2,
+      "text": "Eh bien, Mon Père, grâce aux manœuvres de Macbeth, Comte de Glamis, nous avons pu repousser l’ennemi ; ainsi les Norvégiens sont en fuite ou faits prisonniers."
+    },
+    {
+      "n": 4,
+      "file": "a1s2_004.mp3",
+      "speaker": "Duncan",
+      "voiceCharacter": "Duncan",
+      "pitch": -2,
+      "text": "Prisonniers ou en fuite ? Très bon, très bon ; nous allons pouvoir enfin vivre en paix !"
+    },
+    {
+      "n": 5,
+      "file": "a1s2_005.mp3",
+      "speaker": "Malcolm",
+      "voiceCharacter": "Malcolm",
+      "pitch": 2,
+      "text": "Sauf, Votre Majesté qu’avant notre assaut, un autre chevalier, le Comte de Cador nous a trahis en livrant le secret des plans de bataille de Macbeth et de Banco."
+    },
+    {
+      "n": 6,
+      "file": "a1s2_006.mp3",
+      "speaker": "Duncan",
+      "voiceCharacter": "Duncan",
+      "pitch": -2,
+      "text": "Comment ? Le comte de Cador ? Quelle ingratitude ! Moi qui l’ai anobli Comte il y a peu ! Eh bien il sera « décomté » ; oui, Malcolm, désormais il sera simple soldat et sans titre pour solde de tout compte."
+    },
+    {
+      "n": 7,
+      "file": "a1s2_007.mp3",
+      "speaker": "Malcolm",
+      "voiceCharacter": "Malcolm",
+      "pitch": 2,
+      "text": "Ah, oui, quand même !"
+    },
+    {
+      "n": 8,
+      "file": "a1s2_008.mp3",
+      "speaker": "Duncan",
+      "voiceCharacter": "Duncan",
+      "pitch": -2,
+      "text": "Il gagnera mon déshonneur et perdra son titre de Comte de Cador- le plus haut rang de la chevalerie que je vais céder à quelqu’un de valeureux !"
+    },
+    {
+      "n": 9,
+      "file": "a1s2_009.mp3",
+      "speaker": "Malcolm",
+      "voiceCharacter": "Malcolm",
+      "pitch": 2,
+      "text": "Ah oui ? Quelqu’un de valeureux, Père, Sire, Votre majesté ?"
+    },
+    {
+      "n": 10,
+      "file": "a1s2_010.mp3",
+      "speaker": "Duncan",
+      "voiceCharacter": "Duncan",
+      "pitch": -2,
+      "text": "Quelqu’un de confiance, avec qui je m’entretiens régulièrement .."
+    },
+    {
+      "n": 11,
+      "file": "a1s2_011.mp3",
+      "speaker": "Malcolm",
+      "voiceCharacter": "Malcolm",
+      "pitch": 2,
+      "text": "Ah oui quelqu’un avec qui vous vous entretenez régulièrement, Père, Sire, Votre Majesté. Bref quelqu’un qui est proche de vous, n’est-ce pas, Père, Sire, Votre Majesté ?"
+    },
+    {
+      "n": 12,
+      "file": "a1s2_012.mp3",
+      "speaker": "Duncan",
+      "voiceCharacter": "Duncan",
+      "pitch": -2,
+      "text": "Oui, en effet, quelqu’un qui est proche de moi, bien entendu ; c’est pourquoi ce titre je vais le transmettre à un chevalier dont je donnerai bientôt le nom."
+    },
+    {
+      "n": 13,
+      "file": "a1s2_013.mp3",
+      "speaker": "Malcolm",
+      "voiceCharacter": "Malcolm",
+      "pitch": 2,
+      "text": "Mais bien entendu, Père, Sire, Votre Majesté !"
+    },
+    {
+      "n": 14,
+      "file": "a1s2_014.mp3",
+      "speaker": "Duncan",
+      "voiceCharacter": "Duncan",
+      "pitch": -2,
+      "text": "En attendant mon brave Malcolm, tu avertiras notre bon Arthur."
+    },
+    {
+      "n": 15,
+      "file": "a1s2_015.mp3",
+      "speaker": "Malcolm",
+      "voiceCharacter": "Malcolm",
+      "pitch": 2,
+      "text": "Arthur ?"
+    },
+    {
+      "n": 16,
+      "file": "a1s2_016.mp3",
+      "speaker": "Duncan",
+      "voiceCharacter": "Duncan",
+      "pitch": -2,
+      "text": "Oui Arthur H, notre bon bourreau."
+    },
+    {
+      "n": 17,
+      "file": "a1s2_017.mp3",
+      "speaker": "Malcolm",
+      "voiceCharacter": "Malcolm",
+      "pitch": 2,
+      "text": "Ah oui, ..évidemment, …bien entendu…, Père…Votre Majesté."
+    },
+    {
+      "n": 18,
+      "file": "a1s2_018.mp3",
+      "speaker": "Duncan",
+      "voiceCharacter": "Duncan",
+      "pitch": -2,
+      "text": "Va et porte le message que notre Comte Cador sera déchu de son titre et qu’il perdra la tête."
+    },
+    {
+      "n": 19,
+      "file": "a1s2_019.mp3",
+      "speaker": "Malcolm",
+      "voiceCharacter": "Malcolm",
+      "pitch": 2,
+      "text": "Oui, évidemment, je n’y couperai pas. il va être déchu, j’espère que moi je n’ serai pas déçu !"
+    },
+    {
+      "n": 20,
+      "file": "a1s2_020.mp3",
+      "speaker": "Duncan",
+      "voiceCharacter": "Duncan",
+      "pitch": -2,
+      "text": "Et maintenant lâche-moi la grappe, veux tu ?"
+    },
+    {
+      "n": 21,
+      "file": "a1s2_021.mp3",
+      "speaker": "Malcolm",
+      "voiceCharacter": "Malcolm",
+      "pitch": 2,
+      "text": "Oui, bien entendu, Père, Sire, votre Majesté, vous avez raisin Sire, euh… vous avez raison Sire."
+    }
+  ]
+}

@@ -1,0 +1,496 @@
+{
+  "sceneId": "a2s3",
+  "label": "Acte 2 — Scène 3",
+  "title": "L’heure du crime",
+  "count": 61,
+  "files": [
+    {
+      "n": 1,
+      "file": "a2s3_001.mp3",
+      "speaker": "Garde 1",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "Crois-tu que notre Roi dort ? (temps de silence- rot/hoquet des gardes)"
+    },
+    {
+      "n": 2,
+      "file": "a2s3_002.mp3",
+      "speaker": "Garde 2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "T’as repris du saumon 2 fois , toi ?"
+    },
+    {
+      "n": 3,
+      "file": "a2s3_003.mp3",
+      "speaker": "Garde 1",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "Un peu, mon neveu, plutôt 2 fois qu’une, pour une fois qu’on peut manger à l’œil. (Hoquet/remontée gastrique) A tel point que mon saumon remonte le courant."
+    },
+    {
+      "n": 4,
+      "file": "a2s3_004.mp3",
+      "speaker": "Garde 2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "Moi aussi, garde 1, j’ai comme qui dirait, mal au cœur… (silence)"
+    },
+    {
+      "n": 5,
+      "file": "a2s3_005.mp3",
+      "speaker": "Garde 1",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "(réfléchissant) Tiens toi aussi, … (un temps) on t’identifie par garde 2 ?"
+    },
+    {
+      "n": 6,
+      "file": "a2s3_006.mp3",
+      "speaker": "Garde 2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "Oui, Garde 1, y’ avait pas l’budget pour nous identifier !"
+    },
+    {
+      "n": 7,
+      "file": "a2s3_007.mp3",
+      "speaker": "Garde 1",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "Toujours pareil !... On m’a simplement dit, dans ton rôle ce sera « Garde la nuit »."
+    },
+    {
+      "n": 8,
+      "file": "a2s3_008.mp3",
+      "speaker": "Garde 2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "Moi aussi ! Quand j’ai postulé, c’était plutôt « Retiens la nuit »"
+    },
+    {
+      "n": 9,
+      "file": "a2s3_009.mp3",
+      "speaker": "Garde 1",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "Retiens la nuit ! J’en jaunis à l’idée !"
+    },
+    {
+      "n": 10,
+      "file": "a2s3_010.mp3",
+      "speaker": "Garde 2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "(pris de hauts-le-coeur ) A propos de jaunir ; j’ai le saumon qui remonte à l’embouchure."
+    },
+    {
+      "n": 11,
+      "file": "a2s3_011.mp3",
+      "speaker": "Garde 1",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "Moi aussi, sans compter la Charlotte, la Madeleine et la Belle Hélène qui s’bousculent au portillon."
+    },
+    {
+      "n": 12,
+      "file": "a2s3_012.mp3",
+      "speaker": "Garde 2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "Et si je repense aux fleurs, ça me donne la gerbe !"
+    },
+    {
+      "n": 13,
+      "file": "a2s3_013.mp3",
+      "speaker": "Garde 1",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "(suffoquant) : N’en rajoute pas, mais j’vois pas ce que les fleurs viennent faire la –dedans ?"
+    },
+    {
+      "n": 14,
+      "file": "a2s3_014.mp3",
+      "speaker": "Garde 2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "Moi, j’étais pas loin du bouquet- et ça sentait pas la rose, j’t’assure."
+    },
+    {
+      "n": 15,
+      "file": "a2s3_015.mp3",
+      "speaker": "Garde 1",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "Evidemment, la majorité étaient pourries et noyées ! Et importées en plus !"
+    },
+    {
+      "n": 16,
+      "file": "a2s3_016.mp3",
+      "speaker": "Garde 2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "Ça venait d’où ?"
+    },
+    {
+      "n": 17,
+      "file": "a2s3_017.mp3",
+      "speaker": "Garde 1",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "Un surplus des Floralies, paraît-il. Là je n’tiens plus, direction les latrines !"
+    },
+    {
+      "n": 18,
+      "file": "a2s3_018.mp3",
+      "speaker": "Garde 2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "Deuze ! Ne réveille pas notre Majesté, je monte la garde."
+    },
+    {
+      "n": 19,
+      "file": "a2s3_019.mp3",
+      "speaker": "Garde 1",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "(Pouce levé pour OK)"
+    },
+    {
+      "n": 20,
+      "file": "a2s3_020.mp3",
+      "speaker": "Garde 2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "Qui va là ?"
+    },
+    {
+      "n": 21,
+      "file": "a2s3_021.mp3",
+      "speaker": "Garde 2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "Après avoir vomi, on s’évanouit, eh bien merci. (il s’agenouille pour le réveiller= claques/ …) Quelle idée de mettre une cagoule ! (Sur ce, arrive Lady Co)"
+    },
+    {
+      "n": 22,
+      "file": "a2s3_022.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "La bonne nuit, gardes … ah , je vois que votre collègue est indisposé ?"
+    },
+    {
+      "n": 23,
+      "file": "a2s3_023.mp3",
+      "speaker": "Garde 2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "C’est-à-dire, Lady Commandement…"
+    },
+    {
+      "n": 24,
+      "file": "a2s3_024.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Comtesse, désormais je suis Comtesse de Cador"
+    },
+    {
+      "n": 25,
+      "file": "a2s3_025.mp3",
+      "speaker": "Garde 2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "Oui , évidemment, … Comtesse de Cador, on a un peu abusé du saumon, des desserts."
+    },
+    {
+      "n": 26,
+      "file": "a2s3_026.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Non ?... J’ai ce qu’il vous faut pour apaiser ces vilains maux ; (sortant une fiole) c’est léger et ça nettoie. N’hésitez pas, une bonne dose !"
+    },
+    {
+      "n": 27,
+      "file": "a2s3_027.mp3",
+      "speaker": "Garde 2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "(reniflant puis ingurgitant, il est ensuite pris de soubresauts) Voilà un remède royal"
+    },
+    {
+      "n": 28,
+      "file": "a2s3_028.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "En effet, royal, c’est le terme approprié. A votre collègue, à présent."
+    },
+    {
+      "n": 29,
+      "file": "a2s3_029.mp3",
+      "speaker": "Garde 1",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "Ah, mais où suis-je ?"
+    },
+    {
+      "n": 30,
+      "file": "a2s3_030.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "A la garde du Roi Duncan ; vous pouvez terminer, et partagez ce qu’il reste. (ils s’exécutent)."
+    },
+    {
+      "n": 31,
+      "file": "a2s3_031.mp3",
+      "speaker": "Garde 1",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "Ah oui, (revenant à lui et regardant garde 2) , ça nettoie"
+    },
+    {
+      "n": 32,
+      "file": "a2s3_032.mp3",
+      "speaker": "Garde 2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "Si, si c’est bien moi"
+    },
+    {
+      "n": 33,
+      "file": "a2s3_033.mp3",
+      "speaker": "Garde 1",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "(reprenant une rasade, puis retombant dans un demi-sommeil) Non, j’te dis, ça nettoie."
+    },
+    {
+      "n": 34,
+      "file": "a2s3_034.mp3",
+      "speaker": "Garde 2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "(idem dans un ½ sommeil) Mais c’est bien moi."
+    },
+    {
+      "n": 35,
+      "file": "a2s3_035.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Tu les as déjà occis, Lady Co ?"
+    },
+    {
+      "n": 36,
+      "file": "a2s3_036.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "ça a même été plus facile que je ne pensais ; ces crétins se sont tellement empiffrés et avaient tellement bu qu’ils étaient déjà bien atteints !"
+    },
+    {
+      "n": 37,
+      "file": "a2s3_037.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "C’est donc l’heure ?"
+    },
+    {
+      "n": 38,
+      "file": "a2s3_038.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Eh oui, Macbeth, vas-y mon Mac, ma bête ( elle lui donne une autre fiole). Tiens, donne-toi du courage ! Le royaume est à nous !"
+    },
+    {
+      "n": 39,
+      "file": "a2s3_039.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Le royaume est à nous !"
+    },
+    {
+      "n": 40,
+      "file": "a2s3_040.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Bravo ! Macbeth, t’es une bête !"
+    },
+    {
+      "n": 41,
+      "file": "a2s3_041.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "(ressort, hagard) Ca y est c’est fait… tu crois que j’ai bien fait ?"
+    },
+    {
+      "n": 42,
+      "file": "a2s3_042.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "(le débarrassant du couteau et badigeonnant les mains des gardes- mettant l’arme entre leurs mains) Evidemment que tu as bien fait !"
+    },
+    {
+      "n": 43,
+      "file": "a2s3_043.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Oui, mais tu sais, Duncan était un bon roi !"
+    },
+    {
+      "n": 44,
+      "file": "a2s3_044.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Mais toi aussi, tu seras un bon roi, Macbeth, ma bête !"
+    },
+    {
+      "n": 45,
+      "file": "a2s3_045.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Et si on découvrait notre crime ?"
+    },
+    {
+      "n": 46,
+      "file": "a2s3_046.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Tu rigoles, avec ces indices, l’arme, les taches, le sang."
+    },
+    {
+      "n": 47,
+      "file": "a2s3_047.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Oui, mais c’est quand même malheureux"
+    },
+    {
+      "n": 48,
+      "file": "a2s3_048.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Comment ça ?"
+    },
+    {
+      "n": 49,
+      "file": "a2s3_049.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Tant de sang royal versé"
+    },
+    {
+      "n": 50,
+      "file": "a2s3_050.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Maintenant c’est nous, le sang royal."
+    },
+    {
+      "n": 51,
+      "file": "a2s3_051.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "( Un temps )Oui, mais tu te rends compte, Duncan était d’un groupe rare O-."
+    },
+    {
+      "n": 52,
+      "file": "a2s3_052.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Mais nous aussi, nous sommes d’un groupe rare."
+    },
+    {
+      "n": 53,
+      "file": "a2s3_053.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Je parle du groupe sanguin."
+    },
+    {
+      "n": 54,
+      "file": "a2s3_054.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Tu parles pour quelques centilitres au plus…."
+    },
+    {
+      "n": 55,
+      "file": "a2s3_055.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Non O-, je te dis. Et puis j’ai entendu les sœurs sorcières me souffler : « Macbeth a tué le sommeil ! »."
+    },
+    {
+      "n": 56,
+      "file": "a2s3_056.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Eh bien justement, il est l’heure ; allons-nous cacher et nous coucher"
+    },
+    {
+      "n": 57,
+      "file": "a2s3_057.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Allez viens, que j’aille me laver les mains pour effacer toute trace de notre ouvrage."
+    },
+    {
+      "n": 58,
+      "file": "a2s3_058.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "(hagard) Notre ouvrage peut être découvert, tu le sais bien, ne te voile pas la fesse !"
+    },
+    {
+      "n": 59,
+      "file": "a2s3_059.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "(riant) Oh que si, que je vais me voiler la FACE, FACE mon mec-bête! Il est temps que tu ailles au lit…"
+    },
+    {
+      "n": 60,
+      "file": "a2s3_060.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "A condition que le sommeil arrive… (il sort)."
+    },
+    {
+      "n": 61,
+      "file": "a2s3_061.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Et si les gardes découvraient notre ouvrage….ces deux-là sont de trop. (il reprend le couteau et les assassine machinalement)…(s’apprête à sortir puis revient sur ses pas…) . Merde, j’aurais dû vérifier qu’ils n’étaient pas du groupe O-..."
+    }
+  ]
+}

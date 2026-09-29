@@ -1,0 +1,96 @@
+{
+  "sceneId": "a1s6",
+  "label": "Acte I · Scène 6",
+  "title": "Lady Co rêve du titre suprême",
+  "count": 11,
+  "files": [
+    {
+      "n": 1,
+      "file": "a1s6_001.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Duncan ici, dans notre demeure ! ….Viens Macbeth, toi promu Comte de Cador ! toi, que l’on prédit futur roi d’Ecosse ! Car oui, moi, Lady Commandement, toi qui m’appelles Lady Co, je saurai trouver les mots pour que tu gagnes le trône, même s’il faut user du pire ! Moi, Lady Co, je ne suis pas la rousse, mais rassure-toi j’ai mes Roberts."
+    },
+    {
+      "n": 2,
+      "file": "a1s6_002.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "J’en appelle aux forces du pouvoir et de l’ambition ; remplissez mes deux seins de fiel pour accomplir le dessein qui est le nôtre. Faîtes que Macbeth, mon mec à moi soit gagné par la force animale, sauvage ; faîtes qu’il devienne un lion rugissant, que mon Macbeth soit un vrai mec, une bête, un mec-bête quoi !"
+    },
+    {
+      "n": 3,
+      "file": "a1s6_003.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Que dis-tu Lady Co ?"
+    },
+    {
+      "n": 4,
+      "file": "a1s6_004.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Ah, te voilà, ton message m’a transportée et je vois déjà l’avenir exister pour moi."
+    },
+    {
+      "n": 5,
+      "file": "a1s6_005.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Ne t’emballe pas, tu sais que le roi arrive ce soir ?"
+    },
+    {
+      "n": 6,
+      "file": "a1s6_006.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Et quand part-il d’ici ?"
+    },
+    {
+      "n": 7,
+      "file": "a1s6_007.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Demain, c’est son projet."
+    },
+    {
+      "n": 8,
+      "file": "a1s6_008.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Et ne crois-tu pas que c’est pour nous le moment de l’accueillir comme il se doit … et même plus, afin qu’il ne reparte pas"
+    },
+    {
+      "n": 9,
+      "file": "a1s6_009.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Et même plus ?"
+    },
+    {
+      "n": 10,
+      "file": "a1s6_010.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Mais oui, aie l’air de la fleur innocente, mais sois le serpent caché dessous ; il faut pourvoir à la réception de notre roi…et profiter de l’occasion avant qu’on passe au grand ouvrage de cette nuit."
+    },
+    {
+      "n": 11,
+      "file": "a1s6_011.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Au grand ouvrage…Hmm hmm… Nous en reparlerons."
+    }
+  ]
+}

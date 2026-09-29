@@ -1,0 +1,120 @@
+{
+  "sceneId": "a3s3a",
+  "label": "Acte 3 — Scène 3",
+  "title": "Scène d’installation",
+  "count": 14,
+  "files": [
+    {
+      "n": 1,
+      "file": "a3s3a_001.mp3",
+      "speaker": "Banco",
+      "voiceCharacter": "Banco",
+      "pitch": 0,
+      "text": "Merci bien, voilà qui permettra d’éviter toute trace."
+    },
+    {
+      "n": 2,
+      "file": "a3s3a_002.mp3",
+      "speaker": "Banco",
+      "voiceCharacter": "Banco",
+      "pitch": 0,
+      "text": "C’est vous qui aviez pris mon slip ?"
+    },
+    {
+      "n": 3,
+      "file": "a3s3a_003.mp3",
+      "speaker": "AG1",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "(ressortant des coulisses avec 1 bout de lance qui transperce Banquo au niveau de la ceinture, AG1 est à une extrémité, AG2 à la 2ème) Déjà, on dit « sous-vêtement »"
+    },
+    {
+      "n": 4,
+      "file": "a3s3a_004.mp3",
+      "speaker": "AG2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "Nous, on est censé pas laisser de trace, alors.."
+    },
+    {
+      "n": 5,
+      "file": "a3s3a_005.mp3",
+      "speaker": "Banco",
+      "voiceCharacter": "Banco",
+      "pitch": 0,
+      "text": "Mais pourquoi tant de haine ?"
+    },
+    {
+      "n": 6,
+      "file": "a3s3a_006.mp3",
+      "speaker": "AG2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "Nous on est censé obéir aux ordres ?"
+    },
+    {
+      "n": 7,
+      "file": "a3s3a_007.mp3",
+      "speaker": "Banco",
+      "voiceCharacter": "Banco",
+      "pitch": 0,
+      "text": "Aux ordres, mais aux ordres de qui ?"
+    },
+    {
+      "n": 8,
+      "file": "a3s3a_008.mp3",
+      "speaker": "AG2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "Demande à mon collègue."
+    },
+    {
+      "n": 9,
+      "file": "a3s3a_009.mp3",
+      "speaker": "Banco",
+      "voiceCharacter": "Banco",
+      "pitch": 0,
+      "text": "Tu parles, je ne le vois pas ; il me tourne le dos."
+    },
+    {
+      "n": 10,
+      "file": "a3s3a_010.mp3",
+      "speaker": "Banco",
+      "voiceCharacter": "Banco",
+      "pitch": 0,
+      "text": "Vous obéissez aux ordres de qui ? ( s’écroule)."
+    },
+    {
+      "n": 11,
+      "file": "a3s3a_011.mp3",
+      "speaker": "AG1",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "Et voilà !"
+    },
+    {
+      "n": 12,
+      "file": "a3s3a_012.mp3",
+      "speaker": "AG2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "Ca, c’est fait"
+    },
+    {
+      "n": 13,
+      "file": "a3s3a_013.mp3",
+      "speaker": "AG1",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "Et le corps ?"
+    },
+    {
+      "n": 14,
+      "file": "a3s3a_014.mp3",
+      "speaker": "AG2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "Ah ben oui, comment qu’on fait ?"
+    }
+  ]
+}

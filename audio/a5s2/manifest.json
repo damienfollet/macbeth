@@ -1,0 +1,40 @@
+{
+  "sceneId": "a5s2",
+  "label": "Acte 5 — Scène 2",
+  "title": "Lady Co dans le champ de tir",
+  "count": 4,
+  "files": [
+    {
+      "n": 1,
+      "file": "a5s2_001.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Méfie-toi de Macduff !"
+    },
+    {
+      "n": 2,
+      "file": "a5s2_002.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "d’un homme né naturellement d’une femme !"
+    },
+    {
+      "n": 3,
+      "file": "a5s2_003.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "quand la forêt de Birnam marchera contre moi !"
+    },
+    {
+      "n": 4,
+      "file": "a5s2_004.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Oh, ma Lady Co ! Lady Macbeth ! Pourquoi a-t-il fallu que tu sois dans mon champ de tir ? ( Il se relève, la regarde) Tu vois, tu avais sans doute les yeux plus gros que le ventre !"
+    }
+  ]
+}

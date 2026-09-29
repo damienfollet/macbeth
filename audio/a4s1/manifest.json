@@ -1,0 +1,464 @@
+{
+  "sceneId": "a4s1",
+  "label": "Acte 4 — Scène 1",
+  "title": "Macbeth rend à nouveau visite aux sorcières",
+  "count": 57,
+  "files": [
+    {
+      "n": 1,
+      "file": "a4s1_001.mp3",
+      "speaker": "Ririte + Fifite",
+      "voiceCharacter": "Ririte",
+      "pitch": 2,
+      "text": "(Air : « J’ai la rate…Ah mon Dieu qu’c’est embêtant … »)\n« De la bave de crapaud,\nBien épaisse comm’il faut\nDu venin de serpent\nPour qu’ça piqu’également\nDes entrailles de cochon,\nEt ça s’ra vraiment bon !\nAh, qu’ c’est compliqué de cuisiner en tant qu’sorcière !\nMême, nous dans nos r’cettes, parfois il arriv’ qu’on s’y perd ! »"
+    },
+    {
+      "n": 2,
+      "file": "a4s1_002.mp3",
+      "speaker": "Liloute",
+      "voiceCharacter": "Liloute",
+      "pitch": -2,
+      "text": "Salut les girls ! (signe de salut individuel bises/ check- jetée sort…), ça touille ?"
+    },
+    {
+      "n": 3,
+      "file": "a4s1_003.mp3",
+      "speaker": "Ririte + Fifite",
+      "voiceCharacter": "Ririte",
+      "pitch": 2,
+      "text": "Oui, mais qu’est-ce que c’est chiant de cuisiner ces ingrédients !"
+    },
+    {
+      "n": 4,
+      "file": "a4s1_004.mp3",
+      "speaker": "Ririte + Fifite",
+      "voiceCharacter": "Ririte",
+      "pitch": 2,
+      "text": "(Reprise refrain) Ah, qu’ c’est compliqué de cuisiner quand faut qu’tu touilles !\nAu bout d’un moment, tu sais , ça te casse les cou….. !"
+    },
+    {
+      "n": 5,
+      "file": "a4s1_005.mp3",
+      "speaker": "Liloute",
+      "voiceCharacter": "Liloute",
+      "pitch": -2,
+      "text": "Stop, les cocottes ! Si cuisiner est votre point noir,…"
+    },
+    {
+      "n": 6,
+      "file": "a4s1_006.mp3",
+      "speaker": "Ririte + Fifite",
+      "voiceCharacter": "Ririte",
+      "pitch": 2,
+      "text": "Notre point noir ? ( elles montrent leur verrue/pustule noir au visage)."
+    },
+    {
+      "n": 7,
+      "file": "a4s1_007.mp3",
+      "speaker": "Liloute",
+      "voiceCharacter": "Liloute",
+      "pitch": -2,
+      "text": "Mais non ! Si ça vous embête, j’ai la solution ; grâce à ce cube !... (elle sort un cube)"
+    },
+    {
+      "n": 8,
+      "file": "a4s1_008.mp3",
+      "speaker": "Ririte + Fifite",
+      "voiceCharacter": "Ririte",
+      "pitch": 2,
+      "text": "Ce cube ?"
+    },
+    {
+      "n": 9,
+      "file": "a4s1_009.mp3",
+      "speaker": "Liloute",
+      "voiceCharacter": "Liloute",
+      "pitch": -2,
+      "text": "Ces cubes … (Elle en jette un dans le chaudron) Et voilà le travail ! Avec ce cube on s’en sort ! Jette un cube, jette un sort !"
+    },
+    {
+      "n": 10,
+      "file": "a4s1_010.mp3",
+      "speaker": "Ririte + Fifite",
+      "voiceCharacter": "Ririte",
+      "pitch": 2,
+      "text": "Maggi, Maggi ! et ton idée c’est du génie ! (chanté sur air de pub !)"
+    },
+    {
+      "n": 11,
+      "file": "a4s1_011.mp3",
+      "speaker": "Liloute",
+      "voiceCharacter": "Liloute",
+      "pitch": -2,
+      "text": "Avec du Pop- Rock, c’est encore mieux, c’est le plus Popu, Plus Rocku !"
+    },
+    {
+      "n": 12,
+      "file": "a4s1_012.mp3",
+      "speaker": "Ririte + Fifite",
+      "voiceCharacter": "Ririte",
+      "pitch": 2,
+      "text": "Pas mal ! Et si on rajoutait un peu d’exotisme ?"
+    },
+    {
+      "n": 13,
+      "file": "a4s1_013.mp3",
+      "speaker": "Liloute",
+      "voiceCharacter": "Liloute",
+      "pitch": -2,
+      "text": "(jette un autre cube) Cube des îles ! Jette un cube ! Jette un sort !"
+    },
+    {
+      "n": 14,
+      "file": "a4s1_014.mp3",
+      "speaker": "Ririte + Fifite",
+      "voiceCharacter": "Ririte",
+      "pitch": 2,
+      "text": "Alors , c’est carrément plus Zouk ! C’est zouku !"
+    },
+    {
+      "n": 15,
+      "file": "a4s1_015.mp3",
+      "speaker": "Liloute",
+      "voiceCharacter": "Liloute",
+      "pitch": -2,
+      "text": "Normal, c’est magie « noire » ! Ajoutons du fiel de bouc, des entrailles de loup, des yeux de lézard !"
+    },
+    {
+      "n": 16,
+      "file": "a4s1_016.mp3",
+      "speaker": "Ririte + Fifite",
+      "voiceCharacter": "Ririte",
+      "pitch": 2,
+      "text": "Alors là, ça va être goûtu !"
+    },
+    {
+      "n": 17,
+      "file": "a4s1_017.mp3",
+      "speaker": "Liloute",
+      "voiceCharacter": "Liloute",
+      "pitch": -2,
+      "text": "Et encore des pattes de coq !"
+    },
+    {
+      "n": 18,
+      "file": "a4s1_018.mp3",
+      "speaker": "Ririte + Fifite",
+      "voiceCharacter": "Ririte",
+      "pitch": 2,
+      "text": "Carrément, pattes de coq, c’est cocu !"
+    },
+    {
+      "n": 19,
+      "file": "a4s1_019.mp3",
+      "speaker": "Liloute",
+      "voiceCharacter": "Liloute",
+      "pitch": -2,
+      "text": "Et enfin, du taureau avec des cornes !"
+    },
+    {
+      "n": 20,
+      "file": "a4s1_020.mp3",
+      "speaker": "Ririte",
+      "voiceCharacter": "Ririte",
+      "pitch": 2,
+      "text": "Alors, là c’est Bastien ?"
+    },
+    {
+      "n": 21,
+      "file": "a4s1_021.mp3",
+      "speaker": "Fifite + Liloute",
+      "voiceCharacter": "Fifite",
+      "pitch": 2,
+      "text": "(regard interrogatif) C’est Bastien ?"
+    },
+    {
+      "n": 22,
+      "file": "a4s1_022.mp3",
+      "speaker": "Ririte",
+      "voiceCharacter": "Ririte",
+      "pitch": 2,
+      "text": "Des cornes, … Le cornu, c’est Bastien !"
+    },
+    {
+      "n": 23,
+      "file": "a4s1_023.mp3",
+      "speaker": "Ririte + Fifite",
+      "voiceCharacter": "Ririte",
+      "pitch": 2,
+      "text": "Et maintenant touche finale pour peaufiner notre bouillie !"
+    },
+    {
+      "n": 24,
+      "file": "a4s1_024.mp3",
+      "speaker": "Liloute",
+      "voiceCharacter": "Liloute",
+      "pitch": -2,
+      "text": "Bouwie ? vous avez dit « bowie » ?!"
+    },
+    {
+      "n": 25,
+      "file": "a4s1_025.mp3",
+      "speaker": "Ririte + Fifite",
+      "voiceCharacter": "Ririte",
+      "pitch": 2,
+      "text": "Je crois qu’il faut que l’on s’arrête (chanté sur Bambino ou pas )."
+    },
+    {
+      "n": 26,
+      "file": "a4s1_026.mp3",
+      "speaker": "Liloute",
+      "voiceCharacter": "Liloute",
+      "pitch": -2,
+      "text": "Car il me semble entendre Macbeth."
+    },
+    {
+      "n": 27,
+      "file": "a4s1_027.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "(Bambino- refrain) Oui, en effet !\nC’est moi qu’arrive et j’ai vue\nOui, j’ai vue, oui j’ai vue"
+    },
+    {
+      "n": 28,
+      "file": "a4s1_028.mp3",
+      "speaker": "Ririte + Fifite + Liloute",
+      "voiceCharacter": "Ririte",
+      "pitch": 2,
+      "text": "(Reprise) Tu as vue, tu as vue\nTu as vue sur nos trois (elles se tapent le postérieur*)\nNos trois….(*), nos trois …(*)"
+    },
+    {
+      "n": 29,
+      "file": "a4s1_029.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Halte-là, sorcières du mystère, des ténèbres et de minuit, que faîtes-vous là ? (montrant le chaudron)"
+    },
+    {
+      "n": 30,
+      "file": "a4s1_030.mp3",
+      "speaker": "Ririte",
+      "voiceCharacter": "Ririte",
+      "pitch": 2,
+      "text": "Une de nos mixtures préférées !"
+    },
+    {
+      "n": 31,
+      "file": "a4s1_031.mp3",
+      "speaker": "Fifite",
+      "voiceCharacter": "Fifite",
+      "pitch": 2,
+      "text": "Préparées avec « amour »…"
+    },
+    {
+      "n": 32,
+      "file": "a4s1_032.mp3",
+      "speaker": "Liloute",
+      "voiceCharacter": "Liloute",
+      "pitch": -2,
+      "text": "Et avec Maggi !"
+    },
+    {
+      "n": 33,
+      "file": "a4s1_033.mp3",
+      "speaker": "Ririte + Fifite + Liloute",
+      "voiceCharacter": "Ririte",
+      "pitch": 2,
+      "text": "Maggi, magie, et nos idées ont du génie !"
+    },
+    {
+      "n": 34,
+      "file": "a4s1_034.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "De grâce, Sœurs du Destin (il les implore – à genoux ?), répondez à mes questions"
+    },
+    {
+      "n": 35,
+      "file": "a4s1_035.mp3",
+      "speaker": "Ririte",
+      "voiceCharacter": "Ririte",
+      "pitch": 2,
+      "text": "Vas-y mon p’tit Macbeth"
+    },
+    {
+      "n": 36,
+      "file": "a4s1_036.mp3",
+      "speaker": "Fifite",
+      "voiceCharacter": "Fifite",
+      "pitch": 2,
+      "text": "Parle"
+    },
+    {
+      "n": 37,
+      "file": "a4s1_037.mp3",
+      "speaker": "Liloute",
+      "voiceCharacter": "Liloute",
+      "pitch": -2,
+      "text": "Nous répondrons (Coup de tonnerre) !"
+    },
+    {
+      "n": 38,
+      "file": "a4s1_038.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Ah ! Mais c’est dégueu…"
+    },
+    {
+      "n": 39,
+      "file": "a4s1_039.mp3",
+      "speaker": "Ririte",
+      "voiceCharacter": "Ririte",
+      "pitch": 2,
+      "text": "Chut, chut…., Calme-toi Macbeth, cette potion nous permettra de mieux voir tes demandes."
+    },
+    {
+      "n": 40,
+      "file": "a4s1_040.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Ah, mais c’est dégueu…"
+    },
+    {
+      "n": 41,
+      "file": "a4s1_041.mp3",
+      "speaker": "Fifite",
+      "voiceCharacter": "Fifite",
+      "pitch": 2,
+      "text": "Ca suffit, mon p’tit Macbeth, on finit sa sou-soupe, si tu veux tes réponses."
+    },
+    {
+      "n": 42,
+      "file": "a4s1_042.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "D’accord, mais cette potion est dégueu…"
+    },
+    {
+      "n": 43,
+      "file": "a4s1_043.mp3",
+      "speaker": "Liloute",
+      "voiceCharacter": "Liloute",
+      "pitch": -2,
+      "text": "Lasse… on sait ! Et nous tu nous lasses justement, alors laisse- nous voir l’effet."
+    },
+    {
+      "n": 44,
+      "file": "a4s1_044.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Mais je vois pas les fées, je ne vois que vous, sorcières !"
+    },
+    {
+      "n": 45,
+      "file": "a4s1_045.mp3",
+      "speaker": "Ririte",
+      "voiceCharacter": "Ririte",
+      "pitch": 2,
+      "text": "on parle de l’effet de la potion !"
+    },
+    {
+      "n": 46,
+      "file": "a4s1_046.mp3",
+      "speaker": "Fifite",
+      "voiceCharacter": "Fifite",
+      "pitch": 2,
+      "text": "L’effet de la potion ! (Re-aïe !)"
+    },
+    {
+      "n": 47,
+      "file": "a4s1_047.mp3",
+      "speaker": "Liloute",
+      "voiceCharacter": "Liloute",
+      "pitch": -2,
+      "text": "L’effet potion, c’est compris, triple idiot ! (Re-aïe !)"
+    },
+    {
+      "n": 48,
+      "file": "a4s1_048.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Oui, oui, évidemment- mais dîtes-moi, ce qui me garantira la longévité de mon pouvoir !"
+    },
+    {
+      "n": 49,
+      "file": "a4s1_049.mp3",
+      "speaker": "Voix céleste",
+      "voiceCharacter": "Voix céleste",
+      "pitch": 0,
+      "text": "Macbeth ! Macbeth ! Méfie-toi de Macduff !"
+    },
+    {
+      "n": 50,
+      "file": "a4s1_050.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Macduff ? Comment est-ce possible ?..."
+    },
+    {
+      "n": 51,
+      "file": "a4s1_051.mp3",
+      "speaker": "Voix céleste",
+      "voiceCharacter": "Voix céleste",
+      "pitch": 0,
+      "text": "Macbeth ! Macbeth ! Sois sanguinaire et décidé ; nul homme né naturellement d’une femme ne peut nuire à Macbeth !"
+    },
+    {
+      "n": 52,
+      "file": "a4s1_052.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "(partant d’un grand éclat de rire), né naturellement d’une femme ! Me voilà tranquille !..."
+    },
+    {
+      "n": 53,
+      "file": "a4s1_053.mp3",
+      "speaker": "Voix céleste",
+      "voiceCharacter": "Voix céleste",
+      "pitch": 0,
+      "text": "Macbeth ! Macbeth ! Sois fier comme un lion ; jamais Macbeth ne sera vaincu jusqu’à ce que la forêt de Birnam marche contre lui !"
+    },
+    {
+      "n": 54,
+      "file": "a4s1_054.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "(redoublant d’un rire « carnassier !) Je sens mon instinct carnassier, la bête se réveille en moi, Macbeth- (Metro Goldwynn Meyer ? ) Une forêt qui marche ! Cela n’arrivera jamais ! Qui peut commander à l’arbre de détacher sa racine liée à la terre !"
+    },
+    {
+      "n": 55,
+      "file": "a4s1_055.mp3",
+      "speaker": "Ririte + Fifite + Liloute",
+      "voiceCharacter": "Ririte",
+      "pitch": 2,
+      "text": "Que dirais-tu d’une autre cuillerée de notre bouillie ?"
+    },
+    {
+      "n": 56,
+      "file": "a4s1_056.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "(implorant) Non, de grâce, mes bonnes sorcières, dîtes-moi plutôt si la descendance de Banquo règnera un jour sur ce pays ?"
+    },
+    {
+      "n": 57,
+      "file": "a4s1_057.mp3",
+      "speaker": "Ririte + Fifite + Liloute",
+      "voiceCharacter": "Ririte",
+      "pitch": 2,
+      "text": "Allons Macbeth, ne cherche pas à en savoir davantage !"
+    }
+  ]
+}

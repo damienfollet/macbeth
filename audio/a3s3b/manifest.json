@@ -1,0 +1,456 @@
+{
+  "sceneId": "a3s3b",
+  "label": "Acte 3 — Scène 3",
+  "title": "Un étrange dîner",
+  "count": 56,
+  "files": [
+    {
+      "n": 1,
+      "file": "a3s3b_001.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "J’espère que nos deux tueurs ont bien vu qui tuer ?"
+    },
+    {
+      "n": 2,
+      "file": "a3s3b_002.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Allons s’ils ne connaissent pas la Reine, La Reine Macbeth !"
+    },
+    {
+      "n": 3,
+      "file": "a3s3b_003.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Qu’est-ce que tu racontes ? Je te parle de tuer, assassiner !"
+    },
+    {
+      "n": 4,
+      "file": "a3s3b_004.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Je suis tellement perturbée que je ne sais plus qui je suis- ah (regardant ses mains), et puis ces mains encore couvertes des stigmates sanguins de nos méfaits."
+    },
+    {
+      "n": 5,
+      "file": "a3s3b_005.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Ah, que j’aimerais effacer pour toujours ces traces sur mes mains-(elle se frotte les mains)"
+    },
+    {
+      "n": 6,
+      "file": "a3s3b_006.mp3",
+      "speaker": "AG1 + AG2",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "Votre Altesse. C’est fait, Sire, Banquo Kaput."
+    },
+    {
+      "n": 7,
+      "file": "a3s3b_007.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Kaput, Kaput ?"
+    },
+    {
+      "n": 8,
+      "file": "a3s3b_008.mp3",
+      "speaker": "AG1 + AG2",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "Ja, natürlich ! On lui fait une belle entaille dans les entrailles ! (ils miment)"
+    },
+    {
+      "n": 9,
+      "file": "a3s3b_009.mp3",
+      "speaker": "AG1",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "Et c’était pas qu’un test, hein ?"
+    },
+    {
+      "n": 10,
+      "file": "a3s3b_010.mp3",
+      "speaker": "AG2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "Intestin ! Mon foi(e) (e), non ! (sourire de connivence)"
+    },
+    {
+      "n": 11,
+      "file": "a3s3b_011.mp3",
+      "speaker": "AG1 + AG2",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "(regard mutuel de satisfaction -se mettent à chanter) Ein prosit, ein prosit ! La la la la, la la la la la la la la… Ein prosit, Ein.."
+    },
+    {
+      "n": 12,
+      "file": "a3s3b_012.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Ca suffit ! Et Malcom ?"
+    },
+    {
+      "n": 13,
+      "file": "a3s3b_013.mp3",
+      "speaker": "AG1",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "Malcom ?"
+    },
+    {
+      "n": 14,
+      "file": "a3s3b_014.mp3",
+      "speaker": "AG2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "Comment ça, Malcom ?"
+    },
+    {
+      "n": 15,
+      "file": "a3s3b_015.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Savez-vous où il se trouve ?"
+    },
+    {
+      "n": 16,
+      "file": "a3s3b_016.mp3",
+      "speaker": "AG1",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "Nous, on s’est occupés de Banquo, comme vous nous l’aviez demandé, Sire."
+    },
+    {
+      "n": 17,
+      "file": "a3s3b_017.mp3",
+      "speaker": "AG2",
+      "voiceCharacter": "Garde 2",
+      "pitch": 3,
+      "text": "Mais pas de Malcom"
+    },
+    {
+      "n": 18,
+      "file": "a3s3b_018.mp3",
+      "speaker": "AG1",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "Ah oui, on a suivi les ordres, point."
+    },
+    {
+      "n": 19,
+      "file": "a3s3b_019.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Bon, bon, vu. Vous pouvez disposer."
+    },
+    {
+      "n": 20,
+      "file": "a3s3b_020.mp3",
+      "speaker": "AG1 + AG2",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "De quoi ?"
+    },
+    {
+      "n": 21,
+      "file": "a3s3b_021.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Comment ça de quoi ?"
+    },
+    {
+      "n": 22,
+      "file": "a3s3b_022.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Vous ne pouvez disposer de rien ; par contre taillez-vous ; c’est plus clair comme ça ?"
+    },
+    {
+      "n": 23,
+      "file": "a3s3b_023.mp3",
+      "speaker": "AG1 + AG2",
+      "voiceCharacter": "Garde 1",
+      "pitch": 3,
+      "text": "Oui, votre Altesse, oui, oui, on dispose ; c’est sûr que là on a bien compris. (sortent)"
+    },
+    {
+      "n": 24,
+      "file": "a3s3b_024.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "(plus câline) Dis-donc mon Mac, ma bête… Montre – toi plus rude, plus virile, plus raide, maintenant que tu es Roi !"
+    },
+    {
+      "n": 25,
+      "file": "a3s3b_025.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Ne le suis-je pas assez ? Duncan, maintenant Banquo, ça ne te suffit pas ? Ah !, La voie royale serait à présent dégagée pour moi, si ce satané Malcom ne s’était enfui…"
+    },
+    {
+      "n": 26,
+      "file": "a3s3b_026.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Stop aux tracas, mon Macounet ! Allez, accueillons nos invités, …"
+    },
+    {
+      "n": 27,
+      "file": "a3s3b_027.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Tu as raison, tenons notre rang et offrons notre meilleur visage."
+    },
+    {
+      "n": 28,
+      "file": "a3s3b_028.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Bien vu, mon Macounet ! Et si, pour mettre un peu de légèreté, on faisait une chaise musicale avant notre dîner ?"
+    },
+    {
+      "n": 29,
+      "file": "a3s3b_029.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Tu as de la suite dans les idées, nous, Ecossais, savons nous mettre/ tenir à carreaux avec un peu d’humour ! Allez Banco ! ( enjoué )"
+    },
+    {
+      "n": 30,
+      "file": "a3s3b_030.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Banco, mon Macbeth !"
+    },
+    {
+      "n": 31,
+      "file": "a3s3b_031.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Ah, Banco (attristé), Banco ; pourquoi reviens –tu hanter mon esprit même dans nos discussions les plus futiles ?"
+    },
+    {
+      "n": 32,
+      "file": "a3s3b_032.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Chers amis, je vous remercie d’avoir répondu à mon invitation ; nous serions prêts à célébrer l’honneur de l’Ecosse entière si Banquo était arrivé, espérons qu’aucun contretemps fatal ne lui soit arrivé."
+    },
+    {
+      "n": 33,
+      "file": "a3s3b_033.mp3",
+      "speaker": "Macduff",
+      "voiceCharacter": "Macduff",
+      "pitch": 1,
+      "text": "Son absence signifierait-elle qu’il a rompu son engagement vis-à-vis de vous ?"
+    },
+    {
+      "n": 34,
+      "file": "a3s3b_034.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Qu’est-ce qui vous fait dire cela, Macduff ?"
+    },
+    {
+      "n": 35,
+      "file": "a3s3b_035.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "(par diversion) Laissons de côté, ce petit incident et amusons-nous avec une chaise musicale."
+    },
+    {
+      "n": 36,
+      "file": "a3s3b_036.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Chers amis, allons-y pour un nouveau tour ; celui qui restera pourrait décider du placement à table, n’est-ce pas, qu’en dis notre Roi ?"
+    },
+    {
+      "n": 37,
+      "file": "a3s3b_037.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Mais enfin, ne vois-tu rien ? Es-tu aveugle ?"
+    },
+    {
+      "n": 38,
+      "file": "a3s3b_038.mp3",
+      "speaker": "Invités",
+      "voiceCharacter": "Invités",
+      "pitch": 0,
+      "text": "Sire, qu’est-ce qui vous prend ? Que voyez-vous d’anormal ? Continuons notre chaise musicale, en avant la musique !"
+    },
+    {
+      "n": 39,
+      "file": "a3s3b_039.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Oui, vous avez raison. C’est parti pour un tour ! (Elle fait un signe de lancement pour la musique, qui repart, mais Macbeth ordonne son arrêt aussitôt)"
+    },
+    {
+      "n": 40,
+      "file": "a3s3b_040.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Stop ! Arrêtez cette musique infernale !"
+    },
+    {
+      "n": 41,
+      "file": "a3s3b_041.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Allons Macbeth, nous sommes censés divertir nos invités, sans cela les diners deviennent ennuyeux !"
+    },
+    {
+      "n": 42,
+      "file": "a3s3b_042.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Mais enfin, ouvrez les yeux ! Comment pouvez-vous ? Qui a fait cette mauvaise blague ? (Montrant la chaise avec le fantôme de Banquo)"
+    },
+    {
+      "n": 43,
+      "file": "a3s3b_043.mp3",
+      "speaker": "Macduff",
+      "voiceCharacter": "Macduff",
+      "pitch": 1,
+      "text": "(allant saisir la chaise, le fantôme se meut pour assurer le retour de la chaise à sa place) Il suffit de la remettre à sa place, voilà tout."
+    },
+    {
+      "n": 44,
+      "file": "a3s3b_044.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Macduff, quelle est cette provocation ? (regardant ensuite le fantôme de Banquo) . Et toi, ne me regarde pas comme ça !"
+    },
+    {
+      "n": 45,
+      "file": "a3s3b_045.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "(gênée) Mon mari est parfois sujet à des hallucinations dernièrement, sans doute un peu de fatigue, n’est-ce pas ? (Pas de réponse de Macbeth). Refaisons un dernier tour avant de passer à table. Musique, Maestro !"
+    },
+    {
+      "n": 46,
+      "file": "a3s3b_046.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "Qui a prévu de me narguer ainsi ?"
+    },
+    {
+      "n": 47,
+      "file": "a3s3b_047.mp3",
+      "speaker": "Invités",
+      "voiceCharacter": "Invités",
+      "pitch": 0,
+      "text": "Que se passe-t-il Sire ? Mais enfin personne ne veut vous narguer !"
+    },
+    {
+      "n": 48,
+      "file": "a3s3b_048.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "STOP ! Vous n’avez pas honte de m’insulter ainsi ! (regardant le fantôme) Hors de ma vue, tu n’as aucune moelle dans les os et ton sang est froid !"
+    },
+    {
+      "n": 49,
+      "file": "a3s3b_049.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "(gênée) Bien, mes amis, le Roi semble quelque peu perturbé, sa charge monarchique l’a beaucoup fatiguée. Je vous invite à nous laisser pour l’instant. Avec toutes nos excuses."
+    },
+    {
+      "n": 50,
+      "file": "a3s3b_050.mp3",
+      "speaker": "Banco",
+      "voiceCharacter": "Banco",
+      "pitch": 0,
+      "text": "(fantôme) Oui, ça vaut mieux, hein mon Macbeth !.. heu, non, Majesté ! (tire la langue, narguant)."
+    },
+    {
+      "n": 51,
+      "file": "a3s3b_051.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "(essaie de poursuivre le fantôme qui disparaît) Put…, t’as fini d’me faire ch… !"
+    },
+    {
+      "n": 52,
+      "file": "a3s3b_052.mp3",
+      "speaker": "Macduff",
+      "voiceCharacter": "Macduff",
+      "pitch": 1,
+      "text": "Comment ? Qu’y a –t-il, Sire ?"
+    },
+    {
+      "n": 53,
+      "file": "a3s3b_053.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Il a dit qu’il était très touché !"
+    },
+    {
+      "n": 54,
+      "file": "a3s3b_054.mp3",
+      "speaker": "Macduff",
+      "voiceCharacter": "Macduff",
+      "pitch": 1,
+      "text": "Bien , veillez sur notre Roi, et on se revoit dès demain !"
+    },
+    {
+      "n": 55,
+      "file": "a3s3b_055.mp3",
+      "speaker": "Lady Commandement",
+      "voiceCharacter": "Lady Commandement",
+      "pitch": 0,
+      "text": "Oui, merci brave Macduff, dès demain… Dès deux mains (regardant ses 2 mains – (douche rouge, elle s’écrie, tout en se frottant les mains incessamment) – Ah ! Otez –moi ces marques sanguinolentes de crime. (sort). Vont-elles disparaître de ma vue un jour !"
+    },
+    {
+      "n": 56,
+      "file": "a3s3b_056.mp3",
+      "speaker": "Macbeth",
+      "voiceCharacter": "Macbeth",
+      "pitch": 0,
+      "text": "(seul sur scène) Quant à moi, j’irai demain dès l’aube, visiter les sœurs du destin, Ririte, Fifite et Liloute pour en savoir davantage sur le mien."
+    }
+  ]
+}
