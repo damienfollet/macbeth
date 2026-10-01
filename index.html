@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Macbeth, mec bête ? — Répétition V3.0.7</title>
+<title>Macbeth, mec bête ? — Répétition V3.0.8</title>
 <style>
 :root{--bg:#100f12;--panel:#1a181d;--ink:#f5f0e8;--muted:#aaa2a8;--gold:#e7b85c;--red:#9d302f;--green:#274b3d}
 *{box-sizing:border-box} body{margin:0;background:radial-gradient(circle at 50% -20%,#34292b 0,#100f12 42%);color:var(--ink);font-family:Georgia,'Times New Roman',serif;min-height:100vh}
@@ -206,12 +206,25 @@ button.voice-selected {
 }
 
 
-/* V3.0.7 — interface Voix retirée */
+/* V3.0.8 — interface Voix retirée */
 #settingsBtn,#settingsPanel,.mobileVoiceArea,[data-mobile-tab="voices"]{display:none!important}
 
 
-/* V3.0.7 : aucun réglage de voix visible */
+/* V3.0.8 : aucun réglage de voix visible */
 #settingsBtn,#settingsPanel,.mobileVoiceArea,[data-mobile-tab="voices"]{display:none!important}
+
+/* V3.0.8 : parcours de toutes les répliques */
+.allLinesNav{border:1px solid #e7b85c66!important;color:#f3d99c!important;background:#e7b85c10!important;padding:12px!important;border-radius:11px!important;margin-bottom:8px}
+.allLinesNav.active{background:#e7b85c!important;color:#21170a!important}
+#allLinesPanel{display:none}.allLinesMode #allLinesPanel{display:block}.allLinesMode #card{display:none}
+#allLinesPanel{max-width:980px;margin:0 auto;background:#1a181de8;border:1px solid #ffffff24;border-radius:20px;padding:24px;min-height:480px}
+.allHead{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.allTitle{font-size:22px;font-weight:800;color:#e7b85c}.allMeta{font:13px system-ui;color:#c5bac0}
+.allFilters{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}.allFilters select{background:#29242b;color:#fff;border:1px solid #ffffff35;border-radius:9px;padding:10px;max-width:100%;font-size:14px}
+.allCue{border-left:3px solid #e7b85c;background:#ffffff08;padding:14px;margin:14px 0;border-radius:6px}.allCueLabel{font:700 11px system-ui;letter-spacing:.08em;color:#e7b85c;margin-bottom:8px}.allCueText{font-size:19px;line-height:1.5;white-space:pre-wrap}.allDirections{font:italic 15px Georgia;color:#c8bbc4;margin:8px 0}
+.allMine{background:#ffffff06;border:1px solid #e7b85c55;border-radius:14px;padding:18px;margin:14px 0}.allMineLabel{color:#e7b85c;font:700 13px system-ui;margin-bottom:12px}.allMineText{font-size:clamp(22px,3vw,34px);line-height:1.4;white-space:pre-wrap}.allMineText.blurred{filter:blur(12px);user-select:none}
+.allActions{display:flex;gap:9px;flex-wrap:wrap;margin-top:20px}.allActions button{flex:1 1 130px}.allProgress{height:6px;background:#ffffff20;border-radius:8px;overflow:hidden;margin:14px 0}.allProgress>div{height:100%;background:#e7b85c;width:0}.allEmpty{font-size:21px;text-align:center;padding:70px 10px;color:#e7b85c}
+.allResume{background:#e7b85c16;border:1px solid #e7b85c70;border-radius:12px;padding:12px;margin-top:12px}.allResume button{margin:6px}
+@media(max-width:850px){#allLinesPanel{padding:14px;min-height:60dvh;border-radius:13px}.allCueText{font-size:17px}.allActions button{flex:1 1 40%}.allFilters select{flex:1 1 40%}}
 </style><style>
 /* V2.2.1 : prompteur mobile, CSS indépendant du mode Mac */
 .mobileTabs,.mobileClose{display:none}
@@ -283,7 +296,7 @@ button.voice-selected {
 </style>
 
 <style>
-/* V3.0.7 définitif : Mac + mobile */
+/* V3.0.8 définitif : Mac + mobile */
 .contextLine{min-height:118px!important;max-height:190px!important;padding:12px 14px!important}
 .contextStack{gap:7px!important}
 .ctxItem{padding:5px 0!important}
@@ -303,7 +316,7 @@ button.voice-selected {
 </style>
 </head>
 <body>
-<header><div><h1>Macbeth, mec bête ? <span style="opacity:.55">— Répétition</span></h1><div class="tag">V3.0.7</div></div><div class="toolbar">
+<header><div><h1>Macbeth, mec bête ? <span style="opacity:.55">— Répétition</span></h1><div class="tag">V3.0.8</div></div><div class="toolbar">
 <button id="muteBtn" class="topControl"><span class="controlLabel">🔊 Son</span><span class="tooltip">Activer/désactiver la lecture vocale</span></button>
 <div class="volumeControl"><span class="volumeTooltip">Volume de lecture</span>
   <span class="volumeText">Vol.</span>
@@ -646,15 +659,16 @@ function setupUI(){
  function updateRoleLabel(){$('rolePickerLabel').textContent=learningRoles.length===0?'Sélectionner le(s) personnage(s) joué(s)':(learningRoles.length<=2?learningRoles.join(' + '):learningRoles.length+' rôles sélectionnés')}
  menu.innerHTML=roles.map(r=>`<label class="roleChoice"><input type="checkbox" value="${r}" ${learningRoles.includes(r)?'checked':''}><span>${r}</span></label>`).join('');
  pickerBtn.onclick=()=>picker.classList.toggle('open');
- menu.querySelectorAll('input').forEach(cb=>cb.onchange=()=>{picker.classList.remove('open');let chosen=[...menu.querySelectorAll('input:checked')].map(x=>x.value);learningRoles=chosen;localStorage.setItem('macbethRoles',JSON.stringify(learningRoles));updateRoleLabel();started=false;paused=false;i=0;updateChars();render()});
+ menu.querySelectorAll('input').forEach(cb=>cb.onchange=()=>{picker.classList.remove('open');let chosen=[...menu.querySelectorAll('input:checked')].map(x=>x.value);learningRoles=chosen;localStorage.setItem('macbethRoles',JSON.stringify(learningRoles));updateRoleLabel();started=false;paused=false;i=0;updateChars();render();document.dispatchEvent(new Event("macbethRolesChanged"))});
  updateRoleLabel();
  const nav=$('sceneNav');
  const prologue=scenes.find(s=>s.id==='prologue');
  const groups={}; scenes.filter(s=>s.id!=='prologue').forEach(s=>{const m=s.id.match(/^a(\d+)/);const a=m?Number(m[1]):0;(groups[a]||(groups[a]=[])).push(s)});
  const currentAct=(()=>{const m=currentScene.match(/^a(\d+)/);return m?Number(m[1]):0})();
- nav.innerHTML=`<button data-id="prologue" class="prologueNav ${currentScene==='prologue'?'active':''}">Prologue<small style="display:block;opacity:.65;font-weight:500;margin-top:2px">${prologue?.title||''}</small></button>`+Object.keys(groups).map(a=>`<div class="actGroup ${Number(a)===currentAct?'open':''}" data-act="${a}"><button type="button" class="actToggle"><span>Acte ${a}</span><span class="chev">›</span></button><div class="actScenes">${groups[a].map(s=>`<button data-id="${s.id}" class="${s.id===currentScene?'active':''}">${s.label.replace(/^Acte\s*[^·—-]+[·—-]\s*/i,'')}<small style="display:block;opacity:.65;font-weight:500;margin-top:2px">${s.title}</small></button>`).join('')}</div></div>`).join('');
+ nav.innerHTML=`<button type="button" id="allLinesNav" class="allLinesNav">📖 Toutes mes répliques</button><button data-id="prologue" class="prologueNav ${currentScene==='prologue'?'active':''}">Prologue<small style="display:block;opacity:.65;font-weight:500;margin-top:2px">${prologue?.title||''}</small></button>`+Object.keys(groups).map(a=>`<div class="actGroup ${Number(a)===currentAct?'open':''}" data-act="${a}"><button type="button" class="actToggle"><span>Acte ${a}</span><span class="chev">›</span></button><div class="actScenes">${groups[a].map(s=>`<button data-id="${s.id}" class="${s.id===currentScene?'active':''}">${s.label.replace(/^Acte\s*[^·—-]+[·—-]\s*/i,'')}<small style="display:block;opacity:.65;font-weight:500;margin-top:2px">${s.title}</small></button>`).join('')}</div></div>`).join('');
+ nav.querySelector('#allLinesNav').onclick=()=>document.dispatchEvent(new Event('macbethAllLinesOpen'));
  nav.querySelectorAll('.actToggle').forEach(b=>b.onclick=()=>b.closest('.actGroup').classList.toggle('open'));
- nav.querySelectorAll('button[data-id]').forEach(b=>b.onclick=()=>{stopPlayback();currentScene=b.dataset.id;localStorage.setItem('macbethScene',currentScene);L=scenes.find(s=>s.id===currentScene).lines;i=0;started=true;paused=false;setActiveSceneButton();const m=currentScene.match(/^a(\d+)/);if(m){const g=nav.querySelector(`.actGroup[data-act="${m[1]}"]`);if(g)g.classList.add('open')}mobileSceneTap=window.matchMedia('(max-width:850px)').matches;render();mobileSceneTap=false; if(window.matchMedia('(max-width:850px)').matches && L[i]?.t==='stage' && !muted){try{const u=new SpeechSynthesisUtterance(' ');u.lang='fr-FR';u.volume=0;speechSynthesis.speak(u)}catch(e){}}});
+ nav.querySelectorAll('button[data-id]').forEach(b=>b.onclick=()=>{document.dispatchEvent(new Event('macbethAllLinesClose'));stopPlayback();currentScene=b.dataset.id;localStorage.setItem('macbethScene',currentScene);L=scenes.find(s=>s.id===currentScene).lines;i=0;started=true;paused=false;setActiveSceneButton();const m=currentScene.match(/^a(\d+)/);if(m){const g=nav.querySelector(`.actGroup[data-act="${m[1]}"]`);if(g)g.classList.add('open')}mobileSceneTap=window.matchMedia('(max-width:850px)').matches;render();mobileSceneTap=false; if(window.matchMedia('(max-width:850px)').matches && L[i]?.t==='stage' && !muted){try{const u=new SpeechSynthesisUtterance(' ');u.lang='fr-FR';u.volume=0;speechSynthesis.speak(u)}catch(e){}}});
  
  const pbar=$('v2Progress'),seek=$('seekSlider');
  if(pbar&&seek){
@@ -710,7 +724,7 @@ document.addEventListener('keydown',e=>{if(['SELECT','INPUT'].includes(e.target.
 </script>
 
 <script>
-/* V3.0.7 : menu mobile — Personnages + Actes & scènes uniquement. */
+/* V3.0.8 : menu mobile — Personnages + Actes & scènes uniquement. */
 (function(){
  const mobile=()=>window.matchMedia('(max-width:850px)').matches;
  const panel=document.getElementById('mobileNavPanel');
@@ -736,6 +750,104 @@ document.addEventListener('keydown',e=>{if(['SELECT','INPUT'].includes(e.target.
  const observer=new MutationObserver(()=>{main.classList.toggle('mobilePlaying',/^\s*⏸/.test(main.textContent))});
  observer.observe(main,{childList:true,subtree:true,characterData:true});
  main.classList.toggle('mobilePlaying',/^\s*⏸/.test(main.textContent));
+})();
+</script>
+
+<script>
+/* V3.0.8 — parcours autonome des répliques, moteur classique V3.0.7 inchangé. */
+(function(){
+ const wrap=document.querySelector('.wrap'),panel=document.createElement('section');
+ panel.id='allLinesPanel';panel.innerHTML=`
+ <div class="allHead"><div class="allTitle">📖 Toutes mes répliques</div><button id="allExit">✕ Fermer</button></div>
+ <div id="allResume" class="allResume" hidden></div>
+ <div class="allFilters"><select id="allAct" aria-label="Filtrer par acte"></select><select id="allScene" aria-label="Filtrer par scène"></select></div>
+ <div id="allBody"></div>`;
+ wrap.insertBefore(panel,wrap.querySelector('#card'));
+ const el=id=>document.getElementById(id);
+ let active=false,items=[],pos=0,show=false,seq=0,filterAct='all',filterScene='all';
+ const esc=t=>String(t||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+ const key='macbethAllLinesBookmark308';
+ const act=s=>{const m=s.id.match(/^a(\d+)/);return m?m[1]:'prologue'};
+ function stop(){seq++;stopPlayback();try{recordedAudio.pause();recordedAudio.onended=null;recordedAudio.onerror=null}catch(e){}}
+ function selected(e){return e&&e.c&&learningRoles.some(role=>roleInSpeaker(role,e.c))}
+ function build(){
+  let rows=[];
+  for(const sc of scenes){
+   for(let n=0;n<sc.lines.length;n++){
+    const e=sc.lines[n];if(!selected(e))continue;
+    const prev=sc.lines[n-1]||null;
+    const last=rows[rows.length-1];
+    // Regrouper les répliques adjacentes des personnages sélectionnés.
+    if(last&&last.sceneId===sc.id&&last.lastIndex===n-1){last.entries.push({e,n});last.lastIndex=n;continue}
+    rows.push({sceneId:sc.id,scene:sc,firstIndex:n,lastIndex:n,entries:[{e,n}],prev});
+   }
+  }
+  return rows;
+ }
+ function filtered(){return items.filter(x=>(filterAct==='all'||act(x.scene)===filterAct)&&(filterScene==='all'||x.sceneId===filterScene))}
+ function remember(){try{const x=filtered()[pos];if(x)localStorage.setItem(key,JSON.stringify({sceneId:x.sceneId,index:x.firstIndex,roles:[...learningRoles]}))}catch(e){}}
+ function filters(){
+  const acts=[...new Set(items.map(x=>act(x.scene)))];
+  el('allAct').innerHTML='<option value="all">Toute la pièce</option>'+acts.map(a=>`<option value="${a}">${a==='prologue'?'Prologue':'Acte '+a}</option>`).join('');
+  if(!acts.includes(filterAct))filterAct='all';el('allAct').value=filterAct;
+  const options=scenes.filter(sc=>items.some(x=>x.sceneId===sc.id)&&(filterAct==='all'||act(sc)===filterAct));
+  el('allScene').innerHTML='<option value="all">Toutes les scènes</option>'+options.map(sc=>`<option value="${esc(sc.id)}">${esc(sc.label)} — ${esc(sc.title)}</option>`).join('');
+  if(!options.some(sc=>sc.id===filterScene))filterScene='all';el('allScene').value=filterScene;
+ }
+ function audioSrc(sc,n){let k=0;for(let j=0;j<=n;j++)if(sc.lines[j].c)k++;return `audio/${sc.id}/${sc.id}_${String(k).padStart(3,'0')}.mp3`}
+ function cueFor(x){
+  if(!x)return null;
+  // Une didascalie est visible mais n'est pas lue. Chercher l'amorce parlée précédente.
+  const lines=x.scene.lines,stages=[];let cue=null,cueIndex=-1;
+  for(let j=x.firstIndex-1;j>=0;j--){if(lines[j].t==='stage'){stages.unshift(lines[j].x);continue}if(lines[j].c){cue=lines[j];cueIndex=j;break}}
+  return {cue,cueIndex,stages};
+ }
+ function playCue(){
+  const x=filtered()[pos];if(!x)return;
+  const c=cueFor(x);if(!c||!c.cue)return;
+  stop();const ticket=seq;
+  const src=audioSrc(x.scene,c.cueIndex);recordedAudio.src=src;recordedAudio.volume=masterVolume;recordedAudio.playbackRate=globalSpeed;
+  recordedAudio.onended=()=>{if(ticket!==seq||!active)return;el('allAudioState').textContent='✓ Amorce terminée — à vous !'};
+  recordedAudio.onerror=()=>{if(ticket!==seq)return;el('allAudioState').textContent='MP3 indisponible : vérifiez le dossier audio.'};
+  el('allAudioState').textContent='🔊 Lecture de l’amorce…';
+  const promise=recordedAudio.play();if(promise&&promise.catch)promise.catch(()=>{if(ticket===seq)el('allAudioState').textContent='Appuyez sur « Réécouter l’amorce » pour lancer le son.'});
+ }
+ function render(autoplay=false){
+  stop();const list=filtered(),body=el('allBody');
+  if(!learningRoles.length){body.innerHTML='<div class="allEmpty">Choisissez votre personnage<br><small style="font-size:14px;color:#bdb4b9">Ouvrez le menu Personnages pour sélectionner un rôle.</small></div>';return}
+  if(!list.length){body.innerHTML='<div class="allEmpty">Aucune réplique pour ce filtre.</div>';return}
+  pos=Math.max(0,Math.min(pos,list.length-1));const x=list[pos],c=cueFor(x);
+  const dirs=c.stages.map(t=>`<div class="allDirections">${esc(t)}</div>`).join('');
+  const cue=c.cue?`<div class="allCue"><div class="allCueLabel">AMORCE — ${esc(c.cue.c)}</div><div class="allCueText">${esc(c.cue.x)}</div>${dirs}</div>`:`<div class="allCue"><div class="allCueLabel">DÉBUT DE SCÈNE</div>${dirs||'<div class="allDirections">Aucune réplique précédente dans cette scène.</div>'}</div>`;
+  const mine=x.entries.map(({e})=>`<div class="allMine"><div class="allMineLabel">🎭 ${esc(e.c)}</div><div class="allMineText ${show?'':'blurred'}">${esc(e.x)}</div>${e.d?`<div class="allDirections">${esc(e.d)}</div>`:''}</div>`).join('');
+  body.innerHTML=`<div class="allHead"><div><div class="allTitle">${esc(x.scene.label)}</div><div class="allMeta">${esc(x.scene.title)}</div></div><div class="allMeta">Étape ${pos+1} / ${list.length} · ${x.entries.length} réplique${x.entries.length>1?'s':''}</div></div><div class="allProgress"><div style="width:${(pos+1)/list.length*100}%"></div></div>${cue}${mine}<div class="allActions"><button id="allBack" ${pos===0?'disabled':''}>← Précédente</button><button id="allReplay" ${c.cue?'':'disabled'}>🔊 Réécouter l’amorce</button><button id="allReveal">${show?'🙈 Masquer':'👁 Afficher'} ma réplique</button><button id="allNext" class="primary" ${pos===list.length-1?'disabled':''}>Suivante →</button></div><div id="allAudioState" class="status" aria-live="polite"></div>`;
+  el('allBack').onclick=()=>move(-1);el('allNext').onclick=()=>move(1);
+  el('allReplay').onclick=playCue;el('allReveal').onclick=()=>{show=!show;body.querySelectorAll('.allMineText').forEach(n=>n.classList.toggle('blurred',!show));el('allReveal').textContent=show?'🙈 Masquer ma réplique':'👁 Afficher ma réplique'};
+  remember();if(autoplay&&c.cue&&!muted)playCue();
+ }
+ function move(d){const next=pos+d;if(next<0||next>=filtered().length)return;pos=next;show=false;render(true)}
+ function close(){if(!active)return;stop();active=false;document.body.classList.remove('allLinesMode');el('allLinesNav')?.classList.remove('active');el('allResume').hidden=true;renderClassic()}
+ function renderClassic(){/* La répétition classique n'est jamais réinitialisée par la fermeture. */}
+ function open(){
+  if(active)return;stop();active=true;document.body.classList.add('allLinesMode');el('allLinesNav')?.classList.add('active');
+  items=build();filterAct='all';filterScene='all';pos=0;show=false;filters();
+  const resume=el('allResume');resume.hidden=true;
+  try{const b=JSON.parse(localStorage.getItem(key)||'null');if(b&&b.roles&&JSON.stringify(b.roles)===JSON.stringify(learningRoles)){
+   const idx=filtered().findIndex(x=>x.sceneId===b.sceneId&&x.firstIndex===b.index);
+   if(idx>0){resume.hidden=false;resume.innerHTML=`Reprendre votre dernière réplique ? <button id="allYes">Reprendre</button><button id="allNo">Depuis le début</button>`;
+    el('allYes').onclick=()=>{pos=idx;resume.hidden=true;render(false)};el('allNo').onclick=()=>{pos=0;resume.hidden=true;render(false)};
+   }
+  }}catch(e){}
+  render(false);
+ }
+ el('allExit').onclick=close;
+ el('allAct').onchange=e=>{stop();filterAct=e.target.value;filterScene='all';pos=0;show=false;filters();render(false)};
+ el('allScene').onchange=e=>{stop();filterScene=e.target.value;pos=0;show=false;render(false)};
+ document.addEventListener('macbethAllLinesOpen',()=>{open();if(window.matchMedia('(max-width:850px)').matches){el('mobileNavPanel').classList.remove('mobileOpen');el('mobileNavBtn').setAttribute('aria-expanded','false')}});
+ document.addEventListener('macbethAllLinesClose',close);
+ document.addEventListener('macbethRolesChanged',()=>{if(active){stop();items=build();filterAct='all';filterScene='all';pos=0;show=false;filters();render(false)}});
+ // Éviter que les raccourcis du prompteur classique agissent en mode répliques.
+ document.addEventListener('keydown',e=>{if(!active)return;if(['ArrowLeft','ArrowRight','Space'].includes(e.code)){e.stopImmediatePropagation();e.preventDefault();if(e.code==='ArrowLeft')move(-1);if(e.code==='ArrowRight')move(1)}},true);
 })();
 </script>
 </body></html>
